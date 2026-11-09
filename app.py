@@ -107,6 +107,49 @@ except Exception as exc:
     st.warning("Independent NFL scoreboard temporarily unavailable: "+str(exc)[:130])
 st.caption("Source: ESPN unofficial public scoreboard endpoint; subject to provider availability and terms.")
 
+# Independent player box scores: passing, rushing, receiving, and other published categories.
+st.markdown("#### Player statistics by game")
+if 'espn' in locals() and espn.get("events"):
+    event_options=espn["events"]
+    chosen=st.selectbox("Select NFL game for player statistics",range(len(event_options)),
+        format_func=lambda i:event_options[i].get("name") or event_options[i].get("shortName") or str(event_options[i].get("id")),
+        key="player_game")
+    event_id=event_options[chosen].get("id")
+    @st.cache_data(ttl=180,show_spinner=False)
+    def load_espn_boxscore(event_id):
+        import requests
+        res=requests.get("https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
+                         params={"event":str(event_id)},timeout=(3,7))
+        res.raise_for_status()
+        return res.json()
+    try:
+        detail=load_espn_boxscore(event_id)
+        players=(detail.get("boxscore") or {}).get("players") or []
+        categories={}
+        for team in players:
+            team_name=(team.get("team") or {}).get("displayName") or "Team"
+            for stat in team.get("statistics") or []:
+                name=stat.get("name") or stat.get("label") or "Other"
+                labels=stat.get("labels") or []
+                for athlete in stat.get("athletes") or []:
+                    who=(athlete.get("athlete") or {}).get("displayName") or "Unknown"
+                    values=athlete.get("stats") or []
+                    record={"Team":team_name,"Player":who}
+                    record.update({str(k):v for k,v in zip(labels,values)})
+                    categories.setdefault(name,[]).append(record)
+        if categories:
+            chosen_stat=st.selectbox("Player stat category",list(categories),key="box_stat")
+            df_stats=pd.DataFrame(categories[chosen_stat])
+            st.dataframe(df_stats,hide_index=True,width="stretch")
+            st.download_button("Download player statistics",df_stats.to_csv(index=False),"nfl_player_stats.csv","text/csv")
+            st.caption("Actual game box-score statistics, not projections. ESPN public summary feed.")
+        else:
+            st.info("No player box-score stats are available yet for this game (often true before kickoff).")
+    except Exception as exc:
+        st.warning("Player statistics unavailable: "+str(exc)[:130])
+else:
+    st.info("Select a date with an NFL game to see its player statistics.")
+
 st.divider()
 st.subheader("Matchup center")
 if not games:
