@@ -110,8 +110,41 @@ def fetch_us_nfl_snapshot(days: int = 7, max_events: int = 30, max_quotes: int =
         events, warnings = discover_events(client, now, days, max_events)
         games, quote_count = [], 0
         for event in events:
+            # Event listings can contain only a summary of linked markets.
+            # Fetch the full event, then independently check event-scoped markets.
+            event_markets = list(event.get("markets") or [])
+            event_id = event.get("id")
+            try:
+                full = (client.events.retrieve(event_id) if event_id is not None
+                        else client.events.retrieve_by_slug(str(event.get("slug"))))
+                if isinstance(full, dict):
+                    detail = full.get("event") if isinstance(full.get("event"), dict) else full
+                    event_markets.extend(detail.get("markets") or [])
+            except Exception as exc:
+                warnings.append("Full event lookup failed for " + str(event_id) + ": " + str(exc)[:100])
+            if event_id is not None:
+                try:
+                    # The US SDK exposes a separate markets listing. Never mix
+                    # unrelated games if the API ignores an event filter.
+                    for offset in range(0, 300, 100):
+                        page = client.markets.list({"eventId": event_id, "limit": 100, "offset": offset})
+                        batch = page.get("markets") or []
+                        for candidate in batch:
+                            parent = candidate.get("eventId") or candidate.get("event_id")
+                            if str(parent) == str(event_id):
+                                event_markets.append(candidate)
+                        if len(batch) < 100:
+                            break
+                except Exception as exc:
+                    warnings.append("Event market lookup failed for " + str(event_id) + ": " + str(exc)[:100])
+            unique_markets = {}
+            for candidate in event_markets:
+                if isinstance(candidate, dict) and candidate.get("slug"):
+                    slug = str(candidate["slug"])
+                    if slug not in unique_markets or len(candidate) > len(unique_markets[slug]):
+                        unique_markets[slug] = candidate
             markets = []
-            for market in event.get("markets") or []:
+            for market in unique_markets.values():
                 if market.get("closed") or market.get("active") is False:
                     continue
                 slug = market.get("slug")
@@ -157,6 +190,7 @@ def fetch_us_nfl_snapshot(days: int = 7, max_events: int = 30, max_quotes: int =
                     "title": str(event.get("title") or ""),
                     "event_start_time_utc": when_utc(event.get("startTime")).isoformat(),
                     "markets": markets,
+                    "discovered_market_count": len(unique_markets),
                 })
             if quote_count >= max_quotes:
                 break
