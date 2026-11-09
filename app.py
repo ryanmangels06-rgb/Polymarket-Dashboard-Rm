@@ -51,7 +51,7 @@ for event in events:
     tags = " ".join(str(t.get("label", "")) for t in event.get("tags", []) if isinstance(t, dict))
     haystack = event_text+" "+tags
     if search.strip().upper() == "NFL":
-        if not re.search(r"\\b(nfl|national football league|super bowl|football)\\b", haystack, re.I): continue
+        if not re.search(r"\b(nfl|national football league|super bowl|football)\b", haystack, re.I): continue
     elif search.lower() not in haystack.lower(): continue
     for market in event.get("markets",[]):
         if not market.get("closed"): matches.append((event,market))
