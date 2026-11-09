@@ -165,3 +165,26 @@ buffer=st.number_input("Cost and uncertainty buffer",0.0,0.25,0.03,0.005)
 st.metric("Raw probability difference",f"{prob-price:+.1%}")
 st.metric("Difference after assumed buffer",f"{prob-price-buffer:+.1%}")
 st.warning("Positive differences are hypothetical, not evidence of a profitable strategy. Validate forecasts and costs before drawing conclusions.")
+
+st.divider()
+st.subheader("Read-only Polymarket portfolio")
+st.caption("Optional: enter a PUBLIC Polymarket proxy-wallet address. Never enter a seed phrase, private key, password, or API secret. This app does not place trades.")
+wallet=st.text_input("Public wallet address (0x + 40 hexadecimal characters)",value="",placeholder="0x...",type="default")
+if wallet:
+    if not re.fullmatch(r"0x[a-fA-F0-9]{40}",wallet.strip()):
+        st.warning("Enter a valid public Ethereum-format wallet address (0x followed by 40 hex characters).")
+    elif st.button("Load public portfolio snapshot"):
+        try:
+            base="https://data-api.polymarket.com"
+            response=requests.get(base+"/v2/positions",params={"user":wallet.strip()},timeout=20)
+            response.raise_for_status()
+            payload=response.json()
+            positions=payload.get("data",[]) if isinstance(payload,dict) else payload
+            if isinstance(positions,list) and positions:
+                st.dataframe(pd.DataFrame(positions),use_container_width=True,hide_index=True)
+                st.caption("Public data only. Values and P/L are provider estimates and may lag.")
+            else:
+                st.info("No open positions returned for this wallet.")
+        except (requests.RequestException,ValueError) as error:
+            st.error(f"Portfolio data unavailable: {error}")
+st.caption("This public dashboard does not save wallet addresses to a database, but URLs, server logs and browser sessions can still expose information. Avoid using an address you want to keep private.")
