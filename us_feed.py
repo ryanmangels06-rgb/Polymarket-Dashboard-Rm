@@ -122,21 +122,9 @@ def fetch_us_nfl_snapshot(days: int = 7, max_events: int = 30, max_quotes: int =
                     event_markets.extend(detail.get("markets") or [])
             except Exception as exc:
                 warnings.append("Full event lookup failed for " + str(event_id) + ": " + str(exc)[:100])
-            if event_id is not None:
-                try:
-                    # The US SDK exposes a separate markets listing. Never mix
-                    # unrelated games if the API ignores an event filter.
-                    for offset in range(0, 300, 100):
-                        page = client.markets.list({"eventId": event_id, "limit": 100, "offset": offset})
-                        batch = page.get("markets") or []
-                        for candidate in batch:
-                            parent = candidate.get("eventId") or candidate.get("event_id")
-                            if str(parent) == str(event_id):
-                                event_markets.append(candidate)
-                        if len(batch) < 100:
-                            break
-                except Exception as exc:
-                    warnings.append("Event market lookup failed for " + str(event_id) + ": " + str(exc)[:100])
+            # Avoid a broad markets.list call for every game: the API may ignore
+            # eventId and return unrelated global markets, causing long waits.
+            # Full event detail is the bounded authoritative fallback.
             unique_markets = {}
             for candidate in event_markets:
                 if isinstance(candidate, dict) and candidate.get("slug"):
