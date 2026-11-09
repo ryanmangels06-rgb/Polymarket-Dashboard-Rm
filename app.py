@@ -157,6 +157,44 @@ if rows:
 st.caption("Prices are market snapshots. Live window is based on kickoff time, not a verified game score. Missing bids/asks indicate no displayed quote.")
 
 st.divider()
+st.subheader("Auto-updating matchup quotes")
+auto_on=st.toggle("Refresh selected game's moneyline quotes every 30 seconds while this dashboard is open",value=False)
+@st.fragment(run_every="30s" if auto_on else None)
+def live_moneyline_fragment():
+    if not games:
+        st.info("No qualifying games to monitor in this time window.")
+        return
+    options={f"{dt.astimezone(local_tz).strftime('%b %d, %I:%M %p ET')} — {event.get('title','NFL game')}":(dt,event) for dt,event in games}
+    label=st.selectbox("Game to monitor",list(options.keys()),key="live_moneyline_game")
+    dt,event=options[label]
+    qualifying=[market for market in event.get("markets",[]) if not market.get("closed") and market_category(market)=="Moneyline"]
+    fresh_rows=[]
+    for market in qualifying[:2]:
+        tokens=arr(market.get("clobTokenIds"))
+        for i,outcome in enumerate(arr(market.get("outcomes"))):
+            if i>=len(tokens): continue
+            try:
+                book=order_book(tokens[i])
+                bids=[float(x["price"]) for x in book.get("bids",[])]
+                asks=[float(x["price"]) for x in book.get("asks",[])]
+                fresh_rows.append({
+                    "Outcome":outcome,
+                    "Best bid":max(bids) if bids else None,
+                    "Best ask":min(asks) if asks else None,
+                    "Market":market.get("question"),
+                })
+            except (requests.RequestException,ValueError,KeyError):
+                fresh_rows.append({"Outcome":outcome,"Best bid":None,"Best ask":None,"Market":market.get("question")})
+    if fresh_rows:
+        st.dataframe(pd.DataFrame(fresh_rows),hide_index=True,use_container_width=True)
+    else:
+        st.info("No moneyline order-book quotes available for this game.")
+    st.caption("Checked at "+datetime.now(timezone.utc).astimezone(local_tz).strftime("%I:%M:%S %p ET")+" · Public international Polymarket quotes only. Session must stay open; no automatic ChatGPT message or real-money trading.")
+live_moneyline_fragment()
+
+
+
+st.divider()
 st.subheader("Paper-trading probability comparison")
 st.caption("Supply your own independently estimated probability; this app does not yet have a trained NFL forecasting model.")
 price=st.number_input("Market purchase price",0.01,0.99,0.55,0.01)
