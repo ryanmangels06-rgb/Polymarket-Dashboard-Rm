@@ -43,6 +43,10 @@ def paying_side(market):
     """Only return outcome if explicitly identified by structured fields."""
     meta = metadata(market)
     kind = category(market)
+    if kind == "Total" and str(meta.get("market_sport_type", "")).lower() == "football_team_full_game_total":
+        strike = meta.get("outcome_strike")
+        if strike is not None and str(strike).strip():
+            return "Over " + str(strike), True, "metadata.market_sport_type/outcome_strike"
     names = []
     for side in market.get("marketSides") or []:
         if not isinstance(side, dict) or side.get("long") is not True:
@@ -58,10 +62,6 @@ def paying_side(market):
     long_name = meta.get("long_participant_name")
     if long_name and kind in ("Moneyline", "Spread"):
         return str(long_name), True, "metadata.long_participant_name"
-    if kind == "Total" and str(meta.get("market_sport_type", "")).lower() == "football_team_full_game_total":
-        strike = meta.get("outcome_strike")
-        if strike is not None and str(strike).strip():
-            return "Over " + str(strike), True, "metadata.market_sport_type/outcome_strike"
     return "Side not verified", False, "missing structured outcome"
 
 
