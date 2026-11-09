@@ -6,7 +6,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Polymarket NFL Lab", page_icon="🏈", layout="wide")
 st.title("🏈 Polymarket NFL Lab")
-st.caption("Read-only research dashboard • Prices are snapshots, not guaranteed executable quotes")
+st.caption("Read-only research dashboard • International Polymarket API data, NOT Polymarket US prices • Quotes are snapshots")
 
 @st.cache_data(ttl=300)
 def nfl_metadata():
@@ -167,8 +167,8 @@ st.metric("Difference after assumed buffer",f"{prob-price-buffer:+.1%}")
 st.warning("Positive differences are hypothetical, not evidence of a profitable strategy. Validate forecasts and costs before drawing conclusions.")
 
 st.divider()
-st.subheader("Read-only Polymarket portfolio")
-st.caption("Optional: enter a PUBLIC Polymarket proxy-wallet address. Never enter a seed phrase, private key, password, or API secret. This app does not place trades.")
+st.subheader("International Polymarket wallet viewer (not Polymarket US)")
+st.caption("This viewer is for the international Polymarket platform and cannot connect your Polymarket US Apple ID account. Optional: enter a PUBLIC Polymarket proxy-wallet address. Never enter a seed phrase, private key, password, or API secret. This app does not place trades.")
 wallet=st.text_input("Public wallet address (0x + 40 hexadecimal characters)",value="",placeholder="0x...",type="default")
 if wallet:
     if not re.fullmatch(r"0x[a-fA-F0-9]{40}",wallet.strip()):
@@ -188,3 +188,20 @@ if wallet:
         except (requests.RequestException,ValueError) as error:
             st.error(f"Portfolio data unavailable: {error}")
 st.caption("This public dashboard does not save wallet addresses to a database, but URLs, server logs and browser sessions can still expose information. Avoid using an address you want to keep private.")
+
+st.divider()
+st.subheader("Model evaluation workbench")
+st.caption("Research-only: enter a hypothetical probability and executable ask to see estimated edge and break-even probability. No NFL model is trained yet.")
+with st.expander("Expected value calculator",expanded=True):
+    ask=st.number_input("Contract ask price ($)",min_value=0.001,max_value=0.999,value=0.55,step=0.01,key="eval_ask")
+    p=st.number_input("Independent probability estimate",min_value=0.001,max_value=0.999,value=0.55,step=0.01,key="eval_p")
+    fee=st.number_input("Estimated all-in fees per contract ($)",min_value=0.0,max_value=0.50,value=0.0,step=0.005,key="eval_fee")
+    uncertainty=st.number_input("Probability uncertainty margin (percentage points)",min_value=0.0,max_value=30.0,value=3.0,step=0.5,key="eval_margin")/100
+    cost=ask+fee
+    ev=p-cost
+    st.metric("Hypothetical expected net value / contract",f"${ev:+.3f}")
+    st.metric("Break-even probability",f"{cost:.1%}")
+    st.metric("Conservative estimated difference",f"{p-uncertainty-cost:+.1%}")
+    if cost>=1:
+        st.warning("All-in contract cost is at least the maximum $1 payout.")
+    st.caption("Formula: EV = estimated probability × $1 payout − ask − estimated fees. Excludes price changes, slippage, and model error. This is not a trade recommendation.")
