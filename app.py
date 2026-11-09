@@ -69,6 +69,45 @@ if not usable:
     st.info("No verified contract-side + ask-price pairs in the saved US feed. Rankings are intentionally disabled rather than showing misleading recommendations.")
 
 st.divider()
+st.subheader("Independent NFL game data")
+st.caption("ESPN game feed — separate from Polymarket quotes. This is football information, not a sportsbook line.")
+
+@st.cache_data(ttl=120,show_spinner=False)
+def load_espn_scoreboard(date_str):
+    import requests
+    url="https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
+    response=requests.get(url,params={"dates":date_str},timeout=(3,6))
+    response.raise_for_status()
+    return response.json()
+
+game_date=st.date_input("NFL schedule date",value=now.astimezone(ET).date())
+try:
+    espn=load_espn_scoreboard(game_date.strftime("%Y%m%d"))
+    espn_rows=[]
+    for event in espn.get("events",[]):
+        comp=(event.get("competitions") or [{}])[0]
+        participants=comp.get("competitors") or []
+        home=next((x for x in participants if x.get("homeAway")=="home"),{})
+        away=next((x for x in participants if x.get("homeAway")=="away"),{})
+        status=event.get("status") or {}
+        detail=(status.get("type") or {}).get("shortDetail") or "—"
+        espn_rows.append({
+            "Game":f"{away.get('team',{}).get('displayName','Away')} @ {home.get('team',{}).get('displayName','Home')}",
+            "Away record":(away.get("records") or [{}])[0].get("summary","—"),
+            "Home record":(home.get("records") or [{}])[0].get("summary","—"),
+            "Score":f"{away.get('score','—')} - {home.get('score','—')}" if (status.get("type") or {}).get("state")!="pre" else "Not started",
+            "Status":detail,
+        })
+    if espn_rows:
+        st.dataframe(pd.DataFrame(espn_rows),hide_index=True,width="stretch")
+        st.caption(f"{len(espn_rows)} games returned by independent NFL scoreboard feed.")
+    else:
+        st.info("No games returned by ESPN for this date.")
+except Exception as exc:
+    st.warning("Independent NFL scoreboard temporarily unavailable: "+str(exc)[:130])
+st.caption("Source: ESPN unofficial public scoreboard endpoint; subject to provider availability and terms.")
+
+st.divider()
 st.subheader("Matchup center")
 if not games:
     st.info("No saved games yet. Check the scheduled collector in GitHub Actions.")
