@@ -7,6 +7,7 @@ from __future__ import annotations
 from datetime import datetime, timedelta, timezone
 from typing import Any
 import re
+from market_schema import normalize
 
 NFL_PATTERN = re.compile(r"(?:\bnfl\b|national football league)", re.IGNORECASE)
 MATCHUP_PATTERN = re.compile(r"\b(?:vs\.?|versus)\b|(?:\s@\s)", re.IGNORECASE)
@@ -132,15 +133,20 @@ def fetch_us_nfl_snapshot(days: int = 7, max_events: int = 30, max_quotes: int =
                 except Exception as exc:
                     bid = ask = None
                     warning = "Quote unavailable: " + str(exc)[:120]
+                normalized=normalize(market,{"marketData":{"bestBid":bid,"bestAsk":ask}},captured)
                 markets.append({
-                    "slug": str(slug),
-                    "title": str(market.get("title") or ""),
-                    "outcome": str(market.get("outcome") or ""),
-                    "bid": bid,
-                    "ask": ask,
-                    "spread": round(ask-bid, 5) if ask is not None and bid is not None else None,
-                    "liquidity": market.get("liquidity"),
-                    "volume": market.get("volume"),
+                    "slug": normalized["slug"],
+                    "title": normalized["market"],
+                    "outcome": normalized["side"] if normalized["side_verified"] else "",
+                    "side_verified": normalized["side_verified"],
+                    "side_source": normalized["side_source"],
+                    "type": normalized["type"],
+                    "line": normalized["line"],
+                    "bid": normalized["bid"],
+                    "ask": normalized["ask"],
+                    "spread": normalized["width"],
+                    "liquidity": normalized["liquidity"],
+                    "volume": normalized["volume"],
                     "quote_checked_utc": captured,
                     "quote_warning": warning,
                 })
