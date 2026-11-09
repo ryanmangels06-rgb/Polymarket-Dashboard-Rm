@@ -151,6 +151,66 @@ else:
     st.info("Select a date with an NFL game to see its player statistics.")
 
 st.divider()
+st.subheader("Sportsbook player-prop comparison")
+st.caption("Independent sportsbook lines for TB @ CHI, Nov 8, 2026. Source snapshot: Edge Labs, Nov 8 at 12:44 PM ET. NOT live Polymarket quotes.")
+# Source: https://edgelabs.bet/nfl/props?week=8
+# Each record is a published primary threshold with its own over/under odds.
+prop_rows=[
+ ("Baker Mayfield","Passing yards","DraftKings",212.5,-112,-112),
+ ("Baker Mayfield","Passing yards","FanDuel",209.5,-113,-113),
+ ("Baker Mayfield","Passing yards","BetMGM",209.5,-115,-115),
+ ("Caleb Williams","Passing yards","DraftKings",245.5,-113,-111),
+ ("Caleb Williams","Passing yards","FanDuel",243.5,-113,-113),
+ ("Caleb Williams","Passing yards","BetMGM",245.5,-115,-115),
+ ("Baker Mayfield","Passing TDs","DraftKings",1.5,127,-163),
+ ("Baker Mayfield","Passing TDs","FanDuel",1.5,134,-176),
+ ("Baker Mayfield","Passing TDs","BetMGM",1.5,130,-175),
+ ("Caleb Williams","Passing TDs","DraftKings",1.5,-157,123),
+ ("Caleb Williams","Passing TDs","FanDuel",1.5,-152,116),
+ ("Caleb Williams","Passing TDs","BetMGM",1.5,-150,110),
+ ("Bucky Irving","Rushing yards","DraftKings",64.5,-114,-110),
+ ("Bucky Irving","Rushing yards","FanDuel",63.5,-113,-113),
+ ("Bucky Irving","Rushing yards","BetMGM",64.5,-115,-115),
+ ("D'Andre Swift","Rushing yards","DraftKings",62.5,-114,-110),
+ ("D'Andre Swift","Rushing yards","FanDuel",62.5,-113,-113),
+ ("D'Andre Swift","Rushing yards","BetMGM",62.5,-115,-115),
+ ("Kenny Gainwell","Rushing yards","DraftKings",22.5,-112,-112),
+ ("Kenny Gainwell","Rushing yards","FanDuel",21.5,-113,-113),
+ ("Kenny Gainwell","Rushing yards","BetMGM",22.5,-105,-125),
+ ("Caleb Williams","Rushing yards","DraftKings",19.5,-107,-117),
+ ("Caleb Williams","Rushing yards","FanDuel",19.5,-113,-113),
+ ("Caleb Williams","Rushing yards","BetMGM",18.5,-120,-111),
+ ("Roschon Johnson","Rushing yards","DraftKings",16.5,-114,-110),
+ ("Roschon Johnson","Rushing yards","FanDuel",16.5,-113,-113),
+ ("Roschon Johnson","Rushing yards","BetMGM",15.5,-120,-110),
+ ("Baker Mayfield","Rushing yards","DraftKings",16.5,-111,-113),
+ ("Baker Mayfield","Rushing yards","FanDuel",17.5,-113,-113),
+ ("Baker Mayfield","Rushing yards","BetMGM",16.5,-110,-120),
+]
+def american_implied(odds):
+    return (100/(odds+100)) if odds>0 else (-odds/(-odds+100))
+raw_props=pd.DataFrame(prop_rows,columns=["Player","Stat","Book","Line","Over odds","Under odds"])
+raw_props["Over implied"]=raw_props["Over odds"].apply(american_implied)
+raw_props["Under implied"]=raw_props["Under odds"].apply(american_implied)
+raw_props["No-vig over"]=raw_props["Over implied"]/(raw_props["Over implied"]+raw_props["Under implied"])
+summary=[]
+for (player,stat),group in raw_props.groupby(["Player","Stat"],sort=True):
+    median=float(group["Line"].median())
+    same=group[group["Line"]==median]
+    summary.append({"Player":player,"Stat":stat,"Consensus line (median)":median,
+                    "Lowest line":float(group["Line"].min()),"Highest line":float(group["Line"].max()),
+                    "Books":len(group),
+                    "No-vig over at median":round(float(same["No-vig over"].mean())*100,1) if len(same) else None})
+summary_df=pd.DataFrame(summary)
+st.caption("Median of three independently published sportsbook thresholds. The no-vig probability is calculated only from books quoting that exact median threshold; it is NOT a calibrated player projection.")
+st.dataframe(summary_df,hide_index=True,width="stretch")
+with st.expander("View every sportsbook line and its odds"):
+    st.dataframe(raw_props[["Player","Stat","Book","Line","Over odds","Under odds","No-vig over"]],hide_index=True,width="stretch")
+    st.download_button("Download sportsbook lines",raw_props.to_csv(index=False),"nfl_sportsbook_props_2026_11_08.csv","text/csv")
+st.markdown("[View source and latest available lines](https://edgelabs.bet/nfl/props?week=8)")
+st.info("This is a dated source snapshot for one matchup, not a live automated sportsbook API. Different thresholds must not be treated as interchangeable when comparing odds. No Polymarket player-prop contract is matched yet.")
+
+st.divider()
 st.subheader("Matchup center")
 if not games:
     st.info("No saved games yet. Check the scheduled collector in GitHub Actions.")
