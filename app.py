@@ -33,12 +33,14 @@ if st.button("Refresh US market feed now",key="us_force_refresh"):
 
 @st.cache_data(ttl=25,show_spinner=False)
 def get_us_feed(days):
-    return fetch_us_nfl_snapshot(days=days,max_events=24,max_quotes=90)
+    return fetch_us_nfl_snapshot(days=days,max_events=6,max_quotes=20)
 
 @st.fragment(run_every="30s" if us_auto else None)
 def show_us_feed():
+    st.caption("Loading public US event and quote data. Initial requests may take time.")
     try:
-        feed=get_us_feed(us_days)
+        with st.spinner("Fetching US market quotes…"):
+            feed=get_us_feed(us_days)
     except Exception as exc:
         st.error("Polymarket US feed could not be retrieved: " + str(exc)[:250])
         st.caption("The international data shown below is a different exchange and should not be substituted for a US quote.")
