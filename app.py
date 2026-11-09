@@ -67,7 +67,7 @@ def show_us_feed():
     st.markdown(f"## {game.get('title','NFL matchup')}")
     st.caption("Exchange event time (kickoff not independently verified): "+str(game.get("event_start_time_utc","Unknown")))
     markets=game.get("markets") or []
-    identified=[m for m in markets if str(m.get("outcome") or "").strip()]
+    identified=[m for m in markets if m.get("side_verified") is True]
     c1,c2,c3=st.columns(3)
     c1.metric("Markets returned",len(markets))
     c2.metric("Identified outcomes",len(identified))
@@ -88,7 +88,7 @@ def show_us_feed():
             "Sell (bid)":fmt_price(bid),
             "Spread":fmt_price(m.get("spread")),
             "Quote time UTC":str(m.get("quote_checked_utc") or "")[:19],
-            "Status":"Verified side" if side else "Cannot compare",
+            "Status":"Verified side" if m.get("side_verified") is True else "Cannot compare",
         })
     if display:
         st.dataframe(pd.DataFrame(display),hide_index=True,use_container_width=True)
@@ -96,13 +96,13 @@ def show_us_feed():
     st.markdown("#### Market coverage")
     st.caption("The public US feed may expose only a subset of markets. These are categories to inspect, not claims that the exchange currently lists them.")
     tabs=st.tabs(["Moneyline","Spread","Total","Player props"])
-    for tab,keyword in zip(tabs,["moneyline","spread","total","player"]):
+    for tab,keyword in zip(tabs,["Moneyline","Spread","Total","Props & other"]):
         with tab:
-            matching=[m for m in markets if keyword in str(m.get("title") or "").lower()]
+            matching=[m for m in markets if m.get("type")==keyword]
             if matching:
                 st.dataframe(pd.DataFrame([{"Market":m.get("title"),"Outcome":m.get("outcome") or "Unverified","Ask":fmt_price(m.get("ask"))} for m in matching]),hide_index=True,use_container_width=True)
             else:
-                st.info("No verified "+keyword+" market returned by the current US feed.")
+                st.info("No "+keyword+" market returned by the current US feed.")
     st.caption("Read-only research. Recheck market side, rules, fees, liquidity and quote freshness on the US exchange before relying on any price.")
 
 show_us_feed()
