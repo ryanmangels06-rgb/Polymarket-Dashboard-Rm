@@ -373,6 +373,33 @@ try:
     st.write("**Current team Elo ratings**")
     ratings_df=pd.DataFrame([{"Team":team,"Elo":round(value,1)} for team,value in latest_ratings.items()]).sort_values("Elo",ascending=False)
     st.dataframe(ratings_df,hide_index=True,use_container_width=True)
+
+    # Portable, read-only summary for analysis in ChatGPT. Does not carry credentials.
+    next_games=[]
+    for _,game in upcoming.head(30).iterrows():
+        next_games.append({
+            "kickoff_utc":game["Date"].isoformat(),
+            "home":str(game["Home"]),
+            "away":str(game["Away"]),
+            "home_probability":round(float(game["Home win probability"]),4),
+        })
+    model_report={
+        "generated_utc":datetime.now(timezone.utc).isoformat(),
+        "source":"nflverse games.csv, historical Elo model",
+        "exchange":"None; NFL model probabilities only (not Polymarket US odds)",
+        "model":"Elo pregame baseline",
+        "parameter_selection":"2023-2025 validation; 2026 holdout",
+        "elo_k":best_k,
+        "home_advantage_elo":best_adv,
+        "validation_brier":round(best_brier,5),
+        "holdout_count":len(holdout),
+        "holdout_brier":round(float(((holdout["Home win probability"]-holdout["Result"])**2).mean()),5) if len(holdout) else None,
+        "upcoming":next_games,
+        "team_ratings":{str(team):round(float(value),1) for team,value in latest_ratings.items()},
+        "limitations":["Not live scores","No QB/injury data","Not calibrated to Polymarket US prices","Not proof of positive expected returns"]
+    }
+    st.download_button("Download model report for ChatGPT",json.dumps(model_report,indent=2),"nfl_model_report.json","application/json")
+    st.caption("You can upload this report into this ChatGPT conversation for analysis. It does not continuously sync by itself.")
     with st.expander("Inspect held-out predictions and download"):
         if len(holdout):
             st.dataframe(holdout[["Date","Home","Away","Home win probability","Result"]],hide_index=True,use_container_width=True)
