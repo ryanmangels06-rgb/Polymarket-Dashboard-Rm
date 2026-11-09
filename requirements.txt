@@ -1,3 +1,4 @@
 streamlit>=1.35,<2
 requests>=2.31,<3
 pandas>=2.0,<3
+polymarket-us>=2.3,<3
