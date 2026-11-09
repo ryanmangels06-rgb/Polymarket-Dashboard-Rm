@@ -1,4 +1,5 @@
 import json
+import re
 import requests
 import pandas as pd
 import streamlit as st
@@ -46,7 +47,12 @@ except requests.RequestException as e:
 
 matches=[]
 for event in events:
-    if search.lower() not in ((event.get("title") or "")+" "+(event.get("slug") or "")).lower(): continue
+    event_text = (event.get("title") or "")+" "+(event.get("slug") or "")+" "+(event.get("description") or "")
+    tags = " ".join(str(t.get("label", "")) for t in event.get("tags", []) if isinstance(t, dict))
+    haystack = event_text+" "+tags
+    if search.strip().upper() == "NFL":
+        if not re.search(r"\\b(nfl|national football league|super bowl|football)\\b", haystack, re.I): continue
+    elif search.lower() not in haystack.lower(): continue
     for market in event.get("markets",[]):
         if not market.get("closed"): matches.append((event,market))
 
