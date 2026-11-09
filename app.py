@@ -240,7 +240,9 @@ def load_nfl_history():
     frame["home_score"]=pd.to_numeric(frame["home_score"],errors="coerce")
     frame["away_score"]=pd.to_numeric(frame["away_score"],errors="coerce")
     frame=frame[(frame["season"]>=2018)&(frame["season"]<=2026)].copy()
-    frame["game_datetime"]=pd.to_datetime(frame.get("gameday"),errors="coerce",utc=True)
+    # nflverse gametime is a 24-hour Eastern Time kickoff field; gameday alone is midnight, not kickoff.
+    local_start=pd.to_datetime(frame["gameday"].astype(str)+" "+frame["gametime"].astype(str),format="%Y-%m-%d %H:%M",errors="coerce")
+    frame["game_datetime"]=local_start.dt.tz_localize("America/New_York",ambiguous="NaT",nonexistent="shift_forward").dt.tz_convert("UTC")
     frame=frame.dropna(subset=["season","week","home_team","away_team","game_datetime"])
     return frame.sort_values(["game_datetime","week","home_team","away_team"]).reset_index(drop=True)
 
@@ -248,7 +250,16 @@ def elo_walkforward(frame,k_factor=20,home_edge=45,regression=0.25):
     ratings={}
     previous_season=None
     predictions=[]
+    pending=[]
+    as_of=pd.Timestamp.now(tz="UTC")
     for _,g in frame.iterrows():
+        dt=g["game_datetime"]
+        # A final score from a simultaneous or just-finished game cannot influence another kickoff.
+        due=[item for item in pending if item[0]<=dt]
+        pending=[item for item in pending if item[0]>dt]
+        for _,h_team,a_team,change in due:
+            ratings[h_team]=ratings.get(h_team,1500.0)+change
+            ratings[a_team]=ratings.get(a_team,1500.0)-change
         season=int(g["season"])
         if previous_season is not None and season!=previous_season:
             ratings={team:1500+(rating-1500)*(1-regression) for team,rating in ratings.items()}
@@ -259,18 +270,20 @@ def elo_walkforward(frame,k_factor=20,home_edge=45,regression=0.25):
         advantage=0 if neutral else home_edge
         probability=1/(1+10**(-(h+advantage-a)/400))
         hs=g["home_score"];ascore=g["away_score"]
-        completed=pd.notna(hs) and pd.notna(ascore)
+        completed=pd.notna(hs) and pd.notna(ascore) and dt+pd.Timedelta(hours=5)<=as_of
         actual=None if not completed else (1.0 if hs>ascore else 0.0 if hs<ascore else 0.5)
-        predictions.append({"Date":g["game_datetime"],"Season":season,"Week":int(g["week"]),"Home":home,"Away":away,"Home win probability":probability,"Result":actual,"Home score":hs,"Away score":ascore,"Neutral":neutral})
+        predictions.append({"Date":dt,"Season":season,"Week":int(g["week"]),"Home":home,"Away":away,"Home win probability":probability,"Result":actual,"Home score":hs if completed else None,"Away score":ascore if completed else None,"Neutral":neutral})
         if completed:
-            change=k_factor*(actual-probability)
-            ratings[home]=h+change
-            ratings[away]=a-change
+            pending.append((dt+pd.Timedelta(hours=5),home,away,k_factor*(actual-probability)))
+    for due_dt,h_team,a_team,change in pending:
+        if due_dt<=as_of:
+            ratings[h_team]=ratings.get(h_team,1500.0)+change
+            ratings[a_team]=ratings.get(a_team,1500.0)-change
     return pd.DataFrame(predictions),ratings
 
 try:
     history=load_nfl_history()
-    st.caption("Data source: nflverse/nfldata games.csv (CC BY 4.0). Updates depend on the upstream dataset; not a live score feed.")
+    st.caption("Data source: nflverse/nfldata games.csv. Kickoff timestamps use nflverse Eastern Time game times, converted to UTC. A five-hour score delay prevents using same-time games as foreknowledge. Not a live score feed.")
     training=history[history["season"]<=2025]
     if training.empty: raise ValueError("No historical training games available")
     candidates=[(k,adv) for k in (12,20,30) for adv in (30,45,60)]
@@ -301,11 +314,24 @@ try:
         st.caption(f"2026 constant-rate hindsight benchmark: {baseline:.3f} Brier. This benchmark uses holdout outcomes and is descriptive only, not a fair predictive baseline.")
     upcoming=predicted[(predicted["Season"]==2026)&predicted["Result"].isna()].copy()
     if len(upcoming):
-        upcoming=upcoming[upcoming["Date"]>=pd.Timestamp.now(tz="UTC")-pd.Timedelta(hours=6)]
+        upcoming=upcoming[upcoming["Date"]>=pd.Timestamp.now(tz="UTC")-pd.Timedelta(hours=5)]
         st.write("**Upcoming scheduled games — Elo baseline**")
-        st.dataframe(upcoming[["Date","Week","Away","Home","Home win probability"]].head(25),hide_index=True,use_container_width=True,column_config={"Home win probability":st.column_config.ProgressColumn("Home win probability",min_value=0,max_value=1,format="%.1f")})
+        upcoming["Home win %"]=(100*upcoming["Home win probability"]).round(1)
+        st.dataframe(upcoming[["Date","Week","Away","Home","Home win %"]].head(25),hide_index=True,use_container_width=True,column_config={"Home win %":st.column_config.ProgressColumn("Home win %",min_value=0,max_value=100,format="%.1f%%")})
     else:
         st.info("No upcoming 2026 games found in the schedule feed.")
+    # True prospective baseline uses only pre-2026 completed games, not outcomes from the holdout.
+    base_home_wins=float(training.loc[training["home_score"].notna() & training["away_score"].notna(),"home_score"].gt(training.loc[training["home_score"].notna() & training["away_score"].notna(),"away_score"]).mean())
+    if len(holdout):
+        home_baseline=float(((base_home_wins-holdout["Result"])**2).mean())
+        model_brier=float(((holdout["Home win probability"]-holdout["Result"])**2).mean())
+        st.caption(f"Fairer constant home-win baseline from pre-2026 games: {home_baseline:.3f} Brier on 2026 holdout (assumed home probability {base_home_wins:.1%}). Model improvement: {home_baseline-model_brier:+.3f}.")
+    st.write("**Calibration check (2026 holdout)**")
+    if len(holdout)>=20:
+        calibrated=holdout.copy()
+        calibrated["Forecast band"]=pd.cut(calibrated["Home win probability"],bins=[0,0.2,0.4,0.6,0.8,1],include_lowest=True,labels=["0–20%","20–40%","40–60%","60–80%","80–100%"])
+        calibration=calibrated.groupby("Forecast band",observed=True).agg(Games=("Result","size"),Average_forecast=("Home win probability","mean"),Observed_home_win_rate=("Result","mean")).reset_index()
+        st.dataframe(calibration.rename(columns={"Average_forecast":"Average model P","Observed_home_win_rate":"Actual home win rate"}),hide_index=True,use_container_width=True)
     st.write("**Current team Elo ratings**")
     ratings_df=pd.DataFrame([{"Team":team,"Elo":round(value,1)} for team,value in latest_ratings.items()]).sort_values("Elo",ascending=False)
     st.dataframe(ratings_df,hide_index=True,use_container_width=True)
