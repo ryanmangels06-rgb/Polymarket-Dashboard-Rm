@@ -223,3 +223,96 @@ with st.expander("Calculate an illustrative game probability",expanded=True):
     st.metric(f"Illustrative {away} win probability",f"{1-home_p:.1%}")
     st.caption("Elo logistic formula: 1 / (1 + 10^(-(home rating + home advantage - away rating)/400)). Not calibrated to NFL outcomes. No injuries, roster changes, or current team statistics included.")
     st.warning("Do not interpret this probability as an independent validated edge. Historical game data and out-of-sample calibration are required.")
+
+st.divider()
+st.subheader("Historical NFL Elo — walk-forward evaluation")
+st.caption("Uses completed NFL games from nflverse. Predictions are generated before each game's rating update, never from its result. 2026 is a held-out evaluation season.")
+@st.cache_data(ttl=3600,show_spinner=False)
+def load_nfl_history():
+    url="https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv"
+    frame=pd.read_csv(url,low_memory=False)
+    required={"season","week","home_team","away_team","home_score","away_score","game_type"}
+    missing=required-set(frame.columns)
+    if missing: raise ValueError("Missing schedule columns: "+", ".join(sorted(missing)))
+    frame=frame[frame["game_type"].isin(["REG","WC","DIV","CON","SB"])].copy()
+    frame["season"]=pd.to_numeric(frame["season"],errors="coerce")
+    frame["week"]=pd.to_numeric(frame["week"],errors="coerce")
+    frame["home_score"]=pd.to_numeric(frame["home_score"],errors="coerce")
+    frame["away_score"]=pd.to_numeric(frame["away_score"],errors="coerce")
+    frame=frame[(frame["season"]>=2018)&(frame["season"]<=2026)].copy()
+    frame["game_datetime"]=pd.to_datetime(frame.get("gameday"),errors="coerce",utc=True)
+    frame=frame.dropna(subset=["season","week","home_team","away_team","game_datetime"])
+    return frame.sort_values(["game_datetime","week","home_team","away_team"]).reset_index(drop=True)
+
+def elo_walkforward(frame,k_factor=20,home_edge=45,regression=0.25):
+    ratings={}
+    previous_season=None
+    predictions=[]
+    for _,g in frame.iterrows():
+        season=int(g["season"])
+        if previous_season is not None and season!=previous_season:
+            ratings={team:1500+(rating-1500)*(1-regression) for team,rating in ratings.items()}
+        previous_season=season
+        home=str(g["home_team"]);away=str(g["away_team"])
+        h=ratings.get(home,1500.0);a=ratings.get(away,1500.0)
+        neutral=str(g.get("location","")).lower()=="neutral"
+        advantage=0 if neutral else home_edge
+        probability=1/(1+10**(-(h+advantage-a)/400))
+        hs=g["home_score"];ascore=g["away_score"]
+        completed=pd.notna(hs) and pd.notna(ascore)
+        actual=None if not completed else (1.0 if hs>ascore else 0.0 if hs<ascore else 0.5)
+        predictions.append({"Date":g["game_datetime"],"Season":season,"Week":int(g["week"]),"Home":home,"Away":away,"Home win probability":probability,"Result":actual,"Home score":hs,"Away score":ascore,"Neutral":neutral})
+        if completed:
+            change=k_factor*(actual-probability)
+            ratings[home]=h+change
+            ratings[away]=a-change
+    return pd.DataFrame(predictions),ratings
+
+try:
+    history=load_nfl_history()
+    st.caption("Data source: nflverse/nfldata games.csv (CC BY 4.0). Updates depend on the upstream dataset; not a live score feed.")
+    training=history[history["season"]<=2025]
+    if training.empty: raise ValueError("No historical training games available")
+    candidates=[(k,adv) for k in (12,20,30) for adv in (30,45,60)]
+    score_grid=[]
+    for k,adv in candidates:
+        trial,_=elo_walkforward(training,k,adv)
+        validation=trial[(trial["Season"]>=2023)&(trial["Season"]<=2025)&trial["Result"].isin([0,1])]
+        if len(validation)<100: continue
+        brier=float(((validation["Home win probability"]-validation["Result"])**2).mean())
+        score_grid.append((brier,k,adv))
+    if not score_grid: raise ValueError("Insufficient completed validation games")
+    best_brier,best_k,best_adv=min(score_grid)
+    predicted,latest_ratings=elo_walkforward(history,best_k,best_adv)
+    holdout=predicted[(predicted["Season"]==2026)&predicted["Result"].isin([0,1])]
+    validation_games=predicted[(predicted["Season"]>=2023)&(predicted["Season"]<=2025)&predicted["Result"].isin([0,1])]
+    st.write(f"**Selected parameters:** Elo K={best_k}, home adjustment={best_adv}, offseason regression=25%. Selected using 2023–2025 completed games; 2026 was not used for selection.")
+    a,b,c_metric=st.columns(3)
+    a.metric("2023–25 validation Brier",f"{best_brier:.3f}")
+    b.metric("2026 holdout games",str(len(holdout)))
+    if len(holdout):
+        holdout_brier=float(((holdout["Home win probability"]-holdout["Result"])**2).mean())
+        c_metric.metric("2026 holdout Brier",f"{holdout_brier:.3f}")
+    else:
+        c_metric.metric("2026 holdout Brier","Not available")
+    st.caption("Brier score: lower is better (0 is perfect). A 0.25 Brier corresponds to constant 50% forecasts for decisive games. Historical validation is used to select parameters, so it is not an untouched test set.")
+    if len(holdout):
+        baseline=float(((holdout["Result"].mean()-holdout["Result"])**2).mean())
+        st.caption(f"2026 constant-rate hindsight benchmark: {baseline:.3f} Brier. This benchmark uses holdout outcomes and is descriptive only, not a fair predictive baseline.")
+    upcoming=predicted[(predicted["Season"]==2026)&predicted["Result"].isna()].copy()
+    if len(upcoming):
+        upcoming=upcoming[upcoming["Date"]>=pd.Timestamp.now(tz="UTC")-pd.Timedelta(hours=6)]
+        st.write("**Upcoming scheduled games — Elo baseline**")
+        st.dataframe(upcoming[["Date","Week","Away","Home","Home win probability"]].head(25),hide_index=True,use_container_width=True,column_config={"Home win probability":st.column_config.ProgressColumn("Home win probability",min_value=0,max_value=1,format="%.1f")})
+    else:
+        st.info("No upcoming 2026 games found in the schedule feed.")
+    st.write("**Current team Elo ratings**")
+    ratings_df=pd.DataFrame([{"Team":team,"Elo":round(value,1)} for team,value in latest_ratings.items()]).sort_values("Elo",ascending=False)
+    st.dataframe(ratings_df,hide_index=True,use_container_width=True)
+    with st.expander("Inspect held-out predictions and download"):
+        if len(holdout):
+            st.dataframe(holdout[["Date","Home","Away","Home win probability","Result"]],hide_index=True,use_container_width=True)
+            st.download_button("Download 2026 evaluation CSV",holdout.to_csv(index=False),"nfl_elo_holdout_2026.csv","text/csv")
+    st.warning("Model limitations: no injuries, starting-QB updates, weather, rest/travel, point-spread modeling, calibration adjustment, or US market integration. Ratings are game-result-only. Do not assume positive expected value from these forecasts.")
+except (requests.RequestException,ValueError,KeyError,TypeError,ImportError) as exc:
+    st.error(f"Historical Elo unavailable: {exc}")
