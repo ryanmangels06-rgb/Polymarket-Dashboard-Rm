@@ -14,6 +14,47 @@ st.divider()
 st.subheader("🇺🇸 Polymarket US — NFL market quotes")
 st.caption("US exchange only. No Apple ID, personal account access, API secret, or order placement required.")
 from us_feed import fetch_us_nfl_snapshot
+from datetime import datetime, timezone
+from pathlib import Path
+
+@st.cache_data(ttl=90,show_spinner=False)
+def load_saved_us_report():
+    url="https://raw.githubusercontent.com/ryanmangels06-rgb/Polymarket-Dashboard-Rm/main/data/latest_us_nfl.json"
+    response=requests.get(url,timeout=12)
+    response.raise_for_status()
+    return response.json()
+
+with st.expander("Scheduled Polymarket US snapshot — GitHub archive",expanded=True):
+    try:
+        saved_report=load_saved_us_report()
+        stamped=datetime.fromisoformat(saved_report["fetched_utc"].replace("Z","+00:00"))
+        minutes_old=max(0,(datetime.now(timezone.utc)-stamped).total_seconds()/60)
+        g_count=saved_report.get("games_count",0)
+        q_count=saved_report.get("quote_count",0)
+        st.caption(f"Captured {stamped.strftime('%Y-%m-%d %H:%M UTC')} · {minutes_old:.0f} minutes old · {g_count} NFL events · {q_count} quote requests")
+        if minutes_old>25:
+            st.warning("Snapshot is over 25 minutes old: do not use this archive as a current quote. Use the fresh panel below.")
+        if not g_count:
+            st.info("The scheduled report contains no NFL events; check the GitHub Actions run.")
+        else:
+            summary=[]
+            for game_item in saved_report.get("games",[]):
+                for m in game_item.get("markets",[]):
+                    summary.append({
+                        "Game":game_item.get("title"),
+                        "Market":m.get("title"),
+                        "Contract outcome":m.get("outcome") or "Unspecified — verify on exchange",
+                        "Bid":m.get("bid"),
+                        "Ask":m.get("ask"),
+                        "Quote time (UTC)":m.get("quote_checked_utc"),
+                    })
+            if summary:
+                st.dataframe(pd.DataFrame(summary),use_container_width=True,hide_index=True)
+        st.caption("This is an ARCHIVED US quote report. Missing outcome descriptions mean the quoted contract side cannot be identified reliably; no model-vs-price comparison is made from those rows.")
+        st.link_button("View saved US report on GitHub","https://github.com/ryanmangels06-rgb/Polymarket-Dashboard-Rm/blob/main/data/latest_us_nfl.json")
+    except (requests.RequestException,KeyError,ValueError,TypeError) as exc:
+        st.warning("No accessible saved US snapshot yet: "+str(exc)[:160])
+
 us_days = st.selectbox("US game window", options=[2,7], format_func=lambda d: "Today / next 48 hours" if d == 2 else "Next 7 days", index=0)
 us_auto = st.toggle("Auto-check US quotes every 30 seconds while this page is open",value=False)
 if st.button("Refresh US market feed now",key="us_force_refresh"):
