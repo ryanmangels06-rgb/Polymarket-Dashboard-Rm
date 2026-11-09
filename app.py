@@ -9,138 +9,65 @@ st.title("🏈 Polymarket NFL Lab")
 st.caption("Read-only research dashboard • International Polymarket API data, NOT Polymarket US prices • Quotes are snapshots")
 
 
-# ------------------- US exchange (the exchange used at polymarket.us) -------------------
-st.divider()
-st.subheader("🇺🇸 Today’s NFL games — Polymarket US")
-st.caption("US exchange only. No Apple ID, personal account access, API secret, or order placement required.")
-from us_feed import fetch_us_nfl_snapshot
+# ------------------- US exchange: instant archived snapshot -------------------
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
-@st.cache_data(ttl=90,show_spinner=False)
+st.divider()
+st.subheader("🇺🇸 NFL games — Polymarket US")
+st.caption("Saved public US quotes load first. This page never waits for a live US API request.")
+
+@st.cache_data(ttl=120, show_spinner=False)
 def load_saved_us_report():
-    url="https://raw.githubusercontent.com/ryanmangels06-rgb/Polymarket-Dashboard-Rm/main/data/latest_us_nfl.json"
-    response=requests.get(url,timeout=12)
+    local = Path("data/latest_us_nfl.json")
+    if local.exists():
+        return json.loads(local.read_text())
+    url = "https://raw.githubusercontent.com/ryanmangels06-rgb/Polymarket-Dashboard-Rm/main/data/latest_us_nfl.json"
+    response = requests.get(url, timeout=5)
     response.raise_for_status()
     return response.json()
 
-
-st.info("Choose a matchup below to inspect available US market quotes. Unverified contract sides are not eligible for model-versus-price comparisons.")
-us_days = st.selectbox("US game window", options=[2,7], format_func=lambda d: "Today / next 48 hours" if d == 2 else "Next 7 days", index=0)
-us_auto = st.toggle("Auto-check US quotes every 30 seconds while this page is open",value=False)
-if st.button("Refresh US market feed now",key="us_force_refresh"):
-    st.cache_data.clear()
-
-@st.cache_data(ttl=25,show_spinner=False)
-def get_us_feed(days):
-    return fetch_us_nfl_snapshot(days=days,max_events=6,max_quotes=20)
-
-@st.fragment(run_every="30s" if us_auto else None)
-def show_us_feed():
-    st.caption("Loading public US event and quote data. Initial requests may take time.")
-    try:
-        with st.spinner("Fetching US market quotes…"):
-            feed=get_us_feed(us_days)
-    except Exception as exc:
-        st.error("Polymarket US feed could not be retrieved: " + str(exc)[:250])
-        st.caption("The international data shown below is a different exchange and should not be substituted for a US quote.")
-        return
-    fetched=feed.get("fetched_utc","")
-    st.caption(f"US quote snapshot captured: {fetched} · {feed.get('games_count',0)} matchups · {feed.get('quote_count',0)} quote requests")
-    for warning in feed.get("warnings",[]):
-        st.warning(warning)
-    games_us=feed.get("games") or []
-    if not games_us:
-        st.info("No upcoming NFL games with US quotes returned. This does not mean no US markets exist; the provider may use different event tags/times or limits.")
-        return
-    from zoneinfo import ZoneInfo
-    eastern=ZoneInfo("America/New_York")
-    def game_label(g):
-        raw=g.get("event_start_time_utc")
-        try:
-            dt=datetime.fromisoformat(raw.replace("Z","+00:00")).astimezone(eastern)
-            when=dt.strftime("%a %b %d, %I:%M %p ET")
-        except (ValueError,AttributeError):
-            when="Start time unavailable"
-        return f"{g.get('title','NFL matchup')} · {when}"
-    games_us=sorted(games_us,key=lambda g:g.get("event_start_time_utc") or "")
-    selected=st.selectbox("🏈 Select matchup",range(len(games_us)),format_func=lambda i:game_label(games_us[i]),key="us_game_select")
-    game=games_us[selected]
-    st.markdown(f"## {game.get('title','NFL matchup')}")
-    st.caption("Exchange event time (kickoff not independently verified): "+str(game.get("event_start_time_utc","Unknown")))
-    markets=game.get("markets") or []
-    identified=[m for m in markets if m.get("side_verified") is True]
-    c1,c2,c3=st.columns(3)
-    c1.metric("Markets returned",len(markets))
-    c2.metric("Identified outcomes",len(identified))
-    c3.metric("Two-sided quotes",sum(m.get("bid") is not None and m.get("ask") is not None for m in markets))
-    if not identified:
-        st.warning("No verified contract outcomes were returned for this matchup. The displayed price cannot safely be assigned to either team, a spread, or a total. Market-versus-model rankings are disabled.")
-    def fmt_price(x):
-        return f"{100*float(x):.2f}¢" if x is not None else "Unavailable"
-    display=[]
-    for m in markets:
-        side=str(m.get("outcome") or "").strip()
-        bid=m.get("bid")
-        ask=m.get("ask")
-        display.append({
-            "Market":m.get("title") or "Untitled",
-            "Contract side":side if side else "NOT VERIFIED",
-            "Buy (ask)":fmt_price(ask),
-            "Sell (bid)":fmt_price(bid),
-            "Spread":fmt_price(m.get("spread")),
-            "Quote time UTC":str(m.get("quote_checked_utc") or "")[:19],
-            "Status":"Verified side" if m.get("side_verified") is True else "Cannot compare",
-        })
-    if display:
-        st.dataframe(pd.DataFrame(display),hide_index=True,use_container_width=True)
-        st.download_button("Download matchup quotes",pd.DataFrame(display).to_csv(index=False),"polymarket_us_game_quotes.csv","text/csv",key="us_game_csv")
-    st.markdown("#### Market coverage")
-    st.caption("The public US feed may expose only a subset of markets. These are categories to inspect, not claims that the exchange currently lists them.")
-    tabs=st.tabs(["Moneyline","Spread","Total","Player props"])
-    for tab,keyword in zip(tabs,["Moneyline","Spread","Total","Props & other"]):
-        with tab:
-            matching=[m for m in markets if m.get("type")==keyword]
-            if matching:
-                st.dataframe(pd.DataFrame([{"Market":m.get("title"),"Outcome":m.get("outcome") or "Unverified","Ask":fmt_price(m.get("ask"))} for m in matching]),hide_index=True,use_container_width=True)
-            else:
-                st.info("No "+keyword+" market returned by the current US feed.")
-    st.caption("Read-only research. Recheck market side, rules, fees, liquidity and quote freshness on the US exchange before relying on any price.")
-
-show_us_feed()
-st.divider()
-st.subheader("Archived US snapshots — historical reference")
-with st.expander("Scheduled Polymarket US snapshot — GitHub archive",expanded=False):
-    try:
-        saved_report=load_saved_us_report()
-        stamped=datetime.fromisoformat(saved_report["fetched_utc"].replace("Z","+00:00"))
-        minutes_old=max(0,(datetime.now(timezone.utc)-stamped).total_seconds()/60)
-        g_count=saved_report.get("games_count",0)
-        q_count=saved_report.get("quote_count",0)
-        st.caption(f"Captured {stamped.strftime('%Y-%m-%d %H:%M UTC')} · {minutes_old:.0f} minutes old · {g_count} NFL events · {q_count} quote requests")
-        if minutes_old>25:
-            st.warning("Snapshot is over 25 minutes old: do not use this archive as a current quote. Use the fresh panel below.")
-        if not g_count:
-            st.info("The scheduled report contains no NFL events; check the GitHub Actions run.")
+try:
+    report = load_saved_us_report()
+    stamp = datetime.fromisoformat(report["fetched_utc"].replace("Z","+00:00"))
+    age = max(0, (datetime.now(timezone.utc)-stamp).total_seconds()/60)
+    st.caption(f"Last saved snapshot: {stamp.strftime('%b %d, %Y %I:%M UTC')} · {age:.0f} minutes old")
+    if age > 5:
+        st.warning("Archived quotes, not live prices. Do not use these prices to place a trade without checking the exchange.")
+    games = report.get("games") or []
+    if games:
+        games = sorted(games, key=lambda g:g.get("event_start_time_utc") or "")
+        def game_label(g):
+            try:
+                when = datetime.fromisoformat(g.get("event_start_time_utc","").replace("Z","+00:00")).astimezone(ZoneInfo("America/New_York")).strftime("%a %b %d, %I:%M %p ET")
+            except (ValueError, AttributeError):
+                when = "Time unknown"
+            return f"{g.get('title','NFL game')} · {when}"
+        selected = st.selectbox("🏈 Select game",range(len(games)),format_func=lambda i:game_label(games[i]))
+        game = games[selected]
+        st.markdown("### "+game.get("title","NFL game"))
+        markets = game.get("markets") or []
+        st.metric("Saved contracts",len(markets))
+        def price(x):
+            return f"{float(x)*100:.2f}¢" if x is not None else "—"
+        rows = []
+        for m in markets:
+            verified = m.get("side_verified") is True
+            rows.append({"Market":m.get("title") or "Unknown","Outcome":m.get("outcome") if verified else "Unverified","Buy (ask)":price(m.get("ask")),"Sell (bid)":price(m.get("bid")),"Quote checked UTC":str(m.get("quote_checked_utc") or "")[:19],"Status":"Verified" if verified else "Do not compare"})
+        if rows:
+            st.dataframe(pd.DataFrame(rows),hide_index=True,width="stretch")
+            st.download_button("Download saved quotes",pd.DataFrame(rows).to_csv(index=False),"saved_us_nfl_quotes.csv","text/csv")
         else:
-            summary=[]
-            for game_item in saved_report.get("games",[]):
-                for m in game_item.get("markets",[]):
-                    summary.append({
-                        "Game":game_item.get("title"),
-                        "Market":m.get("title"),
-                        "Contract outcome":m.get("outcome") or "Unspecified — verify on exchange",
-                        "Bid":m.get("bid"),
-                        "Ask":m.get("ask"),
-                        "Quote time (UTC)":m.get("quote_checked_utc"),
-                    })
-            if summary:
-                st.dataframe(pd.DataFrame(summary),use_container_width=True,hide_index=True)
-        st.caption("This is an ARCHIVED US quote report. Missing outcome descriptions mean the quoted contract side cannot be identified reliably; no model-vs-price comparison is made from those rows.")
-        st.link_button("View saved US report on GitHub","https://github.com/ryanmangels06-rgb/Polymarket-Dashboard-Rm/blob/main/data/latest_us_nfl.json")
-    except (requests.RequestException,KeyError,ValueError,TypeError) as exc:
-        st.warning("No accessible saved US snapshot yet: "+str(exc)[:160])
+            st.info("No saved quotes for this matchup.")
+    else:
+        st.info("No NFL events in the saved report. The dashboard is still available.")
+except (requests.RequestException, OSError, KeyError, ValueError, TypeError, json.JSONDecodeError) as exc:
+    st.warning("Saved US report unavailable: "+str(exc)[:180])
 
+st.caption("Updates are collected separately by GitHub Actions. No Apple ID, trading credentials, or orders are involved.")
+st.link_button("View scheduled US data updates","https://github.com/ryanmangels06-rgb/Polymarket-Dashboard-Rm/actions")
+st.link_button("View saved report","https://github.com/ryanmangels06-rgb/Polymarket-Dashboard-Rm/blob/main/data/latest_us_nfl.json")
 
 st.divider()
 st.subheader("🌍 International Polymarket — separate comparison feed")
