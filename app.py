@@ -21,20 +21,23 @@ def nfl_metadata():
 @st.cache_data(ttl=60)
 def nfl_events():
     nfl=nfl_metadata()
-    tag_ids=[x.strip() for x in str(nfl.get("tags","")).split(",") if x.strip().isdigit()]
-    if not tag_ids:
-        raise ValueError("NFL tag IDs unavailable from Polymarket")
+    series_ids=[x.strip() for x in str(nfl.get("series") or "").split(",") if x.strip().isdigit()]
+    tag_ids=[x.strip() for x in str(nfl.get("tags") or "").split(",") if x.strip().isdigit()]
+    if not series_ids and not tag_ids:
+        raise ValueError("NFL series and tag identifiers unavailable")
     found={}
-    for tag_id in tag_ids[:8]:
-        for offset in range(0,500,100):
-            r=requests.get("https://gamma-api.polymarket.com/events",params={"tag_id":tag_id,"active":"true","closed":"false","limit":100,"offset":offset},timeout=20)
+    filters=[{"series_id":sid} for sid in series_ids]
+    filters += [{"tag_id":tid} for tid in tag_ids]
+    for filter_params in filters:
+        for offset in range(0,1000,100):
+            params={"active":"true","closed":"false","limit":100,"offset":offset}
+            params.update(filter_params)
+            r=requests.get("https://gamma-api.polymarket.com/events",params=params,timeout=20)
             r.raise_for_status()
             batch=r.json()
-            for e in batch:
-                labels=" ".join(str(t.get("slug",""))+" "+str(t.get("label","")) for t in e.get("tags",[]) if isinstance(t,dict))
-                title=(e.get("title") or "")+" "+(e.get("slug") or "")
-                if re.search(r"\\b(nfl|super.bowl)\\b",labels+" "+title,re.I):
-                    found[str(e.get("id") or e.get("slug"))]=e
+            for event in batch:
+                if event.get("closed"): continue
+                found[str(event.get("id") or event.get("slug"))]=event
             if len(batch)<100: break
     return list(found.values())
 
