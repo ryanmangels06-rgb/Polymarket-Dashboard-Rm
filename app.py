@@ -11,7 +11,7 @@ st.caption("Read-only research dashboard • International Polymarket API data, 
 
 # ------------------- US exchange (the exchange used at polymarket.us) -------------------
 st.divider()
-st.subheader("🇺🇸 Polymarket US — NFL market quotes")
+st.subheader("🇺🇸 Today’s NFL games — Polymarket US")
 st.caption("US exchange only. No Apple ID, personal account access, API secret, or order placement required.")
 from us_feed import fetch_us_nfl_snapshot
 from datetime import datetime, timezone
@@ -24,7 +24,54 @@ def load_saved_us_report():
     response.raise_for_status()
     return response.json()
 
-with st.expander("Scheduled Polymarket US snapshot — GitHub archive",expanded=True):
+
+st.info("Choose a matchup below to inspect available US market quotes. Unverified contract sides are not eligible for model-versus-price comparisons.")
+us_days = st.selectbox("US game window", options=[2,7], format_func=lambda d: "Today / next 48 hours" if d == 2 else "Next 7 days", index=0)
+us_auto = st.toggle("Auto-check US quotes every 30 seconds while this page is open",value=False)
+if st.button("Refresh US market feed now",key="us_force_refresh"):
+    st.cache_data.clear()
+
+@st.cache_data(ttl=25,show_spinner=False)
+def get_us_feed(days):
+    return fetch_us_nfl_snapshot(days=days,max_events=24,max_quotes=90)
+
+@st.fragment(run_every="30s" if us_auto else None)
+def show_us_feed():
+    try:
+        feed=get_us_feed(us_days)
+    except Exception as exc:
+        st.error("Polymarket US feed could not be retrieved: " + str(exc)[:250])
+        st.caption("The international data shown below is a different exchange and should not be substituted for a US quote.")
+        return
+    fetched=feed.get("fetched_utc","")
+    st.caption(f"US quote snapshot captured: {fetched} · {feed.get('games_count',0)} matchups · {feed.get('quote_count',0)} quote requests")
+    for warning in feed.get("warnings",[]):
+        st.warning(warning)
+    games_us=feed.get("games") or []
+    if not games_us:
+        st.info("No upcoming NFL games with US quotes returned. This does not mean no US markets exist; the provider may use different event tags/times or limits.")
+        return
+    options=[f"{g['title']} — {g.get('event_start_time_utc','')[:16]} UTC" for g in games_us]
+    chosen=st.selectbox("Choose US NFL game",options,key="us_game_select")
+    game=games_us[options.index(chosen)]
+    st.markdown(f"### {game['title']}")
+    st.caption("Exchange event start time (not independently verified kickoff): "+game["event_start_time_utc"])
+    table=[]
+    for market in game.get("markets",[]):
+        table.append({
+            "Market":market["title"],"Outcome":market["outcome"],
+            "Best bid":market["bid"],"Best ask":market["ask"],
+            "Spread":market["spread"],"Quote checked UTC":market["quote_checked_utc"],
+            "Market slug":market["slug"],
+        })
+    if table:
+        st.dataframe(pd.DataFrame(table),hide_index=True,use_container_width=True)
+        st.download_button("Download this US game's quotes",pd.DataFrame(table).to_csv(index=False),"polymarket_us_game_quotes.csv","text/csv",key="us_game_csv")
+    st.caption("No trade recommendation. Quotes can move during live NFL games. Always reconfirm price, depth, availability, fees, and market rules on Polymarket US.")
+show_us_feed()
+st.divider()
+st.subheader("Archived US snapshots — historical reference")
+with st.expander("Scheduled Polymarket US snapshot — GitHub archive",expanded=False):
     try:
         saved_report=load_saved_us_report()
         stamped=datetime.fromisoformat(saved_report["fetched_utc"].replace("Z","+00:00"))
@@ -55,49 +102,7 @@ with st.expander("Scheduled Polymarket US snapshot — GitHub archive",expanded=
     except (requests.RequestException,KeyError,ValueError,TypeError) as exc:
         st.warning("No accessible saved US snapshot yet: "+str(exc)[:160])
 
-us_days = st.selectbox("US game window", options=[2,7], format_func=lambda d: "Today / next 48 hours" if d == 2 else "Next 7 days", index=0)
-us_auto = st.toggle("Auto-check US quotes every 30 seconds while this page is open",value=False)
-if st.button("Refresh US market feed now",key="us_force_refresh"):
-    st.cache_data.clear()
 
-@st.cache_data(ttl=25,show_spinner=False)
-def get_us_feed(days):
-    return fetch_us_nfl_snapshot(days=days,max_events=24,max_quotes=90)
-
-@st.fragment(run_every="30s" if us_auto else None)
-def show_us_feed():
-    try:
-        feed=get_us_feed(us_days)
-    except Exception as exc:
-        st.error("Polymarket US feed could not be retrieved: " + str(exc)[:250])
-        st.caption("The international data shown below is a different exchange and should not be substituted for a US quote.")
-        return
-    fetched=feed.get("fetched_utc","")
-    st.caption(f"US quote snapshot captured: {fetched} · {feed.get('games_count',0)} matchups · {feed.get('quote_count',0)} quote requests")
-    for warning in feed.get("warnings",[]):
-        st.warning(warning)
-    games_us=feed.get("games") or []
-    if not games_us:
-        st.info("No upcoming NFL games with US quotes returned. This does not mean no US markets exist; the provider may use different event tags/times or limits.")
-        return
-    options=[f"{g['title']} — {g.get('event_start_time_utc','')[:16]} UTC" for g in games_us]
-    chosen=st.selectbox("Choose US NFL game",options,key="us_game_select")
-    game=games_us[options.index(chosen)]
-    st.write(f"**{game['title']}**")
-    st.caption("Exchange event start time (not independently verified kickoff): "+game["event_start_time_utc"])
-    table=[]
-    for market in game.get("markets",[]):
-        table.append({
-            "Market":market["title"],"Outcome":market["outcome"],
-            "Best bid":market["bid"],"Best ask":market["ask"],
-            "Spread":market["spread"],"Quote checked UTC":market["quote_checked_utc"],
-            "Market slug":market["slug"],
-        })
-    if table:
-        st.dataframe(pd.DataFrame(table),hide_index=True,use_container_width=True)
-        st.download_button("Download this US game's quotes",pd.DataFrame(table).to_csv(index=False),"polymarket_us_game_quotes.csv","text/csv",key="us_game_csv")
-    st.caption("No trade recommendation. Quotes can move during live NFL games. Always reconfirm price, depth, availability, fees, and market rules on Polymarket US.")
-show_us_feed()
 st.divider()
 st.subheader("🌍 International Polymarket — separate comparison feed")
 st.caption("The historical international feed below is NOT the US exchange. Do not treat its prices as your US execution prices.")
