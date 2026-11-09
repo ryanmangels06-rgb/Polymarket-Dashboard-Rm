@@ -59,44 +59,102 @@ def arr(v):
 if st.button("Refresh market data"):
     st.cache_data.clear()
 
-search=st.text_input("Filter NFL games by team or matchup",value="")
-max_markets=st.slider("Maximum NFL markets",5,100,40)
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
+
+def kickoff(event):
+    candidates=[m.get("gameStartTime") or m.get("eventStartTime") for m in event.get("markets",[])]
+    candidates += [event.get("gameStartTime"),event.get("startTime")]
+    for raw in candidates:
+        if not raw: continue
+        try:
+            value=str(raw).replace(" ","T").replace("Z","+00:00")
+            if value.endswith("+00"): value+=":00"
+            dt=datetime.fromisoformat(value)
+            return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt.astimezone(timezone.utc)
+        except ValueError: continue
+    return None
+
+now=datetime.now(timezone.utc)
+mode=st.radio("Show games",["Live / today","Next 7 days","Next 14 days"],horizontal=True,index=0)
+days=1 if mode=="Live / today" else (7 if mode=="Next 7 days" else 14)
+team_filter=st.text_input("Optional team filter",value="")
+market_type=st.selectbox("Market type",["Moneyline, spread and total","All game markets","Moneyline only","Spreads only","Totals only"])
 try:
     events=nfl_events()
 except (requests.RequestException,ValueError) as e:
     st.error(f"Could not load NFL markets: {e}")
     st.stop()
 
-matches=[]
+# A game may stay open after kickoff; allow a 5-hour live window.
+local_tz=ZoneInfo("America/New_York")
+today_local=now.astimezone(local_tz).date()
+games=[]
 for event in events:
-    for market in event.get("markets",[]):
-        if market.get("closed"): continue
-        text_to_search=(event.get("title") or "")+" "+(market.get("question") or "")
-        if search.strip() and search.lower() not in text_to_search.lower(): continue
-        matches.append((event,market))
-st.write(f"{len(matches)} NFL markets across {len(events)} NFL events.")
-if not matches:
-    st.info("No active NFL markets returned by the sports tags right now. Try clearing the team filter; no unrelated markets will be substituted.")
+    dt=kickoff(event)
+    if dt is None: continue
+    if dt < now-timedelta(hours=5) or dt > now+timedelta(days=days): continue
+    if mode=="Live / today" and dt.astimezone(local_tz).date()!=today_local: continue
+    name=event.get("title") or ""
+    if team_filter.strip() and team_filter.lower() not in name.lower(): continue
+    # Avoid season futures and non-matchup event groups.
+    if not re.search(r"\\b(vs\\.?|versus|@)\\b",name,re.I) and " vs. " not in name.lower(): continue
+    games.append((dt,event))
+games.sort(key=lambda pair:pair[0])
+st.caption(f"Snapshot: {now.astimezone(local_tz).strftime('%b %d, %Y %I:%M %p ET')} · Game times in Eastern Time")
+st.write(f"**{len(games)} games** in selected window.")
+if not games:
+    st.info("No matching NFL games with verified kickoff times in this window. Try Next 7 days. Old games and undated markets are excluded.")
+
+def market_category(m):
+    typ=str(m.get("sportsMarketType") or "").lower()
+    question=str(m.get("question") or "").lower()
+    if typ=="moneyline" or (not typ and " vs. " in question and "spread" not in question and "o/u" not in question): return "Moneyline"
+    if typ in ("spreads","spread") or question.startswith("spread:"): return "Spread"
+    if typ in ("totals","total") or question.startswith("total:") or "total points: o/u" in question: return "Total"
+    return "Other"
+
+def include_market(m):
+    category=market_category(m)
+    if market_type=="All game markets": return True
+    if market_type=="Moneyline only": return category=="Moneyline"
+    if market_type=="Spreads only": return category=="Spread"
+    if market_type=="Totals only": return category=="Total"
+    return category!="Other"
+
 rows=[]
-for event,market in matches[:max_markets]:
-    outcomes=arr(market.get("outcomes"))
-    tokens=arr(market.get("clobTokenIds"))
-    prices=arr(market.get("outcomePrices"))
-    for i,outcome in enumerate(outcomes):
-        bid=ask=None
-        if i<len(tokens):
-            try:
-                book=order_book(tokens[i])
-                bids=[float(x["price"]) for x in book.get("bids",[])]
-                asks=[float(x["price"]) for x in book.get("asks",[])]
-                bid=max(bids) if bids else None
-                ask=min(asks) if asks else None
-            except (requests.RequestException,ValueError,KeyError): pass
-        rows.append({"Event":event.get("title"),"Question":market.get("question"),"Outcome":outcome,"Best bid":bid,"Best ask":ask,"Indicative price":prices[i] if i<len(prices) else None})
+for dt,event in games:
+    title=event.get("title","NFL game")
+    live=dt<=now<dt+timedelta(hours=5)
+    st.subheader(("🔴 Live window · " if live else "🏈 ")+title)
+    st.caption("Kickoff: "+dt.astimezone(local_tz).strftime("%a %b %d, %I:%M %p ET") + (" · kickoff passed; live status unverified" if live else ""))
+    markets=[m for m in event.get("markets",[]) if not m.get("closed") and include_market(m)]
+    if not markets:
+        st.caption("No matching active lines for this game.")
+        continue
+    game_rows=[]
+    for market in markets[:30]:
+        outcomes=arr(market.get("outcomes"))
+        tokens=arr(market.get("clobTokenIds"))
+        prices=arr(market.get("outcomePrices"))
+        for i,outcome in enumerate(outcomes):
+            bid=ask=None
+            if i<len(tokens):
+                try:
+                    book=order_book(tokens[i])
+                    bids=[float(x["price"]) for x in book.get("bids",[])]
+                    asks=[float(x["price"]) for x in book.get("asks",[])]
+                    bid=max(bids) if bids else None
+                    ask=min(asks) if asks else None
+                except (requests.RequestException,ValueError,KeyError): pass
+            record={"Game":title,"Kickoff ET":dt.astimezone(local_tz).isoformat(),"Type":market_category(market),"Market":market.get("question"),"Outcome":outcome,"Best bid":bid,"Best ask":ask,"Indicative price":prices[i] if i<len(prices) else None}
+            game_rows.append(record)
+            rows.append(record)
+    if game_rows:
+        st.dataframe(pd.DataFrame(game_rows).drop(columns=["Game","Kickoff ET"]),use_container_width=True,hide_index=True)
 if rows:
-    df=pd.DataFrame(rows)
-    st.dataframe(df,use_container_width=True,hide_index=True)
-    st.download_button("Export snapshot CSV",df.to_csv(index=False),"market_snapshot.csv","text/csv")
+    st.download_button("Export displayed game lines",pd.DataFrame(rows).to_csv(index=False),"nfl_upcoming_markets.csv","text/csv")
+st.caption("Prices are market snapshots. Live window is based on kickoff time, not a verified game score. Missing bids/asks indicate no displayed quote.")
 
 st.divider()
 st.subheader("Paper-trading probability comparison")
