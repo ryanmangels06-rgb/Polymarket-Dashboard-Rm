@@ -1,0 +1,312 @@
+{
+  "source": "Polymarket US (polymarket.us) \u2014 official public SDK",
+  "exchange": "polymarket_us",
+  "fetched_utc": "2026-11-09T00:41:16.515460+00:00",
+  "quote_count": 15,
+  "games_count": 15,
+  "events_considered": 17,
+  "warnings": [],
+  "games": [
+    {
+      "event_id": "189206",
+      "event_slug": "nfl-gb-ne-2026-11-08",
+      "title": "GB Packers vs. NE Patriots",
+      "event_start_time_utc": "2026-11-08T21:25:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-gb-ne-2026-11-08",
+          "title": "GB Packers vs NE Patriots",
+          "outcome": "",
+          "bid": 0.9975,
+          "ask": null,
+          "spread": null,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:40:46.056600+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "189208",
+      "event_slug": "nfl-tb-chi-2026-11-08",
+      "title": "TB Buccaneers vs. CHI Bears",
+      "event_start_time_utc": "2026-11-09T01:20:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-tb-chi-2026-11-08",
+          "title": "TB Buccaneers vs CHI Bears",
+          "outcome": "",
+          "bid": 0.2825,
+          "ask": 0.285,
+          "spread": 0.0025,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:40:46.074247+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "193099",
+      "event_slug": "nfl-buf-min-2026-11-09",
+      "title": "BUF Bills vs. MIN Vikings",
+      "event_start_time_utc": "2026-11-10T01:15:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-buf-min-2026-11-09",
+          "title": "BUF Bills vs MIN Vikings",
+          "outcome": "",
+          "bid": 0.615,
+          "ask": 0.6175,
+          "spread": 0.0025,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:40:46.089538+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "205606",
+      "event_slug": "nfl-was-nyg-2026-11-12",
+      "title": "WAS Commanders vs. NY Giants",
+      "event_start_time_utc": "2026-11-13T01:15:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-was-nyg-2026-11-12",
+          "title": "WAS Commanders vs NY Giants",
+          "outcome": "",
+          "bid": 0.4375,
+          "ask": 0.445,
+          "spread": 0.0075,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:40:46.105779+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "217043",
+      "event_slug": "nfl-ne-det-2026-11-15",
+      "title": "NE Patriots vs. DET Lions",
+      "event_start_time_utc": "2026-11-15T14:30:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-ne-det-2026-11-15",
+          "title": "NE Patriots vs DET Lions",
+          "outcome": "",
+          "bid": 0.455,
+          "ask": 0.4575,
+          "spread": 0.0025,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:40:46.125084+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "217044",
+      "event_slug": "nfl-kc-atl-2026-11-15",
+      "title": "KC Chiefs vs. ATL Falcons",
+      "event_start_time_utc": "2026-11-15T18:00:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-kc-atl-2026-11-15",
+          "title": "KC Chiefs vs ATL Falcons",
+          "outcome": "",
+          "bid": 0.6375,
+          "ask": 0.64,
+          "spread": 0.0025,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:40:46.144227+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "217045",
+      "event_slug": "nfl-buf-nyj-2026-11-15",
+      "title": "BUF Bills vs. NY Jets",
+      "event_start_time_utc": "2026-11-15T18:00:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-buf-nyj-2026-11-15",
+          "title": "BUF Bills vs NY Jets",
+          "outcome": "",
+          "bid": 0.8075,
+          "ask": 0.8125,
+          "spread": 0.005,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:40:56.208739+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "217046",
+      "event_slug": "nfl-mia-ind-2026-11-15",
+      "title": "MIA Dolphins vs. IND Colts",
+      "event_start_time_utc": "2026-11-15T18:00:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-mia-ind-2026-11-15",
+          "title": "MIA Dolphins vs IND Colts",
+          "outcome": "",
+          "bid": 0.4425,
+          "ask": 0.445,
+          "spread": 0.0025,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:40:56.227166+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "217047",
+      "event_slug": "nfl-min-gb-2026-11-15",
+      "title": "MIN Vikings vs. GB Packers",
+      "event_start_time_utc": "2026-11-15T18:00:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-min-gb-2026-11-15",
+          "title": "MIN Vikings vs GB Packers",
+          "outcome": "",
+          "bid": null,
+          "ask": null,
+          "spread": null,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:40:56.244140+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+        }
+      ]
+    },
+    {
+      "event_id": "217048",
+      "event_slug": "nfl-car-no-2026-11-15",
+      "title": "CAR Panthers vs. NO Saints",
+      "event_start_time_utc": "2026-11-15T18:00:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-car-no-2026-11-15",
+          "title": "CAR Panthers vs NO Saints",
+          "outcome": "",
+          "bid": 0.5075,
+          "ask": 0.515,
+          "spread": 0.0075,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:41:04.313956+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "217049",
+      "event_slug": "nfl-jax-ten-2026-11-15",
+      "title": "JAC Jaguars vs. TEN Titans",
+      "event_start_time_utc": "2026-11-15T18:00:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-jax-ten-2026-11-15",
+          "title": "JAC Jaguars vs TEN Titans",
+          "outcome": "",
+          "bid": 0.83,
+          "ask": 0.8375,
+          "spread": 0.0075,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:41:06.351461+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "217050",
+      "event_slug": "nfl-hou-cle-2026-11-15",
+      "title": "HOU Texans vs. CLE Browns",
+      "event_start_time_utc": "2026-11-15T18:00:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-hou-cle-2026-11-15",
+          "title": "HOU Texans vs CLE Browns",
+          "outcome": "",
+          "bid": 0.65,
+          "ask": 0.6525,
+          "spread": 0.0025,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:41:06.369524+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "217052",
+      "event_slug": "nfl-sea-lv-2026-11-15",
+      "title": "SEA Seahawks vs. LV Raiders",
+      "event_start_time_utc": "2026-11-15T21:05:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-sea-lv-2026-11-15",
+          "title": "SEA Seahawks vs LV Raiders",
+          "outcome": "",
+          "bid": 0.63,
+          "ask": 0.6375,
+          "spread": 0.0075,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:41:06.402649+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "217053",
+      "event_slug": "nfl-lar-ari-2026-11-15",
+      "title": "LA Rams vs. ARI Cardinals",
+      "event_start_time_utc": "2026-11-15T21:05:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-lar-ari-2026-11-15",
+          "title": "LA Rams vs ARI Cardinals",
+          "outcome": "",
+          "bid": 0.7625,
+          "ask": 0.765,
+          "spread": 0.0025,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:41:06.426956+00:00",
+          "quote_warning": null
+        }
+      ]
+    },
+    {
+      "event_id": "217054",
+      "event_slug": "nfl-sf-dal-2026-11-15",
+      "title": "SF 49ers vs. DAL Cowboys",
+      "event_start_time_utc": "2026-11-15T21:25:00+00:00",
+      "markets": [
+        {
+          "slug": "aec-nfl-sf-dal-2026-11-15",
+          "title": "SF 49ers vs DAL Cowboys",
+          "outcome": "",
+          "bid": 0.6675,
+          "ask": 0.675,
+          "spread": 0.0075,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-09T00:41:16.489772+00:00",
+          "quote_warning": null
+        }
+      ]
+    }
+  ],
+  "execution_warning": "Read-only data; refresh the exact market before trading. No order execution."
+}
