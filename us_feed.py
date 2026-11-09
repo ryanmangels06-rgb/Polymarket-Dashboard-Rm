@@ -58,7 +58,7 @@ def discover_events(client: Any, now: datetime, days: int, max_events: int = 80)
     # Explicit US NFL tag filtering, instead of broad markets that match
     # misleading terms such as "inflation".
     try:
-        for offset in range(0, 500, 100):
+        for offset in range(0, 100, 100):
             page = client.events.list({
                 "limit": 100, "offset": offset, "active": True,
                 "closed": False, "tagSlug": "nfl",
@@ -93,7 +93,7 @@ def discover_events(client: Any, now: datetime, days: int, max_events: int = 80)
         if now - timedelta(hours=5) <= kickoff <= cutoff:
             selected.append(event)
     selected.sort(key=lambda item: when_utc(item["startTime"]))
-    return selected[:max_events], warnings
+    return selected[:min(max_events, 6)], warnings
 
 
 def fetch_us_nfl_snapshot(days: int = 7, max_events: int = 30, max_quotes: int = 100,
