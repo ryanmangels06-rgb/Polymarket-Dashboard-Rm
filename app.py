@@ -205,3 +205,21 @@ with st.expander("Expected value calculator",expanded=True):
     if cost>=1:
         st.warning("All-in contract cost is at least the maximum $1 payout.")
     st.caption("Formula: EV = estimated probability × $1 payout − ask − estimated fees. Excludes price changes, slippage, and model error. This is not a trade recommendation.")
+
+st.divider()
+st.subheader("NFL forecasting prototype — Elo baseline")
+st.caption("Experimental probability calculator. Default team ratings are identical placeholders, not trained ratings or current-season statistics.")
+import math
+NFL_TEAMS=["Arizona Cardinals","Atlanta Falcons","Baltimore Ravens","Buffalo Bills","Carolina Panthers","Chicago Bears","Cincinnati Bengals","Cleveland Browns","Dallas Cowboys","Denver Broncos","Detroit Lions","Green Bay Packers","Houston Texans","Indianapolis Colts","Jacksonville Jaguars","Kansas City Chiefs","Las Vegas Raiders","Los Angeles Chargers","Los Angeles Rams","Miami Dolphins","Minnesota Vikings","New England Patriots","New Orleans Saints","New York Giants","New York Jets","Philadelphia Eagles","Pittsburgh Steelers","San Francisco 49ers","Seattle Seahawks","Tampa Bay Buccaneers","Tennessee Titans","Washington Commanders"]
+with st.expander("Calculate an illustrative game probability",expanded=True):
+    home=st.selectbox("Home team",NFL_TEAMS,index=NFL_TEAMS.index("Seattle Seahawks"))
+    away=st.selectbox("Away team",[t for t in NFL_TEAMS if t!=home],index=0)
+    home_rating=st.number_input("Home-team Elo rating (manual)",min_value=800,max_value=2200,value=1500,step=10)
+    away_rating=st.number_input("Away-team Elo rating (manual)",min_value=800,max_value=2200,value=1500,step=10)
+    home_advantage=st.slider("Home-field Elo adjustment",0,120,45,5)
+    delta=home_rating+home_advantage-away_rating
+    home_p=1/(1+10**(-delta/400))
+    st.metric(f"Illustrative {home} win probability",f"{home_p:.1%}")
+    st.metric(f"Illustrative {away} win probability",f"{1-home_p:.1%}")
+    st.caption("Elo logistic formula: 1 / (1 + 10^(-(home rating + home advantage - away rating)/400)). Not calibrated to NFL outcomes. No injuries, roster changes, or current team statistics included.")
+    st.warning("Do not interpret this probability as an independent validated edge. Historical game data and out-of-sample calibration are required.")
