@@ -51,23 +51,60 @@ def show_us_feed():
     if not games_us:
         st.info("No upcoming NFL games with US quotes returned. This does not mean no US markets exist; the provider may use different event tags/times or limits.")
         return
-    options=[f"{g['title']} — {g.get('event_start_time_utc','')[:16]} UTC" for g in games_us]
-    chosen=st.selectbox("Choose US NFL game",options,key="us_game_select")
-    game=games_us[options.index(chosen)]
-    st.markdown(f"### {game['title']}")
-    st.caption("Exchange event start time (not independently verified kickoff): "+game["event_start_time_utc"])
-    table=[]
-    for market in game.get("markets",[]):
-        table.append({
-            "Market":market["title"],"Outcome":market["outcome"],
-            "Best bid":market["bid"],"Best ask":market["ask"],
-            "Spread":market["spread"],"Quote checked UTC":market["quote_checked_utc"],
-            "Market slug":market["slug"],
+    from zoneinfo import ZoneInfo
+    eastern=ZoneInfo("America/New_York")
+    def game_label(g):
+        raw=g.get("event_start_time_utc")
+        try:
+            dt=datetime.fromisoformat(raw.replace("Z","+00:00")).astimezone(eastern)
+            when=dt.strftime("%a %b %d, %I:%M %p ET")
+        except (ValueError,AttributeError):
+            when="Start time unavailable"
+        return f"{g.get('title','NFL matchup')} · {when}"
+    games_us=sorted(games_us,key=lambda g:g.get("event_start_time_utc") or "")
+    selected=st.selectbox("🏈 Select matchup",range(len(games_us)),format_func=lambda i:game_label(games_us[i]),key="us_game_select")
+    game=games_us[selected]
+    st.markdown(f"## {game.get('title','NFL matchup')}")
+    st.caption("Exchange event time (kickoff not independently verified): "+str(game.get("event_start_time_utc","Unknown")))
+    markets=game.get("markets") or []
+    identified=[m for m in markets if str(m.get("outcome") or "").strip()]
+    c1,c2,c3=st.columns(3)
+    c1.metric("Markets returned",len(markets))
+    c2.metric("Identified outcomes",len(identified))
+    c3.metric("Two-sided quotes",sum(m.get("bid") is not None and m.get("ask") is not None for m in markets))
+    if not identified:
+        st.warning("No verified contract outcomes were returned for this matchup. The displayed price cannot safely be assigned to either team, a spread, or a total. Market-versus-model rankings are disabled.")
+    def fmt_price(x):
+        return f"{100*float(x):.2f}¢" if x is not None else "Unavailable"
+    display=[]
+    for m in markets:
+        side=str(m.get("outcome") or "").strip()
+        bid=m.get("bid")
+        ask=m.get("ask")
+        display.append({
+            "Market":m.get("title") or "Untitled",
+            "Contract side":side if side else "NOT VERIFIED",
+            "Buy (ask)":fmt_price(ask),
+            "Sell (bid)":fmt_price(bid),
+            "Spread":fmt_price(m.get("spread")),
+            "Quote time UTC":str(m.get("quote_checked_utc") or "")[:19],
+            "Status":"Verified side" if side else "Cannot compare",
         })
-    if table:
-        st.dataframe(pd.DataFrame(table),hide_index=True,use_container_width=True)
-        st.download_button("Download this US game's quotes",pd.DataFrame(table).to_csv(index=False),"polymarket_us_game_quotes.csv","text/csv",key="us_game_csv")
-    st.caption("No trade recommendation. Quotes can move during live NFL games. Always reconfirm price, depth, availability, fees, and market rules on Polymarket US.")
+    if display:
+        st.dataframe(pd.DataFrame(display),hide_index=True,use_container_width=True)
+        st.download_button("Download matchup quotes",pd.DataFrame(display).to_csv(index=False),"polymarket_us_game_quotes.csv","text/csv",key="us_game_csv")
+    st.markdown("#### Market coverage")
+    st.caption("The public US feed may expose only a subset of markets. These are categories to inspect, not claims that the exchange currently lists them.")
+    tabs=st.tabs(["Moneyline","Spread","Total","Player props"])
+    for tab,keyword in zip(tabs,["moneyline","spread","total","player"]):
+        with tab:
+            matching=[m for m in markets if keyword in str(m.get("title") or "").lower()]
+            if matching:
+                st.dataframe(pd.DataFrame([{"Market":m.get("title"),"Outcome":m.get("outcome") or "Unverified","Ask":fmt_price(m.get("ask"))} for m in matching]),hide_index=True,use_container_width=True)
+            else:
+                st.info("No verified "+keyword+" market returned by the current US feed.")
+    st.caption("Read-only research. Recheck market side, rules, fees, liquidity and quote freshness on the US exchange before relying on any price.")
+
 show_us_feed()
 st.divider()
 st.subheader("Archived US snapshots — historical reference")
