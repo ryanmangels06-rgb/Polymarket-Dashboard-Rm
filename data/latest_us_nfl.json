@@ -1,7 +1,7 @@
 {
   "source": "Polymarket US (polymarket.us) \u2014 official public SDK",
   "exchange": "polymarket_us",
-  "fetched_utc": "2026-11-14T03:27:10.535180+00:00",
+  "fetched_utc": "2026-11-14T04:30:59.763715+00:00",
   "quote_count": 80,
   "games_count": 1,
   "events_considered": 6,
@@ -26,7 +26,7 @@
           "spread": 0.0025,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:32.207281+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:33.734073+00:00",
           "quote_warning": null
         },
         {
@@ -42,7 +42,7 @@
           "spread": 0.09,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:32.220838+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:33.744583+00:00",
           "quote_warning": null
         },
         {
@@ -58,7 +58,7 @@
           "spread": 0.09,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:32.338093+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:33.765281+00:00",
           "quote_warning": null
         },
         {
@@ -74,7 +74,7 @@
           "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:32.454345+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:33.780728+00:00",
           "quote_warning": null
         },
         {
@@ -90,7 +90,7 @@
           "spread": 0.065,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:32.575493+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:33.802404+00:00",
           "quote_warning": null
         },
         {
@@ -101,12 +101,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 28.5 (check sign)",
-          "bid": 0.935,
+          "bid": 0.94,
           "ask": 0.99,
-          "spread": 0.055,
+          "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:32.664887+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:33.820825+00:00",
           "quote_warning": null
         },
         {
@@ -122,7 +122,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:42.811489+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:43.863995+00:00",
           "quote_warning": null
         },
         {
@@ -138,7 +138,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:52.968772+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:43.878642+00:00",
           "quote_warning": null
         },
         {
@@ -154,7 +154,7 @@
           "spread": 0.09,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:53.057236+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:53.922899+00:00",
           "quote_warning": null
         },
         {
@@ -165,12 +165,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 0.5",
-          "bid": 0.95,
+          "bid": 0.94,
           "ask": 0.98,
-          "spread": 0.03,
+          "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:53.174457+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:53.937067+00:00",
           "quote_warning": null
         },
         {
@@ -181,12 +181,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 17.5 (check sign)",
-          "bid": 0.88,
+          "bid": 0.89,
           "ask": 0.97,
-          "spread": 0.09,
+          "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:53.301618+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:53.954098+00:00",
           "quote_warning": null
         },
         {
@@ -202,7 +202,7 @@
           "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:23:53.404050+00:00",
+          "quote_checked_utc": "2026-11-14T04:27:53.968096+00:00",
           "quote_warning": null
         },
         {
@@ -218,7 +218,7 @@
           "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:03.555073+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:04.018305+00:00",
           "quote_warning": null
         },
         {
@@ -234,7 +234,7 @@
           "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:03.643897+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:04.039058+00:00",
           "quote_warning": null
         },
         {
@@ -250,7 +250,7 @@
           "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:13.801720+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:04.061540+00:00",
           "quote_warning": null
         },
         {
@@ -266,23 +266,7 @@
           "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:13.910469+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ne-det-2026-11-15-tfg-ne-0pt5",
-          "title": "NE over 0.5 field goals",
-          "outcome": "New England Patriots",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "0.5",
-          "bid": 0.54,
-          "ask": 0.97,
-          "spread": 0.43,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:14.039761+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:14.108867+00:00",
           "quote_warning": null
         },
         {
@@ -298,7 +282,7 @@
           "spread": 0.29,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:14.153001+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:14.122971+00:00",
           "quote_warning": null
         },
         {
@@ -314,7 +298,7 @@
           "spread": 0.32,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:24.295338+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:14.138382+00:00",
           "quote_warning": null
         },
         {
@@ -330,7 +314,7 @@
           "spread": 0.35,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:24.426800+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:14.151803+00:00",
           "quote_warning": null
         },
         {
@@ -341,12 +325,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 3.5",
-          "bid": 0.9,
+          "bid": 0.91,
           "ask": 0.97,
-          "spread": 0.07,
+          "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:24.538859+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:24.213470+00:00",
           "quote_warning": null
         },
         {
@@ -362,7 +346,7 @@
           "spread": 0.2,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:34.697657+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:24.233010+00:00",
           "quote_warning": null
         },
         {
@@ -373,12 +357,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 0.5",
-          "bid": 0.81,
+          "bid": 0.8,
           "ask": 0.97,
-          "spread": 0.16,
+          "spread": 0.17,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:34.784302+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:24.254022+00:00",
           "quote_warning": null
         },
         {
@@ -394,7 +378,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:34.899150+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:34.306456+00:00",
           "quote_warning": null
         },
         {
@@ -410,7 +394,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:34.990931+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:34.327721+00:00",
           "quote_warning": null
         },
         {
@@ -426,7 +410,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:44.134805+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:34.343468+00:00",
           "quote_warning": null
         },
         {
@@ -442,7 +426,7 @@
           "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:44.263526+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:34.358445+00:00",
           "quote_warning": null
         },
         {
@@ -453,13 +437,13 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 0.5",
-          "bid": null,
-          "ask": null,
-          "spread": null,
+          "bid": 0.83,
+          "ask": 0.96,
+          "spread": 0.13,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:44.378705+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+          "quote_checked_utc": "2026-11-14T04:28:42.388735+00:00",
+          "quote_warning": null
         },
         {
           "slug": "tsc-nfl-ne-det-2026-11-15-4q-3pt5",
@@ -469,12 +453,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 3.5",
-          "bid": 0.85,
+          "bid": 0.73,
           "ask": 0.96,
-          "spread": 0.11,
+          "spread": 0.23,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:52.431231+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:42.408465+00:00",
           "quote_warning": null
         },
         {
@@ -490,7 +474,7 @@
           "spread": 0.055,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:54.568594+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:50.442713+00:00",
           "quote_warning": null
         },
         {
@@ -506,7 +490,23 @@
           "spread": 0.09,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:54.692560+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:50.457193+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-ne-det-2026-11-15-tfg-ne-0pt5",
+          "title": "NE over 0.5 field goals",
+          "outcome": "New England Patriots",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "0.5",
+          "bid": 0.54,
+          "ask": 0.97,
+          "spread": 0.43,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-14T04:28:50.471220+00:00",
           "quote_warning": null
         },
         {
@@ -522,7 +522,7 @@
           "spread": 0.17,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:54.799812+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:58.509392+00:00",
           "quote_warning": null
         },
         {
@@ -538,7 +538,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:24:54.919155+00:00",
+          "quote_checked_utc": "2026-11-14T04:28:58.524687+00:00",
           "quote_warning": null
         },
         {
@@ -554,7 +554,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:05.075426+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:06.560154+00:00",
           "quote_warning": null
         },
         {
@@ -570,7 +570,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:05.168638+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:06.575896+00:00",
           "quote_warning": null
         },
         {
@@ -586,7 +586,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:05.284196+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:06.589491+00:00",
           "quote_warning": null
         },
         {
@@ -602,7 +602,7 @@
           "spread": 0.31,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:15.435914+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:14.622137+00:00",
           "quote_warning": null
         },
         {
@@ -618,7 +618,7 @@
           "spread": 0.015,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:15.545522+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:14.640185+00:00",
           "quote_warning": null
         },
         {
@@ -634,7 +634,7 @@
           "spread": 0.35,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:15.666065+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:14.657695+00:00",
           "quote_warning": null
         },
         {
@@ -650,23 +650,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:15.778474+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "asc-nfl-ne-det-2026-11-15-pos-19pt5",
-          "title": "DET -19.5",
-          "outcome": "New England Patriots",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Spread",
-          "line": "Handicap 19.5 (check sign)",
-          "bid": 0.89,
-          "ask": 0.915,
-          "spread": 0.025,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:23.924949+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:14.671954+00:00",
           "quote_warning": null
         },
         {
@@ -682,7 +666,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:23.973353+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:22.715819+00:00",
           "quote_warning": null
         },
         {
@@ -693,12 +677,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "2",
-          "bid": 0.85,
+          "bid": 0.86,
           "ask": 0.91,
-          "spread": 0.06,
+          "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:24.061786+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:22.734536+00:00",
           "quote_warning": null
         },
         {
@@ -714,7 +698,23 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:32.200614+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:30.770752+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-ne-det-2026-11-15-pos-19pt5",
+          "title": "DET -19.5",
+          "outcome": "New England Patriots",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 19.5 (check sign)",
+          "bid": 0.885,
+          "ask": 0.905,
+          "spread": 0.02,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-14T04:29:30.783497+00:00",
           "quote_warning": null
         },
         {
@@ -725,12 +725,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 17.5 (check sign)",
-          "bid": 0.86,
+          "bid": 0.855,
           "ask": 0.9,
-          "spread": 0.04,
+          "spread": 0.045,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:32.321761+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:30.795792+00:00",
           "quote_warning": null
         },
         {
@@ -746,7 +746,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:32.448549+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:38.837686+00:00",
           "quote_warning": null
         },
         {
@@ -762,7 +762,7 @@
           "spread": 0.015,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:42.602087+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:38.856948+00:00",
           "quote_warning": null
         },
         {
@@ -778,7 +778,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:42.736874+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:46.935905+00:00",
           "quote_warning": null
         },
         {
@@ -794,7 +794,7 @@
           "spread": 0.46,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:42.866861+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:46.946019+00:00",
           "quote_warning": null
         },
         {
@@ -810,23 +810,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:53.036048+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ne-det-2026-11-15-ratt-jahgib-gte16",
-          "title": "Jahmyr Gibbs 16+ Rush Att",
-          "outcome": "Detroit Lions",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "16",
-          "bid": 0.42,
-          "ask": 0.89,
-          "spread": 0.47,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:53.171908+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:46.962042+00:00",
           "quote_warning": null
         },
         {
@@ -842,7 +826,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:25:53.257958+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:54.998618+00:00",
           "quote_warning": null
         },
         {
@@ -858,7 +842,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:03.435378+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:55.021492+00:00",
           "quote_warning": null
         },
         {
@@ -874,7 +858,7 @@
           "spread": 0.28,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:03.525684+00:00",
+          "quote_checked_utc": "2026-11-14T04:29:55.039425+00:00",
           "quote_warning": null
         },
         {
@@ -885,13 +869,13 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 10.5 (check sign)",
-          "bid": null,
-          "ask": null,
-          "spread": null,
+          "bid": 0.84,
+          "ask": 0.88,
+          "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:03.621812+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+          "quote_checked_utc": "2026-11-14T04:29:55.062011+00:00",
+          "quote_warning": null
         },
         {
           "slug": "astatc-nfl-ne-det-2026-11-15-recyd-amobro-gte40",
@@ -906,7 +890,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:11.674808+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:03.109978+00:00",
           "quote_warning": null
         },
         {
@@ -922,7 +906,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:13.764537+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:03.129902+00:00",
           "quote_warning": null
         },
         {
@@ -938,7 +922,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:13.884537+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:03.146102+00:00",
           "quote_warning": null
         },
         {
@@ -954,7 +938,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:14.006525+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:11.182246+00:00",
           "quote_warning": null
         },
         {
@@ -970,7 +954,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:14.091240+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:11.207115+00:00",
           "quote_warning": null
         },
         {
@@ -986,7 +970,7 @@
           "spread": 0.28,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:24.226823+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:11.224672+00:00",
           "quote_warning": null
         },
         {
@@ -1002,23 +986,7 @@
           "spread": 0.015,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:24.343192+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ne-det-2026-11-15-rec-amobro-gte5",
-          "title": "Amon-Ra St. Brown 5+ Rec",
-          "outcome": "Detroit Lions",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "5",
-          "bid": 0.74,
-          "ask": 0.87,
-          "spread": 0.13,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:24.428199+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:19.286091+00:00",
           "quote_warning": null
         },
         {
@@ -1029,12 +997,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "2",
-          "bid": 0.79,
+          "bid": 0.81,
           "ask": 0.87,
-          "spread": 0.08,
+          "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:32.586641+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:19.297473+00:00",
           "quote_warning": null
         },
         {
@@ -1050,7 +1018,7 @@
           "spread": 0.045,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:32.668369+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:29.349013+00:00",
           "quote_warning": null
         },
         {
@@ -1066,7 +1034,23 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:32.752662+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:29.361665+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-ne-det-2026-11-15-rec-amobro-gte5",
+          "title": "Amon-Ra St. Brown 5+ Rec",
+          "outcome": "Detroit Lions",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "5",
+          "bid": 0.74,
+          "ask": 0.86,
+          "spread": 0.12,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-14T04:30:29.372491+00:00",
           "quote_warning": null
         },
         {
@@ -1082,7 +1066,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:40.866893+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:29.390611+00:00",
           "quote_warning": null
         },
         {
@@ -1098,7 +1082,7 @@
           "spread": 0.13,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:40.976097+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:29.408143+00:00",
           "quote_warning": null
         },
         {
@@ -1114,7 +1098,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:49.110778+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:39.475204+00:00",
           "quote_warning": null
         },
         {
@@ -1130,7 +1114,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:49.228083+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:39.496807+00:00",
           "quote_warning": null
         },
         {
@@ -1146,7 +1130,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:49.318515+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:39.518519+00:00",
           "quote_warning": null
         },
         {
@@ -1162,7 +1146,7 @@
           "spread": 0.015,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:59.447393+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:39.542208+00:00",
           "quote_warning": null
         },
         {
@@ -1173,13 +1157,13 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "200",
-          "bid": 0.83,
-          "ask": 0.84,
-          "spread": 0.01,
+          "bid": null,
+          "ask": null,
+          "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:59.549317+00:00",
-          "quote_warning": null
+          "quote_checked_utc": "2026-11-14T04:30:39.560281+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
         },
         {
           "slug": "tsc-nfl-ne-det-2026-11-15-tt-ne-14pt5",
@@ -1194,7 +1178,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:59.665310+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:49.599686+00:00",
           "quote_warning": null
         },
         {
@@ -1210,7 +1194,7 @@
           "spread": 0.26,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:59.780110+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:49.617351+00:00",
           "quote_warning": null
         },
         {
@@ -1226,7 +1210,23 @@
           "spread": 0.26,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:26:59.895479+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:49.630488+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-ne-det-2026-11-15-ryd-corkin-gte40",
+          "title": "Corey Kiner 40+ Rush Yds",
+          "outcome": "New England Patriots",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "40",
+          "bid": 0.43,
+          "ask": 0.83,
+          "spread": 0.4,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-14T04:30:49.644530+00:00",
           "quote_warning": null
         },
         {
@@ -1242,23 +1242,7 @@
           "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:27:10.084198+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-ne-det-2026-11-15-tt-det-17pt5",
-          "title": "DET over 17.5 points",
-          "outcome": "Detroit Lions",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 17.5",
-          "bid": 0.81,
-          "ask": 0.83,
-          "spread": 0.02,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-14T03:27:10.197228+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:49.658063+00:00",
           "quote_warning": null
         },
         {
@@ -1274,7 +1258,23 @@
           "spread": 0.28,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:27:10.347448+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:49.671146+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-ne-det-2026-11-15-pos-13pt5",
+          "title": "DET -13.5",
+          "outcome": "New England Patriots",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 13.5 (check sign)",
+          "bid": 0.815,
+          "ask": 0.825,
+          "spread": 0.01,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-14T04:30:59.717030+00:00",
           "quote_warning": null
         },
         {
@@ -1290,7 +1290,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-14T03:27:10.445613+00:00",
+          "quote_checked_utc": "2026-11-14T04:30:59.740882+00:00",
           "quote_warning": null
         }
       ],
