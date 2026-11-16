@@ -1,7 +1,7 @@
 {
   "source": "Polymarket US (polymarket.us) \u2014 official public SDK",
   "exchange": "polymarket_us",
-  "fetched_utc": "2026-11-16T05:15:31.531948+00:00",
+  "fetched_utc": "2026-11-16T06:56:59.768630+00:00",
   "quote_count": 80,
   "games_count": 1,
   "events_considered": 6,
@@ -26,23 +26,7 @@
           "spread": 0.0025,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:11:52.592110+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "asc-nfl-lac-bal-2026-11-16-1h-pos-19pt5",
-          "title": "BAL -19.5 1H",
-          "outcome": "Los Angeles Chargers",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Spread",
-          "line": "Handicap 19.5 (check sign)",
-          "bid": 0.91,
-          "ask": 0.99,
-          "spread": 0.08,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:11:52.604465+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:02.388181+00:00",
           "quote_warning": null
         },
         {
@@ -58,7 +42,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:11:52.645794+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:02.404762+00:00",
           "quote_warning": null
         },
         {
@@ -69,12 +53,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 19.5 (check sign)",
-          "bid": 0.92,
+          "bid": 0.93,
           "ask": 0.99,
-          "spread": 0.07,
+          "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:11:52.688094+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:02.527216+00:00",
           "quote_warning": null
         },
         {
@@ -90,7 +74,7 @@
           "spread": 0.44,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:11:52.729448+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:02.655373+00:00",
           "quote_warning": null
         },
         {
@@ -106,7 +90,7 @@
           "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:11:52.774010+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:02.773400+00:00",
           "quote_warning": null
         },
         {
@@ -117,13 +101,13 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 12.5",
-          "bid": 0.96,
-          "ask": 0.99,
-          "spread": 0.03,
+          "bid": null,
+          "ask": null,
+          "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:02.861913+00:00",
-          "quote_warning": null
+          "quote_checked_utc": "2026-11-16T06:53:02.879790+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
         },
         {
           "slug": "tsc-nfl-lac-bal-2026-11-16-total-15pt5",
@@ -138,7 +122,23 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:12.904574+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:12.936633+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-lac-bal-2026-11-16-1h-pos-19pt5",
+          "title": "BAL -19.5 1H",
+          "outcome": "Los Angeles Chargers",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 19.5 (check sign)",
+          "bid": 0.91,
+          "ask": 0.98,
+          "spread": 0.07,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:53:13.026348+00:00",
           "quote_warning": null
         },
         {
@@ -154,7 +154,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:12.917759+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:13.142592+00:00",
           "quote_warning": null
         },
         {
@@ -170,7 +170,23 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:12.964692+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:23.311612+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-lac-bal-2026-11-16-rec-trehar-gte1",
+          "title": "Tre' Harris 1+ Rec",
+          "outcome": "Los Angeles Chargers",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "1",
+          "bid": 0.81,
+          "ask": 0.98,
+          "spread": 0.17,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:53:23.436502+00:00",
           "quote_warning": null
         },
         {
@@ -181,12 +197,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 0.5",
-          "bid": 0.65,
+          "bid": 0.68,
           "ask": 0.98,
-          "spread": 0.33,
+          "spread": 0.3,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:12.984259+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:23.548267+00:00",
           "quote_warning": null
         },
         {
@@ -202,7 +218,7 @@
           "spread": 0.035,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:13.025070+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:23.655198+00:00",
           "quote_warning": null
         },
         {
@@ -218,7 +234,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:23.097618+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:31.806638+00:00",
           "quote_warning": null
         },
         {
@@ -229,12 +245,28 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "1",
-          "bid": 0.7,
+          "bid": 0.73,
           "ask": 0.97,
-          "spread": 0.27,
+          "spread": 0.24,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:23.144634+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:31.925764+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-lac-bal-2026-11-16-4q-0pt5",
+          "title": "Over 0.5 4Q",
+          "outcome": "Over",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 0.5",
+          "bid": 0.86,
+          "ask": 0.97,
+          "spread": 0.11,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:53:42.069191+00:00",
           "quote_warning": null
         },
         {
@@ -250,7 +282,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:33.183702+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:42.193248+00:00",
           "quote_warning": null
         },
         {
@@ -261,12 +293,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 27.5 (check sign)",
-          "bid": 0.95,
+          "bid": 0.945,
           "ask": 0.965,
-          "spread": 0.015,
+          "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:33.224858+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:42.309161+00:00",
           "quote_warning": null
         },
         {
@@ -282,7 +314,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:33.263732+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:42.396477+00:00",
           "quote_warning": null
         },
         {
@@ -293,12 +325,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "100",
-          "bid": 0.71,
+          "bid": 0.72,
           "ask": 0.96,
-          "spread": 0.25,
+          "spread": 0.24,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:33.306686+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:52.557956+00:00",
           "quote_warning": null
         },
         {
@@ -309,28 +341,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 1.5",
-          "bid": 0.66,
+          "bid": 0.7,
           "ask": 0.96,
-          "spread": 0.3,
+          "spread": 0.26,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:43.369877+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-lac-bal-2026-11-16-4q-0pt5",
-          "title": "Over 0.5 4Q",
-          "outcome": "Over",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 0.5",
-          "bid": 0.86,
-          "ask": 0.96,
-          "spread": 0.1,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:43.422002+00:00",
+          "quote_checked_utc": "2026-11-16T06:53:52.649676+00:00",
           "quote_warning": null
         },
         {
@@ -346,7 +362,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:43.465492+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:00.802263+00:00",
           "quote_warning": null
         },
         {
@@ -362,7 +378,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:51.532398+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:00.902952+00:00",
           "quote_warning": null
         },
         {
@@ -378,7 +394,7 @@
           "spread": 0.025,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:51.574921+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:01.025401+00:00",
           "quote_warning": null
         },
         {
@@ -394,7 +410,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:51.614862+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:01.138716+00:00",
           "quote_warning": null
         },
         {
@@ -410,7 +426,7 @@
           "spread": 0.035,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:59.679575+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:11.249770+00:00",
           "quote_warning": null
         },
         {
@@ -426,7 +442,7 @@
           "spread": 0.035,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:12:59.716929+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:11.337736+00:00",
           "quote_warning": null
         },
         {
@@ -437,12 +453,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "3",
-          "bid": 0.9,
+          "bid": 0.89,
           "ask": 0.93,
-          "spread": 0.03,
+          "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:07.779502+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:19.491014+00:00",
           "quote_warning": null
         },
         {
@@ -458,7 +474,7 @@
           "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:07.823845+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:19.581456+00:00",
           "quote_warning": null
         },
         {
@@ -474,7 +490,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:07.870699+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:19.707684+00:00",
           "quote_warning": null
         },
         {
@@ -490,7 +506,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:07.908519+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:27.758258+00:00",
           "quote_warning": null
         },
         {
@@ -501,12 +517,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "1",
-          "bid": 0.57,
+          "bid": 0.56,
           "ask": 0.91,
-          "spread": 0.34,
+          "spread": 0.35,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:15.974904+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:27.827868+00:00",
           "quote_warning": null
         },
         {
@@ -517,12 +533,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "1",
-          "bid": 0.58,
+          "bid": 0.57,
           "ask": 0.91,
-          "spread": 0.33,
+          "spread": 0.34,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:16.020719+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:27.962569+00:00",
           "quote_warning": null
         },
         {
@@ -533,12 +549,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "10",
-          "bid": 0.69,
+          "bid": 0.68,
           "ask": 0.91,
-          "spread": 0.22,
+          "spread": 0.23,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:16.074299+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:28.047853+00:00",
           "quote_warning": null
         },
         {
@@ -554,7 +570,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:16.119598+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:36.172412+00:00",
           "quote_warning": null
         },
         {
@@ -570,7 +586,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:24.187704+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:36.227616+00:00",
           "quote_warning": null
         },
         {
@@ -581,12 +597,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "125",
-          "bid": 0.88,
+          "bid": 0.89,
           "ask": 0.9,
-          "spread": 0.02,
+          "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:24.234270+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:36.340033+00:00",
           "quote_warning": null
         },
         {
@@ -602,7 +618,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:24.284579+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:36.448422+00:00",
           "quote_warning": null
         },
         {
@@ -618,23 +634,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:32.345559+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "asc-nfl-lac-bal-2026-11-16-pos-20pt5",
-          "title": "BAL -20.5",
-          "outcome": "Los Angeles Chargers",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Spread",
-          "line": "Handicap 20.5 (check sign)",
-          "bid": 0.88,
-          "ask": 0.895,
-          "spread": 0.015,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:32.387645+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:44.515251+00:00",
           "quote_warning": null
         },
         {
@@ -650,7 +650,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:32.430765+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:44.597694+00:00",
           "quote_warning": null
         },
         {
@@ -666,7 +666,23 @@
           "spread": 0.035,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:40.505205+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:44.718247+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-lac-bal-2026-11-16-race35-none",
+          "title": "Neither Team",
+          "outcome": "Yes",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "35",
+          "bid": 0.88,
+          "ask": 0.89,
+          "spread": 0.01,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:54:52.859532+00:00",
           "quote_warning": null
         },
         {
@@ -682,7 +698,7 @@
           "spread": 0.18,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:40.543868+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:52.978782+00:00",
           "quote_warning": null
         },
         {
@@ -698,7 +714,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:50.622908+00:00",
+          "quote_checked_utc": "2026-11-16T06:54:53.094745+00:00",
           "quote_warning": null
         },
         {
@@ -714,7 +730,23 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:50.685055+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:03.233578+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-lac-bal-2026-11-16-pos-20pt5",
+          "title": "BAL -20.5",
+          "outcome": "Los Angeles Chargers",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 20.5 (check sign)",
+          "bid": 0.875,
+          "ask": 0.885,
+          "spread": 0.01,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:55:03.337465+00:00",
           "quote_warning": null
         },
         {
@@ -725,28 +757,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "125",
-          "bid": null,
-          "ask": null,
-          "spread": null,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:50.731016+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
-        },
-        {
-          "slug": "astatc-nfl-lac-bal-2026-11-16-race35-none",
-          "title": "Neither Team",
-          "outcome": "Yes",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "35",
           "bid": 0.87,
           "ask": 0.88,
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:13:58.767985+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:03.447188+00:00",
           "quote_warning": null
         },
         {
@@ -762,7 +778,23 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:00.824214+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:11.614840+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-lac-bal-2026-11-16-ryd-derhen-gte40",
+          "title": "Derrick Henry 40+ Rush Yds",
+          "outcome": "Baltimore Ravens",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "40",
+          "bid": 0.87,
+          "ask": 0.88,
+          "spread": 0.01,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:55:11.701996+00:00",
           "quote_warning": null
         },
         {
@@ -773,28 +805,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "1.5",
-          "bid": 0.63,
+          "bid": 0.52,
           "ask": 0.88,
-          "spread": 0.25,
+          "spread": 0.36,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:00.868941+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-lac-bal-2026-11-16-tt2h-bal-5pt5",
-          "title": "BAL over 5.5 2H",
-          "outcome": "Baltimore Ravens",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 5.5",
-          "bid": 0.81,
-          "ask": 0.88,
-          "spread": 0.07,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:10.942175+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:11.857432+00:00",
           "quote_warning": null
         },
         {
@@ -805,12 +821,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "2",
-          "bid": 0.83,
+          "bid": 0.81,
           "ask": 0.87,
-          "spread": 0.04,
+          "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:10.993882+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:22.015333+00:00",
           "quote_warning": null
         },
         {
@@ -826,7 +842,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:11.036135+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:22.133753+00:00",
           "quote_warning": null
         },
         {
@@ -837,12 +853,28 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 8.5",
-          "bid": 0.84,
+          "bid": 0.85,
           "ask": 0.87,
-          "spread": 0.03,
+          "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:11.093965+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:22.249509+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-lac-bal-2026-11-16-tt2h-bal-5pt5",
+          "title": "BAL over 5.5 2H",
+          "outcome": "Baltimore Ravens",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 5.5",
+          "bid": 0.82,
+          "ask": 0.87,
+          "spread": 0.05,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:55:32.411094+00:00",
           "quote_warning": null
         },
         {
@@ -858,23 +890,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:21.182426+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-lac-bal-2026-11-16-ryd-derhen-gte40",
-          "title": "Derrick Henry 40+ Rush Yds",
-          "outcome": "Baltimore Ravens",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "40",
-          "bid": 0.85,
-          "ask": 0.86,
-          "spread": 0.01,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:21.225407+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:32.540350+00:00",
           "quote_warning": null
         },
         {
@@ -890,7 +906,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:29.288444+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:32.647799+00:00",
           "quote_warning": null
         },
         {
@@ -901,12 +917,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 26.5",
-          "bid": 0.85,
+          "bid": 0.845,
           "ask": 0.86,
-          "spread": 0.01,
+          "spread": 0.015,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:29.331411+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:42.806717+00:00",
           "quote_warning": null
         },
         {
@@ -917,28 +933,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 5.5",
-          "bid": 0.82,
+          "bid": 0.83,
           "ask": 0.86,
-          "spread": 0.04,
+          "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:29.369710+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-lac-bal-2026-11-16-recyd-quejoh-gte10",
-          "title": "Quentin Johnston 10+ Rec Yds",
-          "outcome": "Los Angeles Chargers",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "10",
-          "bid": 0.81,
-          "ask": 0.85,
-          "spread": 0.04,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:37.435864+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:42.909829+00:00",
           "quote_warning": null
         },
         {
@@ -954,7 +954,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:37.479960+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:43.031327+00:00",
           "quote_warning": null
         },
         {
@@ -970,7 +970,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:37.534462+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:53.199871+00:00",
           "quote_warning": null
         },
         {
@@ -986,7 +986,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:37.578637+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:53.307433+00:00",
           "quote_warning": null
         },
         {
@@ -1002,7 +1002,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:45.644456+00:00",
+          "quote_checked_utc": "2026-11-16T06:55:53.402150+00:00",
           "quote_warning": null
         },
         {
@@ -1018,7 +1018,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:45.686105+00:00",
+          "quote_checked_utc": "2026-11-16T06:56:01.550520+00:00",
           "quote_warning": null
         },
         {
@@ -1029,28 +1029,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 17.5 (check sign)",
-          "bid": 0.84,
-          "ask": 0.845,
-          "spread": 0.005,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:45.730273+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-lac-bal-2026-11-16-tfg-lac-0pt5",
-          "title": "LAC over 0.5 field goals",
-          "outcome": "Los Angeles Chargers",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "0.5",
-          "bid": 0.78,
+          "bid": 0.83,
           "ask": 0.84,
-          "spread": 0.06,
+          "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:55.799514+00:00",
+          "quote_checked_utc": "2026-11-16T06:56:01.655590+00:00",
           "quote_warning": null
         },
         {
@@ -1066,7 +1050,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:55.853207+00:00",
+          "quote_checked_utc": "2026-11-16T06:56:01.781655+00:00",
           "quote_warning": null
         },
         {
@@ -1082,39 +1066,71 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:55.912263+00:00",
+          "quote_checked_utc": "2026-11-16T06:56:11.945357+00:00",
           "quote_warning": null
         },
         {
-          "slug": "astatc-nfl-lac-bal-2026-11-16-pcmp-jacbri-gte18",
-          "title": "Jacoby Brissett 18+ Pass Comp",
+          "slug": "astatc-nfl-lac-bal-2026-11-16-pcmp-jacbri-gte16",
+          "title": "Jacoby Brissett 16+ Pass Comp",
           "outcome": "Baltimore Ravens",
           "side_verified": true,
           "side_source": "marketSides.long.team",
           "type": "Props & other",
-          "line": "18",
-          "bid": null,
-          "ask": null,
-          "spread": null,
+          "line": "16",
+          "bid": 0.53,
+          "ask": 0.83,
+          "spread": 0.3,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:14:55.961285+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+          "quote_checked_utc": "2026-11-16T06:56:12.032176+00:00",
+          "quote_warning": null
         },
         {
-          "slug": "astatc-nfl-lac-bal-2026-11-16-ratt-omaham-gte8",
-          "title": "Omarion Hampton 8+ Rush Att",
+          "slug": "astatc-nfl-lac-bal-2026-11-16-recyd-quejoh-gte10",
+          "title": "Quentin Johnston 10+ Rec Yds",
           "outcome": "Los Angeles Chargers",
           "side_verified": true,
           "side_source": "marketSides.long.team",
           "type": "Props & other",
-          "line": "8",
-          "bid": 0.76,
-          "ask": 0.82,
-          "spread": 0.06,
+          "line": "10",
+          "bid": 0.8,
+          "ask": 0.83,
+          "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:04.011943+00:00",
+          "quote_checked_utc": "2026-11-16T06:56:12.150977+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-lac-bal-2026-11-16-ryd-derhen-gte50",
+          "title": "Derrick Henry 50+ Rush Yds",
+          "outcome": "Baltimore Ravens",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "50",
+          "bid": 0.82,
+          "ask": 0.83,
+          "spread": 0.01,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:56:22.305413+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-lac-bal-2026-11-16-total-28pt5",
+          "title": "Over 28.5 points",
+          "outcome": "Over",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 28.5",
+          "bid": 0.82,
+          "ask": 0.825,
+          "spread": 0.005,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:56:22.411942+00:00",
           "quote_warning": null
         },
         {
@@ -1126,27 +1142,27 @@
           "type": "Props & other",
           "line": "4",
           "bid": 0.79,
-          "ask": 0.82,
-          "spread": 0.03,
+          "ask": 0.83,
+          "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:05.067154+00:00",
+          "quote_checked_utc": "2026-11-16T06:56:22.523332+00:00",
           "quote_warning": null
         },
         {
-          "slug": "tsc-nfl-lac-bal-2026-11-16-total-28pt5",
-          "title": "Over 28.5 points",
-          "outcome": "Over",
+          "slug": "tsc-nfl-lac-bal-2026-11-16-tt-bal-14pt5",
+          "title": "BAL over 14.5 points",
+          "outcome": "Baltimore Ravens",
           "side_verified": true,
           "side_source": "marketSides.long.team",
           "type": "Total",
-          "line": "Total 28.5",
-          "bid": 0.815,
+          "line": "Total 14.5",
+          "bid": 0.8,
           "ask": 0.82,
-          "spread": 0.005,
+          "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:05.112775+00:00",
+          "quote_checked_utc": "2026-11-16T06:56:30.682356+00:00",
           "quote_warning": null
         },
         {
@@ -1162,7 +1178,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:05.151172+00:00",
+          "quote_checked_utc": "2026-11-16T06:56:30.769628+00:00",
           "quote_warning": null
         },
         {
@@ -1178,23 +1194,87 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:13.216241+00:00",
+          "quote_checked_utc": "2026-11-16T06:56:40.903695+00:00",
           "quote_warning": null
         },
         {
-          "slug": "tsc-nfl-lac-bal-2026-11-16-tt-bal-14pt5",
-          "title": "BAL over 14.5 points",
+          "slug": "astatc-nfl-lac-bal-2026-11-16-pyd-jacbri-gte150",
+          "title": "Jacoby Brissett 150+ Pass Yds",
           "outcome": "Baltimore Ravens",
           "side_verified": true,
           "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 14.5",
+          "type": "Props & other",
+          "line": "150",
           "bid": 0.8,
           "ask": 0.81,
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:13.270727+00:00",
+          "quote_checked_utc": "2026-11-16T06:56:41.034218+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-lac-bal-2026-11-16-ratt-omaham-gte8",
+          "title": "Omarion Hampton 8+ Rush Att",
+          "outcome": "Los Angeles Chargers",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "8",
+          "bid": 0.76,
+          "ask": 0.81,
+          "spread": 0.05,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:56:41.141088+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-lac-bal-2026-11-16-tfg-lac-0pt5",
+          "title": "LAC over 0.5 field goals",
+          "outcome": "Los Angeles Chargers",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "0.5",
+          "bid": 0.77,
+          "ask": 0.81,
+          "spread": 0.04,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:56:41.264365+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-lac-bal-2026-11-16-tt2h-lac-4pt5",
+          "title": "LAC over 4.5 2H",
+          "outcome": "Los Angeles Chargers",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 4.5",
+          "bid": 0.7,
+          "ask": 0.81,
+          "spread": 0.11,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:56:51.433272+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-lac-bal-2026-11-16-pos-14pt5",
+          "title": "BAL -14.5",
+          "outcome": "Los Angeles Chargers",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 14.5 (check sign)",
+          "bid": 0.79,
+          "ask": 0.8,
+          "spread": 0.01,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-16T06:56:51.519679+00:00",
           "quote_warning": null
         },
         {
@@ -1210,87 +1290,7 @@
           "spread": 0.27,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:13.319841+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-lac-bal-2026-11-16-pyd-jacbri-gte150",
-          "title": "Jacoby Brissett 150+ Pass Yds",
-          "outcome": "Baltimore Ravens",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "150",
-          "bid": 0.79,
-          "ask": 0.8,
-          "spread": 0.01,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:23.360516+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-lac-bal-2026-11-16-ryd-derhen-gte50",
-          "title": "Derrick Henry 50+ Rush Yds",
-          "outcome": "Baltimore Ravens",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "50",
-          "bid": 0.78,
-          "ask": 0.8,
-          "spread": 0.02,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:23.372502+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-lac-bal-2026-11-16-toyd-lac-250pt5",
-          "title": "LAC over 250.5 offensive yards",
-          "outcome": "Los Angeles Chargers",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "250.5",
-          "bid": 0.41,
-          "ask": 0.8,
-          "spread": 0.39,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:23.383923+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "asc-nfl-lac-bal-2026-11-16-2h-pos-8pt5",
-          "title": "BAL -8.5 2H",
-          "outcome": "Los Angeles Chargers",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Spread",
-          "line": "Handicap 8.5 (check sign)",
-          "bid": 0.75,
-          "ask": 0.79,
-          "spread": 0.04,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:31.445769+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "asc-nfl-lac-bal-2026-11-16-pos-14pt5",
-          "title": "BAL -14.5",
-          "outcome": "Los Angeles Chargers",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Spread",
-          "line": "Handicap 14.5 (check sign)",
-          "bid": 0.785,
-          "ask": 0.79,
-          "spread": 0.005,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-16T05:15:31.494026+00:00",
+          "quote_checked_utc": "2026-11-16T06:56:59.659543+00:00",
           "quote_warning": null
         }
       ],
