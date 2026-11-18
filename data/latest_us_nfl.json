@@ -1,7 +1,7 @@
 {
   "source": "Polymarket US (polymarket.us) \u2014 official public SDK",
   "exchange": "polymarket_us",
-  "fetched_utc": "2026-11-18T15:31:49.322619+00:00",
+  "fetched_utc": "2026-11-18T16:38:28.689617+00:00",
   "quote_count": 80,
   "games_count": 1,
   "events_considered": 6,
@@ -21,12 +21,12 @@
           "side_source": "marketSides.long.team",
           "type": "Moneyline",
           "line": "Winner",
-          "bid": 0.1525,
-          "ask": 0.155,
+          "bid": 0.155,
+          "ask": 0.1575,
           "spread": 0.0025,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:25.733563+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:15.922112+00:00",
           "quote_warning": null
         },
         {
@@ -42,7 +42,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:25.762379+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:15.982079+00:00",
           "quote_warning": null
         },
         {
@@ -58,7 +58,7 @@
           "spread": 0.11,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:25.837051+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:16.096685+00:00",
           "quote_warning": null
         },
         {
@@ -74,7 +74,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:25.969446+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:16.197833+00:00",
           "quote_warning": null
         },
         {
@@ -90,7 +90,7 @@
           "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:26.037570+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:16.295838+00:00",
           "quote_warning": null
         },
         {
@@ -106,7 +106,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:26.106806+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:16.398477+00:00",
           "quote_warning": null
         },
         {
@@ -122,7 +122,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:36.320237+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:26.526396+00:00",
           "quote_warning": null
         },
         {
@@ -133,12 +133,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 38.5 (check sign)",
-          "bid": 0.945,
+          "bid": 0.94,
           "ask": 0.99,
-          "spread": 0.045,
+          "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:36.452925+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:26.619491+00:00",
           "quote_warning": null
         },
         {
@@ -154,7 +154,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:36.607444+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:26.714315+00:00",
           "quote_warning": null
         },
         {
@@ -170,7 +170,7 @@
           "spread": 0.035,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:46.829794+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:36.881804+00:00",
           "quote_warning": null
         },
         {
@@ -186,7 +186,7 @@
           "spread": 0.035,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:47.038458+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:36.989792+00:00",
           "quote_warning": null
         },
         {
@@ -202,7 +202,7 @@
           "spread": 0.035,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:47.211227+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:37.082040+00:00",
           "quote_warning": null
         },
         {
@@ -218,7 +218,7 @@
           "spread": 0.055,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:47.372946+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:37.169315+00:00",
           "quote_warning": null
         },
         {
@@ -234,7 +234,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:47.447610+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:37.277306+00:00",
           "quote_warning": null
         },
         {
@@ -250,7 +250,7 @@
           "spread": 0.035,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:57.671199+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:47.401894+00:00",
           "quote_warning": null
         },
         {
@@ -266,7 +266,7 @@
           "spread": 0.045,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:57.827646+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:47.508688+00:00",
           "quote_warning": null
         },
         {
@@ -282,7 +282,7 @@
           "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:57.991321+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:47.590241+00:00",
           "quote_warning": null
         },
         {
@@ -298,7 +298,7 @@
           "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:28:58.145026+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:47.693747+00:00",
           "quote_warning": null
         },
         {
@@ -314,7 +314,7 @@
           "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:08.371571+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:57.834004+00:00",
           "quote_warning": null
         },
         {
@@ -330,7 +330,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:08.563850+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:57.942942+00:00",
           "quote_warning": null
         },
         {
@@ -346,7 +346,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:08.699326+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:58.048353+00:00",
           "quote_warning": null
         },
         {
@@ -362,7 +362,7 @@
           "spread": 0.33,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:08.862870+00:00",
+          "quote_checked_utc": "2026-11-18T16:35:58.161990+00:00",
           "quote_warning": null
         },
         {
@@ -373,13 +373,13 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 1.5",
-          "bid": 0.84,
-          "ask": 0.97,
-          "spread": 0.13,
+          "bid": null,
+          "ask": null,
+          "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:08.990462+00:00",
-          "quote_warning": null
+          "quote_checked_utc": "2026-11-18T16:35:58.270125+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
         },
         {
           "slug": "tsc-nfl-ind-hou-2026-11-19-total-25pt5",
@@ -394,7 +394,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:19.244552+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:08.322652+00:00",
           "quote_warning": null
         },
         {
@@ -410,7 +410,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:19.318990+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:08.436798+00:00",
           "quote_warning": null
         },
         {
@@ -426,7 +426,7 @@
           "spread": 0.13,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:19.457522+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:08.533637+00:00",
           "quote_warning": null
         },
         {
@@ -442,7 +442,7 @@
           "spread": 0.13,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:19.587607+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:08.643381+00:00",
           "quote_warning": null
         },
         {
@@ -453,13 +453,13 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "20",
-          "bid": null,
-          "ask": null,
-          "spread": null,
+          "bid": 0.82,
+          "ask": 0.96,
+          "spread": 0.14,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:19.730753+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+          "quote_checked_utc": "2026-11-18T16:36:08.742563+00:00",
+          "quote_warning": null
         },
         {
           "slug": "astatc-nfl-ind-hou-2026-11-19-ttds-ind-0pt5",
@@ -474,7 +474,7 @@
           "spread": 0.36,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:29.841823+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:18.876473+00:00",
           "quote_warning": null
         },
         {
@@ -490,7 +490,7 @@
           "spread": 0.23,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:29.977147+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:18.977732+00:00",
           "quote_warning": null
         },
         {
@@ -501,12 +501,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 4.5",
-          "bid": 0.91,
+          "bid": 0.92,
           "ask": 0.96,
-          "spread": 0.05,
+          "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:30.043532+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:19.086628+00:00",
           "quote_warning": null
         },
         {
@@ -522,7 +522,7 @@
           "spread": 0.2,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:30.180911+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:19.190292+00:00",
           "quote_warning": null
         },
         {
@@ -538,7 +538,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:30.337861+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:19.318647+00:00",
           "quote_warning": null
         },
         {
@@ -554,23 +554,7 @@
           "spread": 0.36,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:30.414749+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "asc-nfl-ind-hou-2026-11-19-2h-pos-17pt5",
-          "title": "HOU -17.5 2H",
-          "outcome": "Indianapolis Colts",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Spread",
-          "line": "Handicap 17.5 (check sign)",
-          "bid": 0.86,
-          "ask": 0.95,
-          "spread": 0.09,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:40.569829+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:29.457396+00:00",
           "quote_warning": null
         },
         {
@@ -586,23 +570,23 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:40.710652+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:29.554244+00:00",
           "quote_warning": null
         },
         {
-          "slug": "astatc-nfl-ind-hou-2026-11-19-pcmp-cstr-gte20",
-          "title": "C.J. Stroud 20+ Pass Comp",
-          "outcome": "Houston Texans",
+          "slug": "asc-nfl-ind-hou-2026-11-19-2h-pos-17pt5",
+          "title": "HOU -17.5 2H",
+          "outcome": "Indianapolis Colts",
           "side_verified": true,
           "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "20",
-          "bid": 0.44,
+          "type": "Spread",
+          "line": "Handicap 17.5 (check sign)",
+          "bid": 0.86,
           "ask": 0.94,
-          "spread": 0.5,
+          "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:51.001356+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:29.644739+00:00",
           "quote_warning": null
         },
         {
@@ -618,7 +602,7 @@
           "spread": 0.16,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:51.150311+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:29.747803+00:00",
           "quote_warning": null
         },
         {
@@ -629,13 +613,13 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 28.5",
-          "bid": 0.895,
-          "ask": 0.94,
-          "spread": 0.045,
+          "bid": null,
+          "ask": null,
+          "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:51.309244+00:00",
-          "quote_warning": null
+          "quote_checked_utc": "2026-11-18T16:36:29.858204+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
         },
         {
           "slug": "tsc-nfl-ind-hou-2026-11-19-tt-hou-16pt5",
@@ -650,7 +634,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:29:51.478779+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:37.899744+00:00",
           "quote_warning": null
         },
         {
@@ -661,12 +645,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 30.5 (check sign)",
-          "bid": 0.92,
+          "bid": 0.915,
           "ask": 0.93,
-          "spread": 0.01,
+          "spread": 0.015,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:01.737880+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:40.008792+00:00",
           "quote_warning": null
         },
         {
@@ -682,23 +666,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:02.032001+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ind-hou-2026-11-19-rec-kaybou-gte1",
-          "title": "Kayshon Boutte 1+ Rec",
-          "outcome": "Houston Texans",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "1",
-          "bid": 0.6,
-          "ask": 0.92,
-          "spread": 0.32,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:12.251828+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:40.124940+00:00",
           "quote_warning": null
         },
         {
@@ -714,23 +682,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:12.384679+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ind-hou-2026-11-19-pyd-cstr-gte175",
-          "title": "C.J. Stroud 175+ Pass Yds",
-          "outcome": "Houston Texans",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "175",
-          "bid": 0.89,
-          "ask": 0.91,
-          "spread": 0.02,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:12.461145+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:40.220895+00:00",
           "quote_warning": null
         },
         {
@@ -746,7 +698,7 @@
           "spread": 0.1,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:12.529978+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:40.334772+00:00",
           "quote_warning": null
         },
         {
@@ -762,7 +714,39 @@
           "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:22.795307+00:00",
+          "quote_checked_utc": "2026-11-18T16:36:40.586480+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-ind-hou-2026-11-19-pyd-cstr-gte175",
+          "title": "C.J. Stroud 175+ Pass Yds",
+          "outcome": "Houston Texans",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "175",
+          "bid": 0.89,
+          "ask": 0.9,
+          "spread": 0.01,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-18T16:36:50.725951+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-ind-hou-2026-11-19-rec-kaybou-gte1",
+          "title": "Kayshon Boutte 1+ Rec",
+          "outcome": "Houston Texans",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "1",
+          "bid": 0.58,
+          "ask": 0.9,
+          "spread": 0.32,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-18T16:37:00.865713+00:00",
           "quote_warning": null
         },
         {
@@ -778,7 +762,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:22.929484+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:00.969078+00:00",
           "quote_warning": null
         },
         {
@@ -794,7 +778,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:31.139042+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:01.068543+00:00",
           "quote_warning": null
         },
         {
@@ -810,7 +794,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:31.309892+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:01.171925+00:00",
           "quote_warning": null
         },
         {
@@ -821,13 +805,13 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 27.5 (check sign)",
-          "bid": 0.88,
-          "ask": 0.895,
-          "spread": 0.015,
+          "bid": null,
+          "ask": null,
+          "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:31.462986+00:00",
-          "quote_warning": null
+          "quote_checked_utc": "2026-11-18T16:37:01.294028+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
         },
         {
           "slug": "astatc-nfl-ind-hou-2026-11-19-mpyd-cstr",
@@ -842,7 +826,7 @@
           "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:31.491175+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:11.339260+00:00",
           "quote_warning": null
         },
         {
@@ -858,7 +842,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:39.776530+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:11.433438+00:00",
           "quote_warning": null
         },
         {
@@ -874,7 +858,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:49.930522+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:19.554407+00:00",
           "quote_warning": null
         },
         {
@@ -890,7 +874,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:50.091406+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:19.643215+00:00",
           "quote_warning": null
         },
         {
@@ -906,7 +890,7 @@
           "spread": 0.035,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:50.155243+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:19.771739+00:00",
           "quote_warning": null
         },
         {
@@ -922,23 +906,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:50.331430+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ind-hou-2026-11-19-ryd-setmcg-gte10",
-          "title": "Seth McGowan 10+ Rush Yds",
-          "outcome": "Indianapolis Colts",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "10",
-          "bid": 0.87,
-          "ask": 0.88,
-          "spread": 0.01,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-18T15:30:50.489329+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:19.888543+00:00",
           "quote_warning": null
         },
         {
@@ -954,7 +922,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:00.753130+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:30.040148+00:00",
           "quote_warning": null
         },
         {
@@ -970,7 +938,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:00.899088+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:30.129909+00:00",
           "quote_warning": null
         },
         {
@@ -986,7 +954,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:01.027515+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:30.220673+00:00",
           "quote_warning": null
         },
         {
@@ -1002,7 +970,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:01.206442+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:30.323832+00:00",
           "quote_warning": null
         },
         {
@@ -1018,7 +986,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:09.345427+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:30.421615+00:00",
           "quote_warning": null
         },
         {
@@ -1034,7 +1002,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:17.536855+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:40.551362+00:00",
           "quote_warning": null
         },
         {
@@ -1045,12 +1013,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "10",
-          "bid": 0.82,
+          "bid": 0.84,
           "ask": 0.86,
-          "spread": 0.04,
+          "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:17.610647+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:48.669689+00:00",
           "quote_warning": null
         },
         {
@@ -1066,7 +1034,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:17.768785+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:48.765131+00:00",
           "quote_warning": null
         },
         {
@@ -1082,7 +1050,23 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:17.950224+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:48.875394+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-ind-hou-2026-11-19-pyd-cstr-gte200",
+          "title": "C.J. Stroud 200+ Pass Yds",
+          "outcome": "Houston Texans",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "200",
+          "bid": 0.8,
+          "ask": 0.85,
+          "spread": 0.05,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-18T16:37:49.003595+00:00",
           "quote_warning": null
         },
         {
@@ -1098,7 +1082,7 @@
           "spread": 0.18,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:27.209726+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:57.139501+00:00",
           "quote_warning": null
         },
         {
@@ -1114,7 +1098,23 @@
           "spread": 0.32,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:27.365260+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:57.263913+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-ind-hou-2026-11-19-ryd-setmcg-gte10",
+          "title": "Seth McGowan 10+ Rush Yds",
+          "outcome": "Indianapolis Colts",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "10",
+          "bid": 0.83,
+          "ask": 0.85,
+          "spread": 0.02,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-18T16:37:57.363153+00:00",
           "quote_warning": null
         },
         {
@@ -1130,7 +1130,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:27.572414+00:00",
+          "quote_checked_utc": "2026-11-18T16:37:57.471605+00:00",
           "quote_warning": null
         },
         {
@@ -1146,23 +1146,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:27.745896+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ind-hou-2026-11-19-pyd-cstr-gte200",
-          "title": "C.J. Stroud 200+ Pass Yds",
-          "outcome": "Houston Texans",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "200",
-          "bid": 0.8,
-          "ask": 0.84,
-          "spread": 0.04,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:37.908220+00:00",
+          "quote_checked_utc": "2026-11-18T16:38:07.627790+00:00",
           "quote_warning": null
         },
         {
@@ -1178,23 +1162,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:38.063848+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-ind-hou-2026-11-19-4q-6pt5",
-          "title": "Over 6.5 4Q",
-          "outcome": "Over",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 6.5",
-          "bid": 0.78,
-          "ask": 0.84,
-          "spread": 0.06,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:38.242786+00:00",
+          "quote_checked_utc": "2026-11-18T16:38:07.728858+00:00",
           "quote_warning": null
         },
         {
@@ -1210,7 +1178,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:38.396080+00:00",
+          "quote_checked_utc": "2026-11-18T16:38:07.814892+00:00",
           "quote_warning": null
         },
         {
@@ -1226,7 +1194,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:38.547284+00:00",
+          "quote_checked_utc": "2026-11-18T16:38:07.903518+00:00",
           "quote_warning": null
         },
         {
@@ -1237,12 +1205,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 7.5",
-          "bid": 0.8,
+          "bid": 0.81,
           "ask": 0.84,
-          "spread": 0.04,
+          "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:48.801757+00:00",
+          "quote_checked_utc": "2026-11-18T16:38:18.037927+00:00",
           "quote_warning": null
         },
         {
@@ -1253,12 +1221,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 8.5",
-          "bid": 0.8,
+          "bid": 0.81,
           "ask": 0.84,
-          "spread": 0.04,
+          "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:49.035591+00:00",
+          "quote_checked_utc": "2026-11-18T16:38:18.132393+00:00",
           "quote_warning": null
         },
         {
@@ -1274,7 +1242,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:49.178459+00:00",
+          "quote_checked_utc": "2026-11-18T16:38:18.241070+00:00",
           "quote_warning": null
         },
         {
@@ -1290,7 +1258,39 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-18T15:31:49.245780+00:00",
+          "quote_checked_utc": "2026-11-18T16:38:18.357093+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-ind-hou-2026-11-19-1h-15pt5",
+          "title": "Over 15.5 1H",
+          "outcome": "Over",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 15.5",
+          "bid": 0.78,
+          "ask": 0.83,
+          "spread": 0.05,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-18T16:38:18.459075+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-ind-hou-2026-11-19-2q-7pt5",
+          "title": "Over 7.5 2Q",
+          "outcome": "Over",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 7.5",
+          "bid": 0.78,
+          "ask": 0.83,
+          "spread": 0.05,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-18T16:38:28.586876+00:00",
           "quote_warning": null
         }
       ],
