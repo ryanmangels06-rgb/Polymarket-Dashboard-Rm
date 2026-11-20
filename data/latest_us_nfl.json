@@ -1,7 +1,7 @@
 {
   "source": "Polymarket US (polymarket.us) \u2014 official public SDK",
   "exchange": "polymarket_us",
-  "fetched_utc": "2026-11-20T07:20:59.706499+00:00",
+  "fetched_utc": "2026-11-20T08:35:49.758740+00:00",
   "quote_count": 80,
   "games_count": 1,
   "events_considered": 6,
@@ -26,7 +26,7 @@
           "spread": 0.0025,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:36.594165+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:14.490292+00:00",
           "quote_warning": null
         },
         {
@@ -42,7 +42,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:36.653351+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:14.503561+00:00",
           "quote_warning": null
         },
         {
@@ -53,12 +53,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 16.5 (check sign)",
-          "bid": 0.92,
+          "bid": 0.93,
           "ask": 0.99,
-          "spread": 0.07,
+          "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:36.796251+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:14.519850+00:00",
           "quote_warning": null
         },
         {
@@ -69,12 +69,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 17.5 (check sign)",
-          "bid": 0.92,
+          "bid": 0.93,
           "ask": 0.99,
-          "spread": 0.07,
+          "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:36.857091+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:14.538118+00:00",
           "quote_warning": null
         },
         {
@@ -90,7 +90,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:36.989121+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:14.555377+00:00",
           "quote_warning": null
         },
         {
@@ -101,13 +101,13 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 16.5 (check sign)",
-          "bid": null,
-          "ask": null,
-          "spread": null,
+          "bid": 0.93,
+          "ask": 0.99,
+          "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:37.248413+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+          "quote_checked_utc": "2026-11-20T08:32:14.574799+00:00",
+          "quote_warning": null
         },
         {
           "slug": "asc-nfl-pit-phi-2026-11-22-2h-pos-17pt5",
@@ -122,7 +122,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:47.356748+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:24.635572+00:00",
           "quote_warning": null
         },
         {
@@ -133,12 +133,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 19.5 (check sign)",
-          "bid": 0.925,
+          "bid": 0.92,
           "ask": 0.99,
-          "spread": 0.065,
+          "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:47.528133+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:24.656136+00:00",
           "quote_warning": null
         },
         {
@@ -149,12 +149,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 20.5 (check sign)",
-          "bid": 0.935,
+          "bid": 0.925,
           "ask": 0.99,
-          "spread": 0.055,
+          "spread": 0.065,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:47.657821+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:32.699204+00:00",
           "quote_warning": null
         },
         {
@@ -170,23 +170,7 @@
           "spread": 0.055,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:47.828412+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-pit-phi-2026-11-22-patt-aarrod-gte28",
-          "title": "Aaron Rodgers 28+ Pass Att",
-          "outcome": "Pittsburgh Steelers",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "28",
-          "bid": 0.71,
-          "ask": 0.99,
-          "spread": 0.28,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:47.951836+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:32.717351+00:00",
           "quote_warning": null
         },
         {
@@ -197,12 +181,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 11.5",
-          "bid": 0.955,
+          "bid": 0.94,
           "ask": 0.99,
-          "spread": 0.035,
+          "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:57.197203+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:32.737243+00:00",
           "quote_warning": null
         },
         {
@@ -213,12 +197,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 14.5",
-          "bid": 0.95,
+          "bid": 0.94,
           "ask": 0.99,
-          "spread": 0.04,
+          "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:57.351326+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:32.752436+00:00",
           "quote_warning": null
         },
         {
@@ -234,7 +218,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:57.512354+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:40.793650+00:00",
           "quote_warning": null
         },
         {
@@ -250,7 +234,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:17:57.718568+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:48.834548+00:00",
           "quote_warning": null
         },
         {
@@ -266,7 +250,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:07.862254+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:48.851427+00:00",
           "quote_warning": null
         },
         {
@@ -282,7 +266,7 @@
           "spread": 0.055,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:08.049219+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:48.867969+00:00",
           "quote_warning": null
         },
         {
@@ -298,7 +282,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:08.220264+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:48.886065+00:00",
           "quote_warning": null
         },
         {
@@ -314,7 +298,7 @@
           "spread": 0.14,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:08.277629+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:58.944366+00:00",
           "quote_warning": null
         },
         {
@@ -330,7 +314,7 @@
           "spread": 0.17,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:08.401735+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:58.963199+00:00",
           "quote_warning": null
         },
         {
@@ -346,7 +330,7 @@
           "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:18.610429+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:58.981759+00:00",
           "quote_warning": null
         },
         {
@@ -362,7 +346,7 @@
           "spread": 0.23,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:18.764302+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:59.000115+00:00",
           "quote_warning": null
         },
         {
@@ -378,7 +362,7 @@
           "spread": 0.23,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:18.920691+00:00",
+          "quote_checked_utc": "2026-11-20T08:32:59.018483+00:00",
           "quote_warning": null
         },
         {
@@ -394,7 +378,7 @@
           "spread": 0.23,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:19.059935+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:09.078581+00:00",
           "quote_warning": null
         },
         {
@@ -410,7 +394,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:19.120869+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:09.094668+00:00",
           "quote_warning": null
         },
         {
@@ -426,7 +410,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:29.402379+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:09.108388+00:00",
           "quote_warning": null
         },
         {
@@ -442,7 +426,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:29.521107+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:09.136446+00:00",
           "quote_warning": null
         },
         {
@@ -453,12 +437,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 9.5",
-          "bid": 0.9,
+          "bid": 0.91,
           "ask": 0.95,
-          "spread": 0.05,
+          "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:29.584158+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:09.164407+00:00",
           "quote_warning": null
         },
         {
@@ -474,7 +458,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:29.758039+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:17.210922+00:00",
           "quote_warning": null
         },
         {
@@ -490,7 +474,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:29.908530+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:17.223796+00:00",
           "quote_warning": null
         },
         {
@@ -506,7 +490,7 @@
           "spread": 0.33,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:40.294634+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:17.241993+00:00",
           "quote_warning": null
         },
         {
@@ -522,7 +506,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:40.364129+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:17.261015+00:00",
           "quote_warning": null
         },
         {
@@ -533,12 +517,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 9.5 (check sign)",
-          "bid": 0.87,
+          "bid": 0.86,
           "ask": 0.92,
-          "spread": 0.05,
+          "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:40.520073+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:25.305721+00:00",
           "quote_warning": null
         },
         {
@@ -554,7 +538,7 @@
           "spread": 0.18,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:40.643093+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:25.322598+00:00",
           "quote_warning": null
         },
         {
@@ -565,13 +549,13 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 3.5",
-          "bid": null,
-          "ask": null,
-          "spread": null,
+          "bid": 0.84,
+          "ask": 0.92,
+          "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:40.998900+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+          "quote_checked_utc": "2026-11-20T08:33:25.339473+00:00",
+          "quote_warning": null
         },
         {
           "slug": "tsc-nfl-pit-phi-2026-11-22-tt-phi-6pt5",
@@ -586,7 +570,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:51.110197+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:35.393802+00:00",
           "quote_warning": null
         },
         {
@@ -602,7 +586,7 @@
           "spread": 0.2,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:51.172469+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:35.412795+00:00",
           "quote_warning": null
         },
         {
@@ -618,23 +602,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:59.296056+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "asc-nfl-pit-phi-2026-11-22-1h-pos-7pt5",
-          "title": "PHI -7.5 1H",
-          "outcome": "Pittsburgh Steelers",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Spread",
-          "line": "Handicap 7.5 (check sign)",
-          "bid": 0.87,
-          "ask": 0.91,
-          "spread": 0.04,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:59.353633+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:35.432177+00:00",
           "quote_warning": null
         },
         {
@@ -650,7 +618,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:59.509188+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:35.446753+00:00",
           "quote_warning": null
         },
         {
@@ -666,7 +634,7 @@
           "spread": 0.055,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:18:59.682115+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:45.504572+00:00",
           "quote_warning": null
         },
         {
@@ -682,7 +650,23 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:09.889626+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:45.529095+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-pit-phi-2026-11-22-1h-pos-7pt5",
+          "title": "PHI -7.5 1H",
+          "outcome": "Pittsburgh Steelers",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 7.5 (check sign)",
+          "bid": 0.86,
+          "ask": 0.9,
+          "spread": 0.04,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-20T08:33:45.541664+00:00",
           "quote_warning": null
         },
         {
@@ -698,23 +682,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:10.070130+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-pit-phi-2026-11-22-2q-5pt5",
-          "title": "Over 5.5 2Q",
-          "outcome": "Over",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 5.5",
-          "bid": 0.85,
-          "ask": 0.9,
-          "spread": 0.05,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:10.225421+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:55.597459+00:00",
           "quote_warning": null
         },
         {
@@ -730,7 +698,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:10.352424+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:55.612777+00:00",
           "quote_warning": null
         },
         {
@@ -746,7 +714,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:10.517721+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:55.631417+00:00",
           "quote_warning": null
         },
         {
@@ -762,7 +730,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:20.724342+00:00",
+          "quote_checked_utc": "2026-11-20T08:33:55.650508+00:00",
           "quote_warning": null
         },
         {
@@ -773,13 +741,29 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "35",
-          "bid": null,
-          "ask": null,
-          "spread": null,
+          "bid": 0.87,
+          "ask": 0.89,
+          "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:20.847487+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+          "quote_checked_utc": "2026-11-20T08:34:03.697002+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-pit-phi-2026-11-22-2q-5pt5",
+          "title": "Over 5.5 2Q",
+          "outcome": "Over",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 5.5",
+          "bid": 0.85,
+          "ask": 0.89,
+          "spread": 0.04,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-20T08:34:03.713697+00:00",
+          "quote_warning": null
         },
         {
           "slug": "tsc-nfl-pit-phi-2026-11-22-total-25pt5",
@@ -789,12 +773,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 25.5",
-          "bid": 0.84,
+          "bid": 0.835,
           "ask": 0.885,
-          "spread": 0.045,
+          "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:28.955306+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:03.730289+00:00",
           "quote_warning": null
         },
         {
@@ -810,7 +794,7 @@
           "spread": 0.015,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:31.039896+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:13.785870+00:00",
           "quote_warning": null
         },
         {
@@ -826,7 +810,7 @@
           "spread": 0.32,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:31.161859+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:13.799329+00:00",
           "quote_warning": null
         },
         {
@@ -842,39 +826,7 @@
           "spread": 0.09,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:31.330465+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-pit-phi-2026-11-22-4q-3pt5",
-          "title": "Over 3.5 4Q",
-          "outcome": "Over",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 3.5",
-          "bid": 0.78,
-          "ask": 0.86,
-          "spread": 0.08,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:31.490465+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-pit-phi-2026-11-22-tt-phi-7pt5",
-          "title": "PHI over 7.5 points",
-          "outcome": "Philadelphia Eagles",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 7.5",
-          "bid": 0.85,
-          "ask": 0.87,
-          "spread": 0.02,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:41.710927+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:13.817130+00:00",
           "quote_warning": null
         },
         {
@@ -890,23 +842,23 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:41.827419+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:23.875362+00:00",
           "quote_warning": null
         },
         {
-          "slug": "asc-nfl-pit-phi-2026-11-22-1h-pos-6pt5",
-          "title": "PHI -6.5 1H",
+          "slug": "astatc-nfl-pit-phi-2026-11-22-pyd-aarrod-gte150",
+          "title": "Aaron Rodgers 150+ Pass Yds",
           "outcome": "Pittsburgh Steelers",
           "side_verified": true,
           "side_source": "marketSides.long.team",
-          "type": "Spread",
-          "line": "Handicap 6.5 (check sign)",
-          "bid": 0.82,
+          "type": "Props & other",
+          "line": "150",
+          "bid": 0.75,
           "ask": 0.86,
-          "spread": 0.04,
+          "spread": 0.11,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:50.053003+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:23.890723+00:00",
           "quote_warning": null
         },
         {
@@ -922,7 +874,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:50.180059+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:23.908442+00:00",
           "quote_warning": null
         },
         {
@@ -933,12 +885,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "40",
-          "bid": 0.49,
+          "bid": 0.5,
           "ask": 0.86,
-          "spread": 0.37,
+          "spread": 0.36,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:19:50.374106+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:33.962525+00:00",
           "quote_warning": null
         },
         {
@@ -954,23 +906,55 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:00.518540+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:33.975218+00:00",
           "quote_warning": null
         },
         {
-          "slug": "astatc-nfl-pit-phi-2026-11-22-pyd-aarrod-gte150",
-          "title": "Aaron Rodgers 150+ Pass Yds",
+          "slug": "tsc-nfl-pit-phi-2026-11-22-4q-3pt5",
+          "title": "Over 3.5 4Q",
+          "outcome": "Over",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 3.5",
+          "bid": 0.78,
+          "ask": 0.86,
+          "spread": 0.08,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-20T08:34:33.992641+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-pit-phi-2026-11-22-tt-phi-7pt5",
+          "title": "PHI over 7.5 points",
+          "outcome": "Philadelphia Eagles",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 7.5",
+          "bid": 0.85,
+          "ask": 0.86,
+          "spread": 0.01,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-20T08:34:43.054848+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-pit-phi-2026-11-22-1h-pos-6pt5",
+          "title": "PHI -6.5 1H",
           "outcome": "Pittsburgh Steelers",
           "side_verified": true,
           "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "150",
-          "bid": 0.75,
+          "type": "Spread",
+          "line": "Handicap 6.5 (check sign)",
+          "bid": 0.82,
           "ask": 0.85,
-          "spread": 0.1,
+          "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:00.647059+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:43.069472+00:00",
           "quote_warning": null
         },
         {
@@ -986,7 +970,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:00.769269+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:43.085828+00:00",
           "quote_warning": null
         },
         {
@@ -1002,7 +986,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:08.915939+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:51.140926+00:00",
           "quote_warning": null
         },
         {
@@ -1018,7 +1002,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:09.038483+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:51.154582+00:00",
           "quote_warning": null
         },
         {
@@ -1034,23 +1018,23 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:17.276611+00:00",
+          "quote_checked_utc": "2026-11-20T08:34:51.171294+00:00",
           "quote_warning": null
         },
         {
-          "slug": "astatc-nfl-pit-phi-2026-11-22-ratt-jaywar-gte12",
-          "title": "Jaylen Warren 12+ Rush Att",
+          "slug": "astatc-nfl-pit-phi-2026-11-22-ryd-ricdow-gte20",
+          "title": "Rico Dowdle 20+ Rush Yds",
           "outcome": "Pittsburgh Steelers",
           "side_verified": true,
           "side_source": "marketSides.long.team",
           "type": "Props & other",
-          "line": "12",
-          "bid": 0.42,
+          "line": "20",
+          "bid": 0.52,
           "ask": 0.84,
-          "spread": 0.42,
+          "spread": 0.32,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:17.425971+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:01.221725+00:00",
           "quote_warning": null
         },
         {
@@ -1066,7 +1050,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:17.488256+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:01.242201+00:00",
           "quote_warning": null
         },
         {
@@ -1077,28 +1061,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 27.5",
-          "bid": 0.79,
+          "bid": 0.795,
           "ask": 0.84,
-          "spread": 0.05,
+          "spread": 0.045,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:17.552235+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-pit-phi-2026-11-22-tt-phi-9pt5",
-          "title": "PHI over 9.5 points",
-          "outcome": "Philadelphia Eagles",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 9.5",
-          "bid": 0.8,
-          "ask": 0.84,
-          "spread": 0.04,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:25.734600+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:01.270002+00:00",
           "quote_warning": null
         },
         {
@@ -1114,7 +1082,23 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:25.795508+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:11.323267+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-pit-phi-2026-11-22-tt-phi-9pt5",
+          "title": "PHI over 9.5 points",
+          "outcome": "Philadelphia Eagles",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 9.5",
+          "bid": 0.8,
+          "ask": 0.83,
+          "spread": 0.03,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-20T08:35:11.340027+00:00",
           "quote_warning": null
         },
         {
@@ -1125,12 +1109,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 13.5",
-          "bid": 0.78,
+          "bid": 0.79,
           "ask": 0.83,
-          "spread": 0.05,
+          "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:25.857531+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:11.360689+00:00",
           "quote_warning": null
         },
         {
@@ -1146,7 +1130,7 @@
           "spread": 0.2,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:33.979960+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:21.414681+00:00",
           "quote_warning": null
         },
         {
@@ -1162,7 +1146,7 @@
           "spread": 0.2,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:34.097885+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:21.443806+00:00",
           "quote_warning": null
         },
         {
@@ -1173,13 +1157,13 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 5.5",
-          "bid": 0.63,
-          "ask": 0.83,
-          "spread": 0.2,
+          "bid": null,
+          "ask": null,
+          "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:34.261177+00:00",
-          "quote_warning": null
+          "quote_checked_utc": "2026-11-20T08:35:21.483152+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
         },
         {
           "slug": "tsc-nfl-pit-phi-2026-11-22-tt2h-pit-6pt5",
@@ -1194,7 +1178,7 @@
           "spread": 0.2,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:34.324162+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:29.531765+00:00",
           "quote_warning": null
         },
         {
@@ -1210,23 +1194,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:42.563555+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-pit-phi-2026-11-22-ryd-ricdow-gte20",
-          "title": "Rico Dowdle 20+ Rush Yds",
-          "outcome": "Pittsburgh Steelers",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "20",
-          "bid": 0.52,
-          "ask": 0.82,
-          "spread": 0.3,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:42.687888+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:31.561272+00:00",
           "quote_warning": null
         },
         {
@@ -1242,7 +1210,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:50.876694+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:31.587718+00:00",
           "quote_warning": null
         },
         {
@@ -1258,7 +1226,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:50.938815+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:31.604807+00:00",
           "quote_warning": null
         },
         {
@@ -1269,12 +1237,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "0.5",
-          "bid": 0.74,
+          "bid": 0.73,
           "ask": 0.81,
-          "spread": 0.07,
+          "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:51.127915+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:39.649667+00:00",
           "quote_warning": null
         },
         {
@@ -1290,7 +1258,39 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-20T07:20:51.303193+00:00",
+          "quote_checked_utc": "2026-11-20T08:35:39.668085+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-pit-phi-2026-11-22-pos-4pt5",
+          "title": "PHI -4.5",
+          "outcome": "Pittsburgh Steelers",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 4.5 (check sign)",
+          "bid": 0.775,
+          "ask": 0.79,
+          "spread": 0.015,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-20T08:35:49.724720+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-pit-phi-2026-11-22-ratt-jaywar-gte12",
+          "title": "Jaylen Warren 12+ Rush Att",
+          "outcome": "Pittsburgh Steelers",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "12",
+          "bid": 0.5,
+          "ask": 0.79,
+          "spread": 0.29,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-20T08:35:49.742698+00:00",
           "quote_warning": null
         }
       ],
