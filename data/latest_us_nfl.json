@@ -1,7 +1,7 @@
 {
   "source": "Polymarket US (polymarket.us) \u2014 official public SDK",
   "exchange": "polymarket_us",
-  "fetched_utc": "2026-11-26T08:53:49.451695+00:00",
+  "fetched_utc": "2026-11-26T09:55:57.885545+00:00",
   "quote_count": 80,
   "games_count": 1,
   "events_considered": 6,
@@ -21,12 +21,12 @@
           "side_source": "marketSides.long.team",
           "type": "Moneyline",
           "line": "Winner",
-          "bid": 0.5125,
-          "ask": 0.515,
-          "spread": 0.0025,
+          "bid": 0.515,
+          "ask": 0.52,
+          "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:29.248779+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:27.692207+00:00",
           "quote_warning": null
         },
         {
@@ -42,7 +42,7 @@
           "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:29.261782+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:27.748123+00:00",
           "quote_warning": null
         },
         {
@@ -58,23 +58,23 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:29.275888+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:27.803645+00:00",
           "quote_warning": null
         },
         {
-          "slug": "astatc-nfl-chi-det-2026-11-26-ryd-dswi-gte10",
-          "title": "D'Andre Swift 10+ Rush Yds",
-          "outcome": "Chicago Bears",
+          "slug": "astatc-nfl-chi-det-2026-11-26-pyd-jargof-gte175",
+          "title": "Jared Goff 175+ Pass Yds",
+          "outcome": "Detroit Lions",
           "side_verified": true,
           "side_source": "marketSides.long.team",
           "type": "Props & other",
-          "line": "10",
-          "bid": 0.7,
-          "ask": 0.99,
-          "spread": 0.29,
+          "line": "175",
+          "bid": 0.82,
+          "ask": null,
+          "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:29.293748+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:27.860462+00:00",
           "quote_warning": null
         },
         {
@@ -90,7 +90,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:29.308607+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:27.913059+00:00",
           "quote_warning": null
         },
         {
@@ -106,7 +106,7 @@
           "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:29.325991+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:27.967682+00:00",
           "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
         },
         {
@@ -122,7 +122,7 @@
           "spread": 0.09,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:39.378027+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:37.019468+00:00",
           "quote_warning": null
         },
         {
@@ -138,7 +138,7 @@
           "spread": 0.015,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:39.398494+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:37.076310+00:00",
           "quote_warning": null
         },
         {
@@ -154,7 +154,7 @@
           "spread": 0.025,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:39.419028+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:37.132828+00:00",
           "quote_warning": null
         },
         {
@@ -170,7 +170,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:39.437179+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:37.180633+00:00",
           "quote_warning": null
         },
         {
@@ -186,7 +186,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:39.455707+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:37.237406+00:00",
           "quote_warning": null
         },
         {
@@ -202,7 +202,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:39.474031+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:45.328068+00:00",
           "quote_warning": null
         },
         {
@@ -218,7 +218,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:49.532554+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:45.391614+00:00",
           "quote_warning": null
         },
         {
@@ -229,12 +229,28 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "10",
+          "bid": 0.82,
+          "ask": 0.98,
+          "spread": 0.16,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-26T09:52:45.446828+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-chi-det-2026-11-26-ryd-dswi-gte10",
+          "title": "D'Andre Swift 10+ Rush Yds",
+          "outcome": "Chicago Bears",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "10",
           "bid": 0.73,
           "ask": 0.98,
           "spread": 0.25,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:49.545753+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:55.546254+00:00",
           "quote_warning": null
         },
         {
@@ -250,7 +266,7 @@
           "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:49.559402+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:55.603409+00:00",
           "quote_warning": null
         },
         {
@@ -266,7 +282,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:49.575336+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:55.654447+00:00",
           "quote_warning": null
         },
         {
@@ -282,7 +298,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:49.593817+00:00",
+          "quote_checked_utc": "2026-11-26T09:52:55.708873+00:00",
           "quote_warning": null
         },
         {
@@ -298,7 +314,7 @@
           "spread": 0.43,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:59.656081+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:05.796754+00:00",
           "quote_warning": null
         },
         {
@@ -314,23 +330,7 @@
           "spread": 0.27,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:59.669914+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-chi-det-2026-11-26-recyd-romodu-gte10",
-          "title": "Rome Odunze 10+ Rec Yds",
-          "outcome": "Chicago Bears",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "10",
-          "bid": 0.78,
-          "ask": 0.97,
-          "spread": 0.19,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:59.687912+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:05.847449+00:00",
           "quote_warning": null
         },
         {
@@ -341,12 +341,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 1.5",
-          "bid": 0.87,
+          "bid": 0.85,
           "ask": 0.97,
-          "spread": 0.1,
+          "spread": 0.12,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:59.705694+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:05.901420+00:00",
           "quote_warning": null
         },
         {
@@ -362,7 +362,7 @@
           "spread": 0.12,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:50:59.723638+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:15.996839+00:00",
           "quote_warning": null
         },
         {
@@ -378,7 +378,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:09.786694+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:16.051085+00:00",
           "quote_warning": null
         },
         {
@@ -394,7 +394,23 @@
           "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:09.802242+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:16.098472+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-chi-det-2026-11-26-pos-19pt5",
+          "title": "DET -19.5",
+          "outcome": "Chicago Bears",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 19.5 (check sign)",
+          "bid": 0.93,
+          "ask": 0.96,
+          "spread": 0.03,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-26T09:53:16.152188+00:00",
           "quote_warning": null
         },
         {
@@ -410,7 +426,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:09.838257+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:26.250778+00:00",
           "quote_warning": null
         },
         {
@@ -421,12 +437,28 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "10",
-          "bid": 0.85,
+          "bid": 0.81,
           "ask": 0.96,
-          "spread": 0.11,
+          "spread": 0.15,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:09.853451+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:26.300215+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-chi-det-2026-11-26-tfg-chi-0pt5",
+          "title": "CHI over 0.5 field goals",
+          "outcome": "Chicago Bears",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "0.5",
+          "bid": 0.46,
+          "ask": 0.96,
+          "spread": 0.5,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-26T09:53:26.351999+00:00",
           "quote_warning": null
         },
         {
@@ -442,39 +474,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:09.867510+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-chi-det-2026-11-26-tt-det-13pt5",
-          "title": "DET over 13.5 points",
-          "outcome": "Detroit Lions",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 13.5",
-          "bid": 0.91,
-          "ask": 0.96,
-          "spread": 0.05,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:19.928281+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "asc-nfl-chi-det-2026-11-26-pos-19pt5",
-          "title": "DET -19.5",
-          "outcome": "Chicago Bears",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Spread",
-          "line": "Handicap 19.5 (check sign)",
-          "bid": 0.93,
-          "ask": 0.955,
-          "spread": 0.025,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:19.946870+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:26.401118+00:00",
           "quote_warning": null
         },
         {
@@ -490,7 +490,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:19.960829+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:34.502893+00:00",
           "quote_warning": null
         },
         {
@@ -506,7 +506,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:19.973994+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:34.548930+00:00",
           "quote_warning": null
         },
         {
@@ -517,13 +517,13 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 14.5",
-          "bid": null,
-          "ask": null,
-          "spread": null,
+          "bid": 0.92,
+          "ask": 0.95,
+          "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:19.993292+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+          "quote_checked_utc": "2026-11-26T09:53:34.600097+00:00",
+          "quote_warning": null
         },
         {
           "slug": "asc-nfl-chi-det-2026-11-26-pos-17pt5",
@@ -538,7 +538,7 @@
           "spread": 0.025,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:28.048171+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:44.697695+00:00",
           "quote_warning": null
         },
         {
@@ -554,7 +554,23 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:30.073437+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:44.754518+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-chi-det-2026-11-26-tt-det-13pt5",
+          "title": "DET over 13.5 points",
+          "outcome": "Detroit Lions",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 13.5",
+          "bid": 0.93,
+          "ask": 0.94,
+          "spread": 0.01,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-26T09:53:44.804595+00:00",
           "quote_warning": null
         },
         {
@@ -570,7 +586,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:30.090220+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:44.859198+00:00",
           "quote_warning": null
         },
         {
@@ -586,7 +602,23 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:30.106965+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:54.948908+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-chi-det-2026-11-26-recyd-romodu-gte10",
+          "title": "Rome Odunze 10+ Rec Yds",
+          "outcome": "Chicago Bears",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "10",
+          "bid": 0.74,
+          "ask": 0.93,
+          "spread": 0.19,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-26T09:53:54.995838+00:00",
           "quote_warning": null
         },
         {
@@ -602,7 +634,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:30.132007+00:00",
+          "quote_checked_utc": "2026-11-26T09:53:55.052768+00:00",
           "quote_warning": null
         },
         {
@@ -613,13 +645,13 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 16.5 (check sign)",
-          "bid": null,
-          "ask": null,
-          "spread": null,
+          "bid": 0.91,
+          "ask": 0.92,
+          "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:30.157681+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+          "quote_checked_utc": "2026-11-26T09:54:05.147168+00:00",
+          "quote_warning": null
         },
         {
           "slug": "astatc-nfl-chi-det-2026-11-26-recyd-lutbur-gte20",
@@ -629,12 +661,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "20",
-          "bid": 0.77,
+          "bid": 0.78,
           "ask": 0.92,
-          "spread": 0.15,
+          "spread": 0.14,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:46.226066+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:05.202909+00:00",
           "quote_warning": null
         },
         {
@@ -650,7 +682,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:48.250813+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:05.256873+00:00",
           "quote_warning": null
         },
         {
@@ -666,7 +698,23 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:48.269495+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:05.312428+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-chi-det-2026-11-26-rec-dswi-gte1",
+          "title": "D'Andre Swift 1+ Rec",
+          "outcome": "Chicago Bears",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "1",
+          "bid": 0.69,
+          "ask": 0.91,
+          "spread": 0.22,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-26T09:54:13.402952+00:00",
           "quote_warning": null
         },
         {
@@ -682,7 +730,7 @@
           "spread": 0.31,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:48.283122+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:13.450834+00:00",
           "quote_warning": null
         },
         {
@@ -698,7 +746,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:48.322929+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:13.507642+00:00",
           "quote_warning": null
         },
         {
@@ -714,23 +762,23 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:56.364623+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:23.611321+00:00",
           "quote_warning": null
         },
         {
-          "slug": "astatc-nfl-chi-det-2026-11-26-ptd-jargof-gte1",
-          "title": "Jared Goff 1+ Pass TD",
-          "outcome": "Detroit Lions",
+          "slug": "astatc-nfl-chi-det-2026-11-26-ptd-calewil-gte1",
+          "title": "Caleb Williams 1+ Pass TD",
+          "outcome": "Chicago Bears",
           "side_verified": true,
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "1",
-          "bid": 0.89,
+          "bid": 0.87,
           "ask": 0.9,
-          "spread": 0.01,
+          "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:56.383438+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:23.683174+00:00",
           "quote_warning": null
         },
         {
@@ -746,7 +794,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:56.401265+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:23.731510+00:00",
           "quote_warning": null
         },
         {
@@ -762,7 +810,23 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:51:56.414309+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:31.811508+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-chi-det-2026-11-26-rec-lutbur-gte3",
+          "title": "Luther Burden III 3+ Rec",
+          "outcome": "Chicago Bears",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "3",
+          "bid": 0.83,
+          "ask": 0.89,
+          "spread": 0.06,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-26T09:54:31.864600+00:00",
           "quote_warning": null
         },
         {
@@ -773,12 +837,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "20",
-          "bid": 0.71,
+          "bid": 0.78,
           "ask": 0.9,
-          "spread": 0.19,
+          "spread": 0.12,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:04.459260+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:31.912591+00:00",
           "quote_warning": null
         },
         {
@@ -794,23 +858,23 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:04.478663+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:42.030528+00:00",
           "quote_warning": null
         },
         {
-          "slug": "astatc-nfl-chi-det-2026-11-26-ptd-calewil-gte1",
-          "title": "Caleb Williams 1+ Pass TD",
-          "outcome": "Chicago Bears",
+          "slug": "astatc-nfl-chi-det-2026-11-26-ptd-jargof-gte1",
+          "title": "Jared Goff 1+ Pass TD",
+          "outcome": "Detroit Lions",
           "side_verified": true,
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "1",
-          "bid": 0.86,
+          "bid": 0.88,
           "ask": 0.89,
-          "spread": 0.03,
+          "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:04.497862+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:42.086748+00:00",
           "quote_warning": null
         },
         {
@@ -826,23 +890,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:12.542324+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-chi-det-2026-11-26-ryd-kylmon-gte10",
-          "title": "Kyle Monangai 10+ Rush Yds",
-          "outcome": "Chicago Bears",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "10",
-          "bid": 0.71,
-          "ask": 0.89,
-          "spread": 0.18,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:12.555207+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:42.138930+00:00",
           "quote_warning": null
         },
         {
@@ -858,7 +906,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:12.568586+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:52.250125+00:00",
           "quote_warning": null
         },
         {
@@ -874,7 +922,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:22.629910+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:52.304472+00:00",
           "quote_warning": null
         },
         {
@@ -890,7 +938,7 @@
           "spread": 0.015,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:22.644087+00:00",
+          "quote_checked_utc": "2026-11-26T09:54:52.359789+00:00",
           "quote_warning": null
         },
         {
@@ -906,7 +954,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:22.657394+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:00.445934+00:00",
           "quote_warning": null
         },
         {
@@ -917,28 +965,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 17.5",
-          "bid": 0.85,
+          "bid": 0.84,
           "ask": 0.88,
-          "spread": 0.03,
+          "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:32.712483+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-chi-det-2026-11-26-rec-dswi-gte1",
-          "title": "D'Andre Swift 1+ Rec",
-          "outcome": "Chicago Bears",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "1",
-          "bid": 0.66,
-          "ask": 0.9,
-          "spread": 0.24,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:32.725881+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:00.489956+00:00",
           "quote_warning": null
         },
         {
@@ -954,23 +986,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:32.739582+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-chi-det-2026-11-26-rec-lutbur-gte3",
-          "title": "Luther Burden III 3+ Rec",
-          "outcome": "Chicago Bears",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "3",
-          "bid": 0.83,
-          "ask": 0.87,
-          "spread": 0.04,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:42.797901+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:10.587229+00:00",
           "quote_warning": null
         },
         {
@@ -986,7 +1002,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:42.813614+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:10.643229+00:00",
           "quote_warning": null
         },
         {
@@ -997,12 +1013,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "20",
-          "bid": 0.72,
+          "bid": 0.75,
           "ask": 0.87,
-          "spread": 0.15,
+          "spread": 0.12,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:42.828252+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:10.692145+00:00",
           "quote_warning": null
         },
         {
@@ -1018,7 +1034,23 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:52.886988+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:18.771543+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-chi-det-2026-11-26-tt-det-17pt5",
+          "title": "DET over 17.5 points",
+          "outcome": "Detroit Lions",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 17.5",
+          "bid": 0.84,
+          "ask": 0.87,
+          "spread": 0.03,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-26T09:55:18.824577+00:00",
           "quote_warning": null
         },
         {
@@ -1034,7 +1066,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:52.908460+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:28.976931+00:00",
           "quote_warning": null
         },
         {
@@ -1045,13 +1077,13 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 9.5 (check sign)",
-          "bid": null,
-          "ask": null,
-          "spread": null,
+          "bid": 0.85,
+          "ask": 0.86,
+          "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:52:52.922167+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+          "quote_checked_utc": "2026-11-26T09:55:29.044722+00:00",
+          "quote_warning": null
         },
         {
           "slug": "astatc-nfl-chi-det-2026-11-26-rec-romodu-gte2",
@@ -1061,12 +1093,28 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "2",
-          "bid": 0.82,
+          "bid": 0.81,
           "ask": 0.86,
-          "spread": 0.04,
+          "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:00.975669+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:29.098791+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-chi-det-2026-11-26-ryd-kylmon-gte10",
+          "title": "Kyle Monangai 10+ Rush Yds",
+          "outcome": "Chicago Bears",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "10",
+          "bid": 0.73,
+          "ask": 0.89,
+          "spread": 0.16,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-26T09:55:29.152241+00:00",
           "quote_warning": null
         },
         {
@@ -1082,7 +1130,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:03.006413+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:29.198146+00:00",
           "quote_warning": null
         },
         {
@@ -1098,7 +1146,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:03.023604+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:39.287723+00:00",
           "quote_warning": null
         },
         {
@@ -1114,7 +1162,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:03.040888+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:39.356385+00:00",
           "quote_warning": null
         },
         {
@@ -1130,23 +1178,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:13.104591+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-chi-det-2026-11-26-tt-det-17pt5",
-          "title": "DET over 17.5 points",
-          "outcome": "Detroit Lions",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 17.5",
-          "bid": 0.84,
-          "ask": 0.86,
-          "spread": 0.02,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:13.122438+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:39.406002+00:00",
           "quote_warning": null
         },
         {
@@ -1162,7 +1194,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:13.136210+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:39.457487+00:00",
           "quote_warning": null
         },
         {
@@ -1178,7 +1210,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:21.186105+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:39.513844+00:00",
           "quote_warning": null
         },
         {
@@ -1194,7 +1226,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:21.201638+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:47.594611+00:00",
           "quote_warning": null
         },
         {
@@ -1210,23 +1242,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:21.220104+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-chi-det-2026-11-26-recyd-lutbur-gte30",
-          "title": "Luther Burden III 30+ Rec Yds",
-          "outcome": "Chicago Bears",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "30",
-          "bid": 0.8,
-          "ask": 0.84,
-          "spread": 0.04,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:31.278480+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:47.648514+00:00",
           "quote_warning": null
         },
         {
@@ -1237,12 +1253,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "20",
-          "bid": 0.79,
+          "bid": 0.77,
           "ask": 0.84,
-          "spread": 0.05,
+          "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:31.308428+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:47.693161+00:00",
           "quote_warning": null
         },
         {
@@ -1258,7 +1274,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:31.325458+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:47.739151+00:00",
           "quote_warning": null
         },
         {
@@ -1274,27 +1290,11 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:39.376469+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-chi-det-2026-11-26-patt-calewil-gte28",
-          "title": "Caleb Williams 28+ Pass Att",
-          "outcome": "Chicago Bears",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "28",
-          "bid": 0.81,
-          "ask": 0.83,
-          "spread": 0.02,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-26T08:53:39.390246+00:00",
+          "quote_checked_utc": "2026-11-26T09:55:57.828478+00:00",
           "quote_warning": null
         }
       ],
-      "discovered_market_count": 732
+      "discovered_market_count": 733
     }
   ],
   "execution_warning": "Read-only data; refresh the exact market before trading. No order execution."
