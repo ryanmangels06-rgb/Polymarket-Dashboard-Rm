@@ -1,7 +1,7 @@
 {
   "source": "Polymarket US (polymarket.us) \u2014 official public SDK",
   "exchange": "polymarket_us",
-  "fetched_utc": "2026-11-27T16:54:41.701210+00:00",
+  "fetched_utc": "2026-11-27T17:45:27.753768+00:00",
   "quote_count": 80,
   "games_count": 1,
   "events_considered": 6,
@@ -26,7 +26,7 @@
           "spread": 0.0025,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:17.750906+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:31.312321+00:00",
           "quote_warning": null
         },
         {
@@ -42,7 +42,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:17.773418+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:31.340896+00:00",
           "quote_warning": null
         },
         {
@@ -58,7 +58,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:17.790392+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:31.365006+00:00",
           "quote_warning": null
         },
         {
@@ -74,7 +74,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:17.812366+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:31.382923+00:00",
           "quote_warning": null
         },
         {
@@ -90,7 +90,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:17.835255+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:31.401827+00:00",
           "quote_warning": null
         },
         {
@@ -106,7 +106,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:17.856130+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:31.424537+00:00",
           "quote_warning": null
         },
         {
@@ -122,7 +122,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:27.914828+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:41.488508+00:00",
           "quote_warning": null
         },
         {
@@ -138,7 +138,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:27.930310+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:49.535634+00:00",
           "quote_warning": null
         },
         {
@@ -154,7 +154,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:27.947130+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:49.554491+00:00",
           "quote_warning": null
         },
         {
@@ -170,7 +170,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:27.965322+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:49.576645+00:00",
           "quote_warning": null
         },
         {
@@ -186,7 +186,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:38.016238+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:49.601112+00:00",
           "quote_warning": null
         },
         {
@@ -202,7 +202,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:38.033207+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:57.643692+00:00",
           "quote_warning": null
         },
         {
@@ -218,7 +218,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:38.047829+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:57.657973+00:00",
           "quote_warning": null
         },
         {
@@ -234,7 +234,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:38.059257+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:57.670792+00:00",
           "quote_warning": null
         },
         {
@@ -250,7 +250,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:38.082394+00:00",
+          "quote_checked_utc": "2026-11-27T17:42:57.688540+00:00",
           "quote_warning": null
         },
         {
@@ -266,7 +266,23 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:48.121842+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:05.732643+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-den-pit-2026-11-27-total-14pt5",
+          "title": "Over 14.5 points",
+          "outcome": "Over",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 14.5",
+          "bid": 0.985,
+          "ask": 0.99,
+          "spread": 0.005,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-27T17:43:05.752544+00:00",
           "quote_warning": null
         },
         {
@@ -282,7 +298,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:48.135737+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:05.773567+00:00",
           "quote_warning": null
         },
         {
@@ -293,28 +309,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 27.5 (check sign)",
-          "bid": 0.975,
-          "ask": 0.985,
-          "spread": 0.01,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:48.150160+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-den-pit-2026-11-27-total-14pt5",
-          "title": "Over 14.5 points",
-          "outcome": "Over",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 14.5",
           "bid": 0.98,
           "ask": 0.985,
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:48.160977+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:05.789607+00:00",
           "quote_warning": null
         },
         {
@@ -330,7 +330,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:58.209757+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:05.808704+00:00",
           "quote_warning": null
         },
         {
@@ -346,7 +346,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:58.224463+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:05.826447+00:00",
           "quote_warning": null
         },
         {
@@ -362,7 +362,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:58.241603+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:05.848180+00:00",
           "quote_warning": null
         },
         {
@@ -378,7 +378,7 @@
           "spread": 0.16,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:58.254242+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:05.864053+00:00",
           "quote_warning": null
         },
         {
@@ -394,7 +394,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:51:58.272352+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:05.884109+00:00",
           "quote_warning": null
         },
         {
@@ -410,7 +410,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:08.311465+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:21.971493+00:00",
           "quote_warning": null
         },
         {
@@ -426,7 +426,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:08.321895+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:21.996602+00:00",
           "quote_warning": null
         },
         {
@@ -442,23 +442,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:08.334676+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "asc-nfl-den-pit-2026-11-27-pos-14pt5",
-          "title": "PIT -14.5",
-          "outcome": "Denver Broncos",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Spread",
-          "line": "Handicap 14.5 (check sign)",
-          "bid": 0.955,
-          "ask": 0.96,
-          "spread": 0.005,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:08.357338+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:22.015483+00:00",
           "quote_warning": null
         },
         {
@@ -474,7 +458,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:16.396247+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:22.037675+00:00",
           "quote_warning": null
         },
         {
@@ -490,7 +474,23 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:16.412645+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:22.062085+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-den-pit-2026-11-27-pos-14pt5",
+          "title": "PIT -14.5",
+          "outcome": "Denver Broncos",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 14.5 (check sign)",
+          "bid": 0.95,
+          "ask": 0.955,
+          "spread": 0.005,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-27T17:43:38.149563+00:00",
           "quote_warning": null
         },
         {
@@ -506,7 +506,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:16.432416+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:38.180498+00:00",
           "quote_warning": null
         },
         {
@@ -522,7 +522,23 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:16.443476+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:38.202951+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-den-pit-2026-11-27-tt-den-9pt5",
+          "title": "DEN over 9.5 points",
+          "outcome": "Denver Broncos",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 9.5",
+          "bid": 0.92,
+          "ask": 0.94,
+          "spread": 0.02,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-27T17:43:38.227578+00:00",
           "quote_warning": null
         },
         {
@@ -533,12 +549,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 20.5",
-          "bid": 0.925,
+          "bid": 0.93,
           "ask": 0.935,
-          "spread": 0.01,
+          "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:24.481480+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:46.272462+00:00",
           "quote_warning": null
         },
         {
@@ -554,7 +570,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:24.494836+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:46.290963+00:00",
           "quote_warning": null
         },
         {
@@ -570,23 +586,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:24.516137+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-den-pit-2026-11-27-tt-den-9pt5",
-          "title": "DEN over 9.5 points",
-          "outcome": "Denver Broncos",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 9.5",
-          "bid": 0.92,
-          "ask": 0.93,
-          "spread": 0.01,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:32.557867+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:46.313232+00:00",
           "quote_warning": null
         },
         {
@@ -597,13 +597,13 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 10.5 (check sign)",
-          "bid": 0.92,
-          "ask": 0.925,
-          "spread": 0.005,
+          "bid": null,
+          "ask": null,
+          "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:32.574142+00:00",
-          "quote_warning": null
+          "quote_checked_utc": "2026-11-27T17:43:46.336158+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
         },
         {
           "slug": "asc-nfl-den-pit-2026-11-27-2h-pos-8pt5",
@@ -618,7 +618,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:32.587222+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:56.386347+00:00",
           "quote_warning": null
         },
         {
@@ -634,7 +634,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:42.635839+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:56.402696+00:00",
           "quote_warning": null
         },
         {
@@ -645,12 +645,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "1",
-          "bid": 0.87,
+          "bid": 0.91,
           "ask": 0.92,
-          "spread": 0.05,
+          "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:42.647788+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:56.417406+00:00",
           "quote_warning": null
         },
         {
@@ -666,7 +666,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:42.660313+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:56.435561+00:00",
           "quote_warning": null
         },
         {
@@ -682,7 +682,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:52.713089+00:00",
+          "quote_checked_utc": "2026-11-27T17:43:56.448236+00:00",
           "quote_warning": null
         },
         {
@@ -698,7 +698,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:52.730123+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:06.504759+00:00",
           "quote_warning": null
         },
         {
@@ -714,7 +714,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:52:52.746387+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:06.524893+00:00",
           "quote_warning": null
         },
         {
@@ -730,7 +730,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:02.787595+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:06.540796+00:00",
           "quote_warning": null
         },
         {
@@ -746,7 +746,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:02.806280+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:06.560391+00:00",
           "quote_warning": null
         },
         {
@@ -762,7 +762,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:02.816683+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:16.624847+00:00",
           "quote_warning": null
         },
         {
@@ -778,7 +778,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:12.869956+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:16.651526+00:00",
           "quote_warning": null
         },
         {
@@ -794,7 +794,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:12.881626+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:16.675261+00:00",
           "quote_warning": null
         },
         {
@@ -810,7 +810,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:12.927523+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:16.694258+00:00",
           "quote_warning": null
         },
         {
@@ -826,7 +826,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:22.966379+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:26.752457+00:00",
           "quote_warning": null
         },
         {
@@ -842,7 +842,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:22.977100+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:26.771377+00:00",
           "quote_warning": null
         },
         {
@@ -858,7 +858,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:22.992600+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:26.788220+00:00",
           "quote_warning": null
         },
         {
@@ -874,7 +874,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:31.028164+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:26.808194+00:00",
           "quote_warning": null
         },
         {
@@ -890,39 +890,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:31.042859+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-den-pit-2026-11-27-total-23pt5",
-          "title": "Over 23.5 points",
-          "outcome": "Over",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 23.5",
-          "bid": 0.87,
-          "ask": 0.875,
-          "spread": 0.005,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:31.065463+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-den-pit-2026-11-27-pyd-masrud-gte100",
-          "title": "Mason Rudolph 100+ Pass Yds",
-          "outcome": "Pittsburgh Steelers",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "100",
-          "bid": 0.86,
-          "ask": 0.87,
-          "spread": 0.01,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:39.101912+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:36.865811+00:00",
           "quote_warning": null
         },
         {
@@ -938,7 +906,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:39.115919+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:36.889769+00:00",
           "quote_warning": null
         },
         {
@@ -954,7 +922,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:47.152570+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:36.908973+00:00",
           "quote_warning": null
         },
         {
@@ -970,7 +938,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:47.167749+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:36.926169+00:00",
           "quote_warning": null
         },
         {
@@ -986,7 +954,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:47.178965+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:46.998541+00:00",
           "quote_warning": null
         },
         {
@@ -1002,7 +970,23 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:47.194857+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:47.027328+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-den-pit-2026-11-27-total-23pt5",
+          "title": "Over 23.5 points",
+          "outcome": "Over",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 23.5",
+          "bid": 0.865,
+          "ask": 0.87,
+          "spread": 0.005,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-27T17:44:47.055173+00:00",
           "quote_warning": null
         },
         {
@@ -1018,7 +1002,23 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:55.229810+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:47.080819+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-den-pit-2026-11-27-tfg-den-0pt5",
+          "title": "DEN over 0.5 field goals",
+          "outcome": "Denver Broncos",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "0.5",
+          "bid": 0.85,
+          "ask": 0.86,
+          "spread": 0.01,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-27T17:44:57.142223+00:00",
           "quote_warning": null
         },
         {
@@ -1034,7 +1034,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:55.247983+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:57.161311+00:00",
           "quote_warning": null
         },
         {
@@ -1050,8 +1050,24 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:53:55.265595+00:00",
+          "quote_checked_utc": "2026-11-27T17:44:57.181294+00:00",
           "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-den-pit-2026-11-27-pyd-masrud-gte100",
+          "title": "Mason Rudolph 100+ Pass Yds",
+          "outcome": "Pittsburgh Steelers",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "100",
+          "bid": null,
+          "ask": null,
+          "spread": null,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-27T17:44:57.202015+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
         },
         {
           "slug": "astatc-nfl-den-pit-2026-11-27-rec-joncol-gte2",
@@ -1066,23 +1082,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:05.316592+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-den-pit-2026-11-27-tfg-den-0pt5",
-          "title": "DEN over 0.5 field goals",
-          "outcome": "Denver Broncos",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "0.5",
-          "bid": 0.84,
-          "ask": 0.86,
-          "spread": 0.02,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:05.335432+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:07.266982+00:00",
           "quote_warning": null
         },
         {
@@ -1098,7 +1098,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:05.365651+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:07.292641+00:00",
           "quote_warning": null
         },
         {
@@ -1114,7 +1114,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:05.385634+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:07.334167+00:00",
           "quote_warning": null
         },
         {
@@ -1130,7 +1130,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:13.421267+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:07.362751+00:00",
           "quote_warning": null
         },
         {
@@ -1141,13 +1141,13 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 5.5",
-          "bid": 0.83,
-          "ask": 0.84,
-          "spread": 0.01,
+          "bid": null,
+          "ask": null,
+          "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:13.436669+00:00",
-          "quote_warning": null
+          "quote_checked_utc": "2026-11-27T17:45:07.396244+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
         },
         {
           "slug": "asc-nfl-den-pit-2026-11-27-1h-pos-6pt5",
@@ -1162,7 +1162,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:13.451767+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:15.519270+00:00",
           "quote_warning": null
         },
         {
@@ -1178,7 +1178,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:21.488565+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:17.551095+00:00",
           "quote_warning": null
         },
         {
@@ -1194,7 +1194,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:21.502260+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:17.568895+00:00",
           "quote_warning": null
         },
         {
@@ -1210,7 +1210,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:21.518860+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:17.589203+00:00",
           "quote_warning": null
         },
         {
@@ -1221,12 +1221,28 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 13.5",
-          "bid": 0.81,
-          "ask": 0.82,
-          "spread": 0.01,
+          "bid": null,
+          "ask": null,
+          "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:31.565704+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:17.622012+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+        },
+        {
+          "slug": "asc-nfl-den-pit-2026-11-27-pos-4pt5",
+          "title": "PIT -4.5",
+          "outcome": "Denver Broncos",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 4.5 (check sign)",
+          "bid": 0.81,
+          "ask": 0.815,
+          "spread": 0.005,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-27T17:45:27.688678+00:00",
           "quote_warning": null
         },
         {
@@ -1242,7 +1258,7 @@
           "spread": 0.005,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:31.587072+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:27.707327+00:00",
           "quote_warning": null
         },
         {
@@ -1258,7 +1274,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:31.603691+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:27.725350+00:00",
           "quote_warning": null
         },
         {
@@ -1274,27 +1290,11 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:41.655313+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "asc-nfl-den-pit-2026-11-27-pos-4pt5",
-          "title": "PIT -4.5",
-          "outcome": "Denver Broncos",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Spread",
-          "line": "Handicap 4.5 (check sign)",
-          "bid": 0.805,
-          "ask": 0.81,
-          "spread": 0.005,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T16:54:41.673314+00:00",
+          "quote_checked_utc": "2026-11-27T17:45:27.739928+00:00",
           "quote_warning": null
         }
       ],
-      "discovered_market_count": 745
+      "discovered_market_count": 746
     }
   ],
   "execution_warning": "Read-only data; refresh the exact market before trading. No order execution."
