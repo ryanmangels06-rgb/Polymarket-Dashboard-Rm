@@ -1,7 +1,7 @@
 {
   "source": "Polymarket US (polymarket.us) \u2014 official public SDK",
   "exchange": "polymarket_us",
-  "fetched_utc": "2026-11-27T23:42:08.891444+00:00",
+  "fetched_utc": "2026-11-28T00:42:49.222785+00:00",
   "quote_count": 80,
   "games_count": 1,
   "events_considered": 6,
@@ -26,7 +26,7 @@
           "spread": 0.0025,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:31.406741+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:03.618458+00:00",
           "quote_warning": null
         },
         {
@@ -42,7 +42,7 @@
           "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:31.454956+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:03.669512+00:00",
           "quote_warning": null
         },
         {
@@ -58,7 +58,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:31.604007+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:03.731046+00:00",
           "quote_warning": null
         },
         {
@@ -69,12 +69,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 30.5 (check sign)",
-          "bid": 0.93,
+          "bid": 0.94,
           "ask": 0.99,
-          "spread": 0.06,
+          "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:31.727207+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:03.784284+00:00",
           "quote_warning": null
         },
         {
@@ -90,7 +90,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:31.819455+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:03.844486+00:00",
           "quote_warning": null
         },
         {
@@ -106,7 +106,7 @@
           "spread": 0.1,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:31.937654+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:03.901559+00:00",
           "quote_warning": null
         },
         {
@@ -122,7 +122,7 @@
           "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:42.106482+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:13.999362+00:00",
           "quote_warning": null
         },
         {
@@ -138,7 +138,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:52.277134+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:14.071375+00:00",
           "quote_warning": null
         },
         {
@@ -154,7 +154,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:52.425898+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:24.169073+00:00",
           "quote_warning": null
         },
         {
@@ -170,7 +170,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:52.537112+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:24.241059+00:00",
           "quote_warning": null
         },
         {
@@ -186,7 +186,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:52.624823+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:24.301059+00:00",
           "quote_warning": null
         },
         {
@@ -197,13 +197,13 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 41.5 (check sign)",
-          "bid": null,
-          "ask": null,
-          "spread": null,
+          "bid": 0.94,
+          "ask": 0.99,
+          "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:38:52.739243+00:00",
-          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
+          "quote_checked_utc": "2026-11-28T00:39:24.350598+00:00",
+          "quote_warning": null
         },
         {
           "slug": "asc-nfl-ten-jax-2026-11-29-pos-45pt5",
@@ -218,7 +218,7 @@
           "spread": 0.045,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:02.820727+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:32.438498+00:00",
           "quote_warning": null
         },
         {
@@ -229,12 +229,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 48.5 (check sign)",
-          "bid": 0.93,
+          "bid": 0.935,
           "ask": 0.99,
-          "spread": 0.06,
+          "spread": 0.055,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:02.907857+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:32.492738+00:00",
           "quote_warning": null
         },
         {
@@ -245,12 +245,28 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 49.5 (check sign)",
-          "bid": 0.93,
+          "bid": 0.935,
           "ask": 0.99,
-          "spread": 0.06,
+          "spread": 0.055,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:13.075894+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:42.586840+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-ten-jax-2026-11-29-pos-51pt5",
+          "title": "JAX -51.5",
+          "outcome": "Tennessee Titans",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 51.5 (check sign)",
+          "bid": 0.925,
+          "ask": 0.99,
+          "spread": 0.065,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-28T00:39:42.643050+00:00",
           "quote_warning": null
         },
         {
@@ -261,12 +277,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 54.5 (check sign)",
-          "bid": 0.92,
+          "bid": 0.925,
           "ask": 0.99,
-          "spread": 0.07,
+          "spread": 0.065,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:13.189401+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:42.695739+00:00",
           "quote_warning": null
         },
         {
@@ -277,12 +293,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 57.5 (check sign)",
-          "bid": 0.915,
+          "bid": 0.92,
           "ask": 0.99,
-          "spread": 0.075,
+          "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:13.335642+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:42.748327+00:00",
           "quote_warning": null
         },
         {
@@ -293,12 +309,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 60.5 (check sign)",
-          "bid": 0.885,
+          "bid": 0.915,
           "ask": 0.99,
-          "spread": 0.105,
+          "spread": 0.075,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:13.426220+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:52.847080+00:00",
           "quote_warning": null
         },
         {
@@ -309,12 +325,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "20",
-          "bid": 0.5,
+          "bid": 0.66,
           "ask": 0.99,
-          "spread": 0.49,
+          "spread": 0.33,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:13.549429+00:00",
+          "quote_checked_utc": "2026-11-28T00:39:52.899717+00:00",
           "quote_warning": null
         },
         {
@@ -330,7 +346,7 @@
           "spread": 0.035,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:23.725714+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:02.998864+00:00",
           "quote_warning": null
         },
         {
@@ -346,7 +362,7 @@
           "spread": 0.045,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:23.838369+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:03.043772+00:00",
           "quote_warning": null
         },
         {
@@ -362,7 +378,7 @@
           "spread": 0.045,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:33.983060+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:03.100233+00:00",
           "quote_warning": null
         },
         {
@@ -378,7 +394,7 @@
           "spread": 0.14,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:34.102023+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:03.156326+00:00",
           "quote_warning": null
         },
         {
@@ -389,12 +405,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "150",
-          "bid": 0.84,
+          "bid": 0.83,
           "ask": 0.98,
-          "spread": 0.14,
+          "spread": 0.15,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:34.214635+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:13.249248+00:00",
           "quote_warning": null
         },
         {
@@ -405,28 +421,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "10",
-          "bid": 0.77,
+          "bid": 0.8,
           "ask": 0.98,
-          "spread": 0.21,
+          "spread": 0.18,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:34.300945+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-ten-jax-2026-11-29-2q-2pt5",
-          "title": "Over 2.5 2Q",
-          "outcome": "Over",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 2.5",
-          "bid": 0.9,
-          "ask": 0.97,
-          "spread": 0.07,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:44.476630+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:13.321260+00:00",
           "quote_warning": null
         },
         {
@@ -437,12 +437,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 26.5",
-          "bid": 0.955,
-          "ask": 0.975,
-          "spread": 0.02,
+          "bid": 0.94,
+          "ask": 0.98,
+          "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:44.576737+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:13.382540+00:00",
           "quote_warning": null
         },
         {
@@ -453,12 +453,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 23.5 (check sign)",
-          "bid": 0.88,
+          "bid": 0.87,
           "ask": 0.97,
-          "spread": 0.09,
+          "spread": 0.1,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:44.679789+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:21.472971+00:00",
           "quote_warning": null
         },
         {
@@ -474,23 +474,23 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:54.823472+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:21.528489+00:00",
           "quote_warning": null
         },
         {
-          "slug": "astatc-nfl-ten-jax-2026-11-29-lrec-jakomey-gte20",
-          "title": "Jakobi Meyers 20+ Long Rec",
-          "outcome": "Jacksonville Jaguars",
+          "slug": "tsc-nfl-ten-jax-2026-11-29-2q-2pt5",
+          "title": "Over 2.5 2Q",
+          "outcome": "Over",
           "side_verified": true,
           "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "20",
-          "bid": null,
+          "type": "Total",
+          "line": "Total 2.5",
+          "bid": 0.91,
           "ask": 0.97,
-          "spread": null,
+          "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:54.949279+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:21.585975+00:00",
           "quote_warning": null
         },
         {
@@ -506,7 +506,7 @@
           "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:55.043047+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:31.682576+00:00",
           "quote_warning": null
         },
         {
@@ -517,12 +517,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 2.5",
-          "bid": 0.84,
+          "bid": 0.83,
           "ask": 0.97,
-          "spread": 0.13,
+          "spread": 0.14,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:39:55.164778+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:31.735727+00:00",
           "quote_warning": null
         },
         {
@@ -533,12 +533,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 19.5 (check sign)",
-          "bid": 0.87,
+          "bid": 0.88,
           "ask": 0.96,
-          "spread": 0.09,
+          "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:05.361847+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:31.796217+00:00",
           "quote_warning": null
         },
         {
@@ -554,23 +554,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:05.456281+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ten-jax-2026-11-29-pcmp-camwar-gte20",
-          "title": "Cam Ward 20+ Pass Comp",
-          "outcome": "Tennessee Titans",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "20",
-          "bid": null,
-          "ask": 0.96,
-          "spread": null,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:05.547900+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:39.900963+00:00",
           "quote_warning": null
         },
         {
@@ -581,28 +565,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "12",
-          "bid": null,
+          "bid": 0.57,
           "ask": 0.96,
-          "spread": null,
+          "spread": 0.39,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:15.737129+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ten-jax-2026-11-29-ratt-chrrod-gte16",
-          "title": "Chris Rodriguez Jr. 16+ Rush Att",
-          "outcome": "Jacksonville Jaguars",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "16",
-          "bid": null,
-          "ask": 0.96,
-          "spread": null,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:15.756051+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:39.957507+00:00",
           "quote_warning": null
         },
         {
@@ -613,12 +581,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "0.5",
-          "bid": 0.72,
+          "bid": 0.7,
           "ask": 0.96,
-          "spread": 0.24,
+          "spread": 0.26,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:15.810976+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:50.054552+00:00",
           "quote_warning": null
         },
         {
@@ -634,7 +602,7 @@
           "spread": 0.16,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:15.903008+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:50.118250+00:00",
           "quote_warning": null
         },
         {
@@ -650,7 +618,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:26.059626+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:50.175265+00:00",
           "quote_warning": null
         },
         {
@@ -666,7 +634,7 @@
           "spread": 0.045,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:26.169355+00:00",
+          "quote_checked_utc": "2026-11-28T00:40:50.230267+00:00",
           "quote_warning": null
         },
         {
@@ -677,13 +645,13 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 17.5",
-          "bid": 0.93,
-          "ask": 0.95,
-          "spread": 0.02,
+          "bid": null,
+          "ask": null,
+          "spread": null,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:26.281847+00:00",
-          "quote_warning": null
+          "quote_checked_utc": "2026-11-28T00:40:50.296549+00:00",
+          "quote_warning": "Quote unavailable: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
         },
         {
           "slug": "tsc-nfl-ten-jax-2026-11-29-total-29pt5",
@@ -693,12 +661,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 29.5",
-          "bid": 0.925,
+          "bid": 0.93,
           "ask": 0.945,
-          "spread": 0.02,
+          "spread": 0.015,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:26.367961+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:00.353293+00:00",
           "quote_warning": null
         },
         {
@@ -714,7 +682,7 @@
           "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:36.562781+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:08.428494+00:00",
           "quote_warning": null
         },
         {
@@ -730,7 +698,7 @@
           "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:36.675462+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:08.475871+00:00",
           "quote_warning": null
         },
         {
@@ -746,7 +714,7 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:36.795370+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:08.534018+00:00",
           "quote_warning": null
         },
         {
@@ -757,12 +725,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 2.5",
-          "bid": 0.87,
+          "bid": 0.85,
           "ask": 0.94,
-          "spread": 0.07,
+          "spread": 0.09,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:36.889080+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:08.591138+00:00",
           "quote_warning": null
         },
         {
@@ -778,7 +746,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:47.034127+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:18.792803+00:00",
           "quote_warning": null
         },
         {
@@ -789,44 +757,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "125",
-          "bid": 0.86,
-          "ask": 0.93,
-          "spread": 0.07,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:47.052403+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ten-jax-2026-11-29-ratt-tonpol-gte12",
-          "title": "Tony Pollard 12+ Rush Att",
-          "outcome": "Tennessee Titans",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "12",
-          "bid": 0.47,
-          "ask": 0.93,
-          "spread": 0.46,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:47.111601+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ten-jax-2026-11-29-patt-camwar-gte32",
-          "title": "Cam Ward 32+ Pass Att",
-          "outcome": "Tennessee Titans",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "32",
-          "bid": 0.46,
+          "bid": 0.87,
           "ask": 0.92,
-          "spread": 0.46,
+          "spread": 0.05,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:47.212523+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:18.850334+00:00",
           "quote_warning": null
         },
         {
@@ -837,12 +773,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "2",
-          "bid": 0.74,
+          "bid": 0.86,
           "ask": 0.92,
-          "spread": 0.18,
+          "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:57.410204+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:18.903530+00:00",
           "quote_warning": null
         },
         {
@@ -853,28 +789,12 @@
           "side_source": "marketSides.long.team",
           "type": "Total",
           "line": "Total 5.5",
-          "bid": 0.87,
+          "bid": 0.86,
           "ask": 0.92,
-          "spread": 0.05,
+          "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:57.526675+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-ten-jax-2026-11-29-total-32pt5",
-          "title": "Over 32.5 points",
-          "outcome": "Over",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 32.5",
-          "bid": 0.89,
-          "ask": 0.92,
-          "spread": 0.03,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:57.648156+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:18.958626+00:00",
           "quote_warning": null
         },
         {
@@ -890,7 +810,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:40:57.772788+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:19.020035+00:00",
           "quote_warning": null
         },
         {
@@ -901,12 +821,12 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 19.5 (check sign)",
-          "bid": 0.83,
+          "bid": 0.79,
           "ask": 0.91,
-          "spread": 0.08,
+          "spread": 0.12,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:05.929536+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:27.111509+00:00",
           "quote_warning": null
         },
         {
@@ -917,12 +837,28 @@
           "side_source": "marketSides.long.team",
           "type": "Spread",
           "line": "Handicap 16.5 (check sign)",
-          "bid": 0.84,
+          "bid": 0.83,
           "ask": 0.91,
-          "spread": 0.07,
+          "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:06.051061+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:27.167025+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-ten-jax-2026-11-29-total-32pt5",
+          "title": "Over 32.5 points",
+          "outcome": "Over",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 32.5",
+          "bid": 0.89,
+          "ask": 0.91,
+          "spread": 0.02,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-28T00:41:27.277427+00:00",
           "quote_warning": null
         },
         {
@@ -938,7 +874,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:06.160617+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:27.326075+00:00",
           "quote_warning": null
         },
         {
@@ -954,7 +890,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:06.296845+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:35.416613+00:00",
           "quote_warning": null
         },
         {
@@ -965,12 +901,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "3",
-          "bid": 0.67,
+          "bid": 0.83,
           "ask": 0.9,
-          "spread": 0.23,
+          "spread": 0.07,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:14.429118+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:35.480411+00:00",
           "quote_warning": null
         },
         {
@@ -981,12 +917,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "10",
-          "bid": 0.87,
+          "bid": 0.86,
           "ask": 0.9,
-          "spread": 0.03,
+          "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:14.519035+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:35.531956+00:00",
           "quote_warning": null
         },
         {
@@ -997,28 +933,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "20",
-          "bid": 0.8,
+          "bid": 0.82,
           "ask": 0.9,
-          "spread": 0.1,
+          "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:14.605924+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ten-jax-2026-11-29-recyd-jakomey-gte30",
-          "title": "Jakobi Meyers 30+ Rec Yds",
-          "outcome": "Jacksonville Jaguars",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "30",
-          "bid": 0.69,
-          "ask": 0.9,
-          "spread": 0.21,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:22.741222+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:43.624375+00:00",
           "quote_warning": null
         },
         {
@@ -1034,7 +954,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:22.830271+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:43.682316+00:00",
           "quote_warning": null
         },
         {
@@ -1050,7 +970,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:22.945236+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:43.739487+00:00",
           "quote_warning": null
         },
         {
@@ -1061,12 +981,44 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "2",
+          "bid": 0.83,
+          "ask": 0.89,
+          "spread": 0.06,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-28T00:41:53.840148+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-ten-jax-2026-11-29-recyd-jakomey-gte30",
+          "title": "Jakobi Meyers 30+ Rec Yds",
+          "outcome": "Jacksonville Jaguars",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "30",
           "bid": 0.81,
           "ask": 0.89,
           "spread": 0.08,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:31.073506+00:00",
+          "quote_checked_utc": "2026-11-28T00:41:53.899486+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-ten-jax-2026-11-29-recyd-joscam-gte10",
+          "title": "Josh Cameron 10+ Rec Yds",
+          "outcome": "Jacksonville Jaguars",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "10",
+          "bid": 0.88,
+          "ask": 0.89,
+          "spread": 0.01,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-28T00:41:53.960603+00:00",
           "quote_warning": null
         },
         {
@@ -1082,7 +1034,23 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:31.187439+00:00",
+          "quote_checked_utc": "2026-11-28T00:42:04.060881+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-ten-jax-2026-11-29-total-34pt5",
+          "title": "Over 34.5 points",
+          "outcome": "Over",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 34.5",
+          "bid": 0.845,
+          "ask": 0.89,
+          "spread": 0.045,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-28T00:42:04.116992+00:00",
           "quote_warning": null
         },
         {
@@ -1098,7 +1066,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:31.277399+00:00",
+          "quote_checked_utc": "2026-11-28T00:42:04.178658+00:00",
           "quote_warning": null
         },
         {
@@ -1114,7 +1082,7 @@
           "spread": 0.04,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:39.427370+00:00",
+          "quote_checked_utc": "2026-11-28T00:42:04.234015+00:00",
           "quote_warning": null
         },
         {
@@ -1125,44 +1093,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "1",
-          "bid": 0.68,
+          "bid": 0.67,
           "ask": 0.88,
-          "spread": 0.2,
+          "spread": 0.21,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:39.535490+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ten-jax-2026-11-29-recyd-joscam-gte10",
-          "title": "Josh Cameron 10+ Rec Yds",
-          "outcome": "Jacksonville Jaguars",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "10",
-          "bid": 0.87,
-          "ask": 0.88,
-          "spread": 0.01,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:47.694471+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "tsc-nfl-ten-jax-2026-11-29-total-34pt5",
-          "title": "Over 34.5 points",
-          "outcome": "Over",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Total",
-          "line": "Total 34.5",
-          "bid": 0.845,
-          "ask": 0.88,
-          "spread": 0.035,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:47.781334+00:00",
+          "quote_checked_utc": "2026-11-28T00:42:14.347463+00:00",
           "quote_warning": null
         },
         {
@@ -1178,7 +1114,7 @@
           "spread": 0.16,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:47.911858+00:00",
+          "quote_checked_utc": "2026-11-28T00:42:14.400081+00:00",
           "quote_warning": null
         },
         {
@@ -1194,7 +1130,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:48.049757+00:00",
+          "quote_checked_utc": "2026-11-28T00:42:14.467218+00:00",
           "quote_warning": null
         },
         {
@@ -1210,7 +1146,7 @@
           "spread": 0.02,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:58.213753+00:00",
+          "quote_checked_utc": "2026-11-28T00:42:22.555893+00:00",
           "quote_warning": null
         },
         {
@@ -1226,7 +1162,7 @@
           "spread": 0.03,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:58.300925+00:00",
+          "quote_checked_utc": "2026-11-28T00:42:22.609245+00:00",
           "quote_warning": null
         },
         {
@@ -1242,7 +1178,7 @@
           "spread": 0.01,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:58.418115+00:00",
+          "quote_checked_utc": "2026-11-28T00:42:22.670340+00:00",
           "quote_warning": null
         },
         {
@@ -1253,28 +1189,12 @@
           "side_source": "marketSides.long.team",
           "type": "Props & other",
           "line": "8",
-          "bid": 0.73,
+          "bid": 0.76,
           "ask": 0.85,
-          "spread": 0.12,
+          "spread": 0.09,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:58.543245+00:00",
-          "quote_warning": null
-        },
-        {
-          "slug": "astatc-nfl-ten-jax-2026-11-29-rec-gunhel-gte2",
-          "title": "Gunnar Helm 2+ Rec",
-          "outcome": "Tennessee Titans",
-          "side_verified": true,
-          "side_source": "marketSides.long.team",
-          "type": "Props & other",
-          "line": "2",
-          "bid": 0.73,
-          "ask": 0.85,
-          "spread": 0.12,
-          "liquidity": null,
-          "volume": null,
-          "quote_checked_utc": "2026-11-27T23:41:58.649827+00:00",
+          "quote_checked_utc": "2026-11-28T00:42:32.769017+00:00",
           "quote_warning": null
         },
         {
@@ -1290,11 +1210,91 @@
           "spread": 0.06,
           "liquidity": null,
           "volume": null,
-          "quote_checked_utc": "2026-11-27T23:42:08.804037+00:00",
+          "quote_checked_utc": "2026-11-28T00:42:32.822226+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "tsc-nfl-ten-jax-2026-11-29-total-36pt5",
+          "title": "Over 36.5 points",
+          "outcome": "Over",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Total",
+          "line": "Total 36.5",
+          "bid": 0.81,
+          "ask": 0.85,
+          "spread": 0.04,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-28T00:42:32.882274+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-ten-jax-2026-11-29-pos-27pt5",
+          "title": "JAX -27.5",
+          "outcome": "Tennessee Titans",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 27.5 (check sign)",
+          "bid": 0.84,
+          "ask": 0.845,
+          "spread": 0.005,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-28T00:42:40.964932+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "asc-nfl-ten-jax-2026-11-29-1h-pos-17pt5",
+          "title": "JAX -17.5 1H",
+          "outcome": "Tennessee Titans",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Spread",
+          "line": "Handicap 17.5 (check sign)",
+          "bid": 0.82,
+          "ask": 0.84,
+          "spread": 0.02,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-28T00:42:41.025103+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-ten-jax-2026-11-29-pyd-camwar-gte150",
+          "title": "Cam Ward 150+ Pass Yds",
+          "outcome": "Tennessee Titans",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "150",
+          "bid": 0.77,
+          "ask": 0.84,
+          "spread": 0.07,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-28T00:42:41.077115+00:00",
+          "quote_warning": null
+        },
+        {
+          "slug": "astatc-nfl-ten-jax-2026-11-29-rec-gunhel-gte2",
+          "title": "Gunnar Helm 2+ Rec",
+          "outcome": "Tennessee Titans",
+          "side_verified": true,
+          "side_source": "marketSides.long.team",
+          "type": "Props & other",
+          "line": "2",
+          "bid": 0.74,
+          "ask": 0.84,
+          "spread": 0.1,
+          "liquidity": null,
+          "volume": null,
+          "quote_checked_utc": "2026-11-28T00:42:49.161968+00:00",
           "quote_warning": null
         }
       ],
-      "discovered_market_count": 666
+      "discovered_market_count": 674
     }
   ],
   "execution_warning": "Read-only data; refresh the exact market before trading. No order execution."
